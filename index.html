@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Базовый шаблон!</title>
+    <title>Moon Food</title>
     
-    <link href="css/onepage-scroll.css" rel="stylesheet">
+    <!-- <link href="css/onepage-scroll.css" rel="stylesheet"> -->
+    <link href="css/jquery.fullpage.css" rel="stylesheet">
     <!-- Normalize -->
     <link href="css/normalize.css" rel="stylesheet">
     <!-- Bootstrap -->
@@ -25,7 +26,9 @@
   </head>
   <body>
     <header class="header">
-        <img class="header__logo" src="images/logo.png"/>
+        <a href="index.html">
+            <img class="header__logo" src="images/logo.png"/>
+        </a>
         <nav class="header__navigation">
             <ul class="navigation__navigation-list">
                 <li class="navigation-list__button"> вопросы и ответы </li>
@@ -42,24 +45,157 @@
         </div>
     </header>
     
-    <div id="main">
-        <section class="slide-bg" style="background: url('images/template.jpg') no-repeat;"></section>
-        <section class="slide-bg" style="background: url('images/template2.jpg') no-repeat;"></section>
-        <section class="slide-bg" style="background: url('images/template3.jpg') no-repeat;"></section>
-        <section class="slide-bg" style="background: url('images/template4.jpg') no-repeat;"></section>
-    </div>
-    <!--
-    <div id="blog">
-        <section></section>
-        <section></section>
+    <div id="fullpage">
+        <section class="slide-bg section" style="background: url('images/template.jpg') no-repeat;">
+            <div class="content-slide">
+               <div class="right-col text-right">
+                <h1 class="content-slide__header-slide ">
+                    Что если бы...
+                </h1>
+                <p class="content-slide__title">
+                    самое здоровое питание<br/> было бы еще и самым<br/>  простым?
+                </p>
+                </div>
+            </div>
+        </section>
+        <section class="slide-bg section" style="background: url('images/template2.jpg') no-repeat;">
+            <div class="content-slide">
+                <div class="left-col">
+                    <h1 class="content-slide__header-slide ">
+                        MOONFOOD
+                    </h1>
+                    <p class="content-slide__title">
+                        - полноценный обед из трех блюд в одной бутылке
+                    </p>
+                    <p class="content-slide__description">
+                        Весь комплекс необходимых микроэлементов,
+    витаминов и питательных веществ, идеально сбалансированный для повседневного питания, который заботится о вашем здоровье, укрепляет иммунитет, экономит ваше время и вместо последобеденной тяжести в желудке дарит легкость и заряд энергии
+                    </p>
+                </div>
+                <div class="right-col text-center">
+                    <img src="images/bootle.png" style="width: 100%; max-width: 400px;">
+                </div>
+            </div>
+        </section>
+        <section class="slide-bg section" style="background: url('images/template3.jpg') no-repeat;">
+            <div class="content-slide">
+                <div class="center-col">
+                    <h1 class="content-slide__header-slide ">
+                        СОСТАВ
+                    </h1>
+                    <p class="content-slide__title">
+                        - тащательно подобранный комплекс из белков и сложных углеводов
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="compositions">
+                        <img src="images/Shape.png" style="display:block; position: absolute; margin: 0 50px; width: 850px;">
+                        <!-- семена чиа -->
+                        <div class="composition down">
+                            <div class="composition__img">
+                                <img src="images/chia-seeds_1.png">
+                            </div>
+                            <div class="composition__description text-center">
+                                семена чиа
+                            </div>
+                        </div>
+                        <!-- соевые бобы -->
+                        <div class="composition up">
+                            <div class="composition__img">
+                                <img src="images/soybeans.png">
+                            </div>
+                            <div class="composition__description text-center">
+                                соевые бобы
+                            </div>
+                        </div>
+                        <!-- зерна гороха -->
+                        <div class="composition down">
+                            <div class="composition__img">
+                                <img src="images/goroh.png">
+                            </div>
+                            <div class="composition__description text-center">
+                               зерна гороха
+                            </div>
+                        </div>
+                        <!-- ягоды -->
+                        <div class="composition up">
+                            <div class="composition__img">
+                                <img src="images/goji.png">
+                            </div>
+                            <div class="composition__description text-center">
+                                ягоды и годжи
+                            </div>
+                        </div>
+                        <!-- витамины -->
+                        <div class="composition down">
+                            <div class="composition__img">
+                                <img src="images/mineral.png">
+                            </div>
+                            <div class="composition__description text-center">
+                                витамины и минералы
+                            </div>
+                        </div>
+                        <!-- орехи -->
+                        <div class="composition up">
+                            <div class="composition__img">
+                                <img src="images/walnut.png">
+                            </div>
+                            <div class="composition__description text-center">
+                                семена чиа
+                            </div>
+                        </div>
+                        <!-- миндальное молоко -->
+                        <div class="composition down">
+                            <div class="composition__img">
+                                <img src="images/pinto-beans-texture.png">
+                            </div>
+                            <div class="composition__description text-center">
+                                миндальное молоко
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="slide-bg section" style="background: url('images/template4.jpg') no-repeat;">
+            <div class="content-slide">
+                
+                <div class="center-col">
+                    <h1 class="content-slide__header-slide ">
+                        Мнение специалиста
+                    </h1>
+                    <div class="slider__opinion">
+                        <div class="opinion">
+                            <p class="content-slide__title">
+                                - Виктор Стрижевский, диетолог
+                            </p>
+                            <div class="opinion__detail-opinion">
+                                <img src="images/foto.png" class="detail-opinion__foto-specialist">
+                                <p class="detail-opinion__concret-opinion">
+                                    За 15 лет практики в качестве ведущего врача-диетолога в нашей клинике, это первый случай, когда продукт подходит абсолютно всем пациентам. Отсутствие потенциальных аллергенов в составе, сбалансированность веществ и микроэлементов позволяют употреблять Moon Food практически всем. За 4 месяца, в течение которых я предлагаю эти бутылочки своим пациентам, не наблюдалось ни одного негативного случая или побочного эффекта. Да что там говорить, я и сама в последнее время частенько пользуюсь этим уникальным продуктом. Это инновации, которые качественно меняют нашу жизнь: будущее в диетическом питании пришло к нам уже сегодня.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-btn left-slide-btn text-center">
+                        <img src="images/left_slide_btn.png">
+                        <label>Фитнесс тренер</label>
+                    </div>
+                    <div class="slide-btn right-slide-btn text-center">
+                        <img src="images/right_slide_btn.png">
+                        <label>Терапевт</label>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     
-    <div id="reviews">
-        <section></section>
-        <section></section>
-    </div>
-    -->
     <footer class="footer">
+        <div id="btn-arrow-down" class="footer__arrow">
+            <img src="images/arrow_down.png">
+        </div>
+       
         <div class="social-panel">
             <span class="icon-instagram social-panel__social-btn"></span>
             <span class="icon-facebook social-panel__social-btn"></span>
@@ -90,7 +226,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- MoonFood script -->
     <script src="js/script.js"></script>
-    
-    <script src="js/jquery.onepage-scroll.js"></script>
+    <!-- full page scroller -->
+    <!-- <script src="js/jquery.onepage-scroll.js"></script> -->
+    <script src="js/jquery.fullpage.js"></script>
   </body>
 </html>

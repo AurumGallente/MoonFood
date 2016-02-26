@@ -1,4 +1,4 @@
-@import url("fonts/pragmatica-bold.ttf");
+@import url("../fonts/pragmatica-bold.ttf");
 
 body{
     font-family: 'Pragmatica Bold', arial;
@@ -69,6 +69,15 @@ body{
     text-align: center;
     vertical-align: middle;
     line-height: 32px;
+    cursor: pointer;
+}
+
+.header__cart .glyphicon.glyphicon-shopping-cart:hover{
+    position: relative;
+    left: -1px;
+    top: -1px;
+    -webkit-box-shadow: 1px 1px 0px 0px #000;
+    box-shadow: 1px 1px 0px 0px #000;
 }
 
 .header__phone{
@@ -92,6 +101,53 @@ body{
     /* width: 1260px */
 }
 
+.footer__arrow{
+    margin: 0 auto;
+    margin-bottom: 35px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.footer__arrow:hover img{
+    /*position: absolute;*/
+    -webkit-animation-name: arrow-up-down;
+         -o-animation-name: arrow-up-down;
+            animation-name: arrow-up-down;
+    -webkit-animation-duration: 1s;
+         -o-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+         -o-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+         -o-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@keyframes arrow-up-down {
+    0% {
+        transform: translateY(0%);  
+    }
+    50% {
+        transform: translateY(20%);  
+    }   
+    100% {
+        transform: translateY(0%);
+    }   
+}
+ 
+@-webkit-keyframes arrow-up-down {
+    0% {
+        transform: translateY(0%);  
+    }
+    50% {
+        transform: translateY(20%);  
+    }   
+    100% {
+        transform: translateY(0%);
+    }
+}
+
 /*            social botton          */
 .social-panel{
     /* margin-bottom: 25px; */
@@ -111,6 +167,15 @@ body{
     line-height: 32px;
     font-size: 18px;
     margin-right: 4px;
+    cursor: pointer;
+}
+
+.social-panel__social-btn:hover{
+    position: relative;
+    left: -1px;
+    top: -1px;
+    -webkit-box-shadow: 1px 1px 0px 0px #000;
+    box-shadow: 1px 1px 0px 0px #000;
 }
 
 .social-panel__social-btn.icon-vk:before{
@@ -180,4 +245,116 @@ select.select-count__selector > option{
 
 .slide-bg{
     background-size: cover !important;
+}
+
+/* navigation panel */
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{
+    background-color: #fff;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background-color: #fff;
+}
+
+/* content slide */
+.content-slide{
+    color: #fff;
+    margin: 0 60px;
+    padding: 0 80px;
+}
+
+.content-slide__header-slide{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.content-slide__title{
+    /*font-weight: bold;*/
+    font-size: 27px
+}
+.center-col .content-slide__title{
+    margin-right: -30px
+}
+
+.content-slide__description{
+    font-size: 16px;
+}
+
+.right-col{
+    width: 50%;
+    float: right;
+}
+
+.left-col{
+    width: 50%;
+    float: left;
+}
+
+/* составы */
+.compositions{
+    width: 1000px;
+    margin: 0 -60px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+.composition{
+    width: 140px;
+    float: left;
+}
+.composition.up{
+    margin-top: -65px;
+}
+.composition.down{
+    margin-top: 55px;
+}
+.composition__img img{
+    width: 100%;
+    position: relative;
+}
+.composition__description{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* мнение специалиста */
+.slider__opinion{
+    margin-bottom: 100px;
+}
+.opinion__detail-opinion{
+    display: inline-block;
+    margin-top: 40px;
+}
+.detail-opinion__foto-specialist{
+    display: block;
+    float: left;
+    margin: 0 30px;
+}
+.detail-opinion__concret-opinion{
+    padding-right: 80px;
+    font-size: 15px;
+    width: 600px;
+    float: left;
+}
+.slide-btn{
+    position: absolute;
+    top: 45%;
+    width: 120px
+}
+.left-slide-btn{
+    left: 60px;
+}
+.right-slide-btn{
+    right: 60px;
+}
+
+.slide-btn img{
+    display: inline-block;
+}
+
+.slide-btn label{
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 10px;
 }

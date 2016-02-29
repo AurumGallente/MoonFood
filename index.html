@@ -46,16 +46,39 @@
     </header>
     
     <div id="fullpage">
-        <section class="slide-bg section" style="background: url('images/template.jpg') no-repeat;">
+        <section class="slide-bg section">
             <div class="content-slide">
-               <div class="right-col text-right">
-                <h1 class="content-slide__header-slide ">
-                    Что если бы...
-                </h1>
-                <p class="content-slide__title">
-                    самое здоровое питание<br/> было бы еще и самым<br/>  простым?
-                </p>
-                </div>
+                <div class="right-col text-right">
+                    <div id="bg-title">
+                        <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg1.jpg') no-repeat;"></div>
+                        <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg2.jpg') no-repeat;"></div>
+                        <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg3.jpg') no-repeat;"></div>
+                        <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg4.jpg') no-repeat;"></div>
+                        <!--
+                        <img src="images/first-main-slide-bg1.jpg" style="position: absolute; top:0; left:0; width:100%; z-index:-1;">
+                        <img src="images/first-main-slide-bg2.jpg" style="position: absolute; top:0; left:0; width:100%; z-index:-1;">
+                        <img src="images/first-main-slide-bg3.jpg" style="position: absolute; top:0; left:0; width:100%; z-index:-1;">
+                        <img src="images/first-main-slide-bg4.jpg" style="position: absolute; top:0; left:0; width:100%; z-index:-1;"> -->
+                    </div>
+
+                    <h1 class="content-slide__header-slide ">
+                        Что если бы...
+                    </h1>
+                    <div id="content-slide__title_slider" class="content-slide__title_slider">
+                        <p class="content-slide__title title-slide">
+                            самое здоровое питание<br/> было бы еще и самым<br/>  простым?
+                        </p>
+                        <p class="content-slide__title title-slide">
+                            вы могли похудеть, не изнуряя себя<br/> мучительными диетами?
+                        </p>
+                        <p class="content-slide__title title-slide">
+                            фитнесс-питание стало<br/> доступно каждому?
+                        </p>
+                        <p class="content-slide__title title-slide">
+                            у вас всегда было время<br/> на здоровую еду?
+                        </p>
+                    </div>
+                </div>                
             </div>
         </section>
         <section class="slide-bg section" style="background: url('images/template2.jpg') no-repeat;">
@@ -161,30 +184,57 @@
         <section class="slide-bg section" style="background: url('images/template4.jpg') no-repeat;">
             <div class="content-slide">
                 
-                <div class="center-col">
+                <div class="center-col opinion-specialist">
                     <h1 class="content-slide__header-slide ">
                         Мнение специалиста
                     </h1>
-                    <div class="slider__opinion">
-                        <div class="opinion">
-                            <p class="content-slide__title">
-                                - Виктор Стрижевский, диетолог
-                            </p>
-                            <div class="opinion__detail-opinion">
-                                <img src="images/foto.png" class="detail-opinion__foto-specialist">
-                                <p class="detail-opinion__concret-opinion">
-                                    За 15 лет практики в качестве ведущего врача-диетолога в нашей клинике, это первый случай, когда продукт подходит абсолютно всем пациентам. Отсутствие потенциальных аллергенов в составе, сбалансированность веществ и микроэлементов позволяют употреблять Moon Food практически всем. За 4 месяца, в течение которых я предлагаю эти бутылочки своим пациентам, не наблюдалось ни одного негативного случая или побочного эффекта. Да что там говорить, я и сама в последнее время частенько пользуюсь этим уникальным продуктом. Это инновации, которые качественно меняют нашу жизнь: будущее в диетическом питании пришло к нам уже сегодня.
+                    <div id="slider-wrap">
+                        <div id="slider-opinion" class="slider__opinion">
+                            <!-- мнение 1 -->
+                            <div class="opinion">
+                                <p class="content-slide__title">
+                                    - Виктор Стрижевский, <span class="proffesion">диетолог</span>
                                 </p>
+                                <div class="opinion__detail-opinion">
+                                    <img src="images/foto.png" class="detail-opinion__foto-specialist">
+                                    <p class="detail-opinion__concret-opinion">
+                                        За 15 лет практики в качестве ведущего врача-диетолога в нашей клинике, это первый случай, когда продукт подходит абсолютно всем пациентам. Отсутствие потенциальных аллергенов в составе, сбалансированность веществ и микроэлементов позволяют употреблять Moon Food практически всем. За 4 месяца, в течение которых я предлагаю эти бутылочки своим пациентам, не наблюдалось ни одного негативного случая или побочного эффекта. Да что там говорить, я и сама в последнее время частенько пользуюсь этим уникальным продуктом. Это инновации, которые качественно меняют нашу жизнь: будущее в диетическом питании пришло к нам уже сегодня.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- мнение 2 -->
+                            <div class="opinion">
+                                <p class="content-slide__title">
+                                    - Имя Фамилия, <span class="proffesion">терапевт</span>
+                                </p>
+                                <div class="opinion__detail-opinion">
+                                    <img src="images/foto.png" class="detail-opinion__foto-specialist">
+                                    <p class="detail-opinion__concret-opinion">
+                                        какойто текст............
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- мнение 3 -->
+                            <div class="opinion">
+                                <p class="content-slide__title">
+                                    - Имя Фамилия, <span class="proffesion">фитнесс тререр</span>
+                                </p>
+                                <div class="opinion__detail-opinion">
+                                    <img src="images/foto.png" class="detail-opinion__foto-specialist">
+                                    <p class="detail-opinion__concret-opinion">
+                                        какойто текст............
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="slide-btn left-slide-btn text-center">
-                        <img src="images/left_slide_btn.png">
-                        <label>Фитнесс тренер</label>
-                    </div>
-                    <div class="slide-btn right-slide-btn text-center">
-                        <img src="images/right_slide_btn.png">
-                        <label>Терапевт</label>
+                        <div id="prev-opinion" class="slide-btn left-slide-btn text-center">
+                            <img src="images/left_slide_btn.png" class="img-circle">
+                            <span>Фитнесс тренер</span>
+                        </div>
+                        <div id="next-opinion" class="slide-btn right-slide-btn text-center">
+                            <img src="images/right_slide_btn.png" class="img-circle">
+                            <span>Терапевт</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -229,5 +279,9 @@
     <!-- full page scroller -->
     <!-- <script src="js/jquery.onepage-scroll.js"></script> -->
     <script src="js/jquery.fullpage.js"></script>
+    <!-- slider first main slide -->
+    <script src="js/slider_title.js"></script>
+    <!-- slider opinion -->
+    <script src="js/slider_opinion.js"></script>
   </body>
 </html>

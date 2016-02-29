@@ -13,11 +13,15 @@ $(function(){
         fitSection: false
     });
     
+    if($('#fp-nav ul li').size() <= 1){
+        $('#fp-nav').hide();
+    }
+    
     // обработка нажатия кнопок верхнего меню
-    $(".navigation-list__button").on("click", function(btn){
+    /*$(".navigation-list__button").on("click", function(btn){
         $(".navigation-list__button").removeClass("active");
         $(this).addClass("active");
-    })
+    })*/
     
     // нажатие стрелки кнопки 
     $("#btn-arrow-down").on("click", function(){

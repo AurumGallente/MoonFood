@@ -3,7 +3,7 @@ var hwTimeOut = 3000;
 var hwNeedLinks = true;
  
 $(document).ready(function(e) {
-    $('.opinion').css(
+    $("#slider-reviews .comment").css(
         {
             "position" : "absolute",
             "top":'0', 
@@ -14,7 +14,7 @@ $(document).ready(function(e) {
         .show();
     var slideNum = 0;
     var slideTime;
-    slideCount = $("#slider-opinion .opinion").size();
+    slideCount = $("#slider-reviews .comment").size();
     
     var setBtnText = function(){
         var prewSlide = 0;
@@ -31,15 +31,15 @@ $(document).ready(function(e) {
             nextSlide = slideNum + 1;
         }
         
-        $('#prev-opinion span').empty().append($('.opinion').eq(prewSlide).find('span').html());
-        $('#next-opinion span').empty().append($('.opinion').eq(nextSlide).find('span').html());
+        $('#prev-comment span').empty().append($("#slider-reviews .comment").eq(prewSlide).find('span').html());
+        $('#next-comment span').empty().append($("#slider-reviews .comment").eq(nextSlide).find('span').html());
     }
     
     setBtnText();
     
     var animSlide = function(arrow){
             clearTimeout(slideTime);
-            $('.opinion').eq(slideNum).fadeOut(hwSlideSpeed);
+            $("#slider-reviews .comment").eq(slideNum).fadeOut(hwSlideSpeed);
             if(arrow == "next"){
                 if(slideNum == (slideCount-1)){slideNum=0;}
                 else{slideNum++}
@@ -52,7 +52,7 @@ $(document).ready(function(e) {
             else{
                 slideNum = arrow;
                 }
-            $('.opinion').eq(slideNum).fadeIn(hwSlideSpeed);
+            $("#slider-reviews .comment").eq(slideNum).fadeIn(hwSlideSpeed);
             setBtnText();
             //$(".control-slide.active").removeClass("active");
             //$('.control-slide').eq(slideNum).addClass('active');
@@ -60,39 +60,11 @@ $(document).ready(function(e) {
     if(hwNeedLinks){
     /*var $linkArrow = $('<a id="prewbutton" href="#"></a><a id="nextbutton" href="#"></a>')
         .prependTo('#slider-opinion');*/      
-        $('#next-opinion').click(function(){
+        $('#next-comment').click(function(){
                 animSlide("next");
             });
-        $('#prev-opinion').click(function(){
+        $('#prev-comment').click(function(){
                 animSlide("prew");
             });
     }
-    /*var $adderSpan = '';
-    $('.opinion').each(function(index) {
-            $adderSpan += '<span class = "control-slide">' + index + '</span>';
-        });
-    $('<div class ="sli-links">' + $adderSpan +'</div>').appendTo('#slider-wrap');
-    $(".control-slide:first").addClass("active");
-     
-    $('.control-slide').click(function(){
-        var goToNum = parseFloat($(this).text());
-        animSlide(goToNum);
-    });*/
-    /*var pause = false;
-    var rotator = function(){
-            if(!pause){
-                slideTime = setTimeout(function(){
-                    animSlide('next')
-                }, hwTimeOut);
-            }
-        }
-    $('#slider-wrap').hover(    
-        function(){
-            clearTimeout(slideTime); pause = true;
-        },
-        function(){
-            pause = false; 
-            rotator();
-        });*/
-    //rotator();
 });

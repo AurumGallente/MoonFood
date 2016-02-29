@@ -45,7 +45,10 @@ body{
     
     cursor: pointer;
 }
-
+a .navigation-list__button{
+    text-decoration: none;
+    color: #fff;
+}
 .navigation-list__button:hover{
     border: solid 1px #fff;
 }
@@ -106,6 +109,10 @@ body{
     margin-bottom: 35px;
     width: 30px;
     cursor: pointer;
+}
+
+.footer__arrow.hide{
+    display: none;
 }
 
 .footer__arrow:hover img{
@@ -275,12 +282,13 @@ select.select-count__selector > option{
 .content-slide__header-slide{
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .content-slide__title{
     /*font-weight: bold;*/
-    font-size: 27px
+    font-size: 27px;
+    font-weight: bold;
 }
 .content-slide__title_slider{
     position:relative; 
@@ -339,9 +347,15 @@ select.select-count__selector > option{
 }
 
 /* мнение специалиста */
-#slider-wrap{ /* Оболочка слайдера */
-    width:850px; 
+.slider-wrap-opinion{
+    width: 800px;
 }
+
+/* отзывы */
+.slider-wrap-reviews{
+    margin-left: 80px;
+}
+
 .opinion-specialist{
     width: 850px;
     margin: 0 auto;
@@ -355,8 +369,8 @@ select.select-count__selector > option{
     display: none;
 }
 .slider__opinion{
-    margin-bottom: 100px;
-    height: 300px;
+    margin-bottom: 50px;
+    height: 400px;
     overflow: hidden;
     position: relative;
 }
@@ -368,11 +382,14 @@ select.select-count__selector > option{
     display: block;
     float: left;
     margin: 0 30px;
+    /*border: 5px solid #fff;*/
+    /*-webkit-box-shadow: 0 0 25px -5px #000;
+    box-shadow: 0 0 25px -5px #000;*/
 }
 .detail-opinion__concret-opinion{
-    padding-right: 80px;
+    /*padding-right: 80px;*/
     font-size: 15px;
-    width: 600px;
+    width: 520px;
     float: left;
 }
 .slide-btn{
@@ -410,4 +427,38 @@ select.select-count__selector > option{
     font-weight: normal;
     font-size: 14px;
     margin-top: 10px;
+}
+
+/* reviews */
+.slider__reviews {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.comment__title{
+    font-size: 27px;
+    font-weight: bold;
+}
+.comment__description{
+    
+}
+
+/*  blog   */
+.blog-content{
+    margin-top: -150px;   
+}
+.blog{
+    max-width: 750px;
+    margin-left: 60px;
+    margin-top: 70px;
+}
+.blog__title{
+    font-size: 27px;
+    font-weight: bold;
+}
+.blog__description{
+    
 }

@@ -30,7 +30,7 @@
         <a href="index.html">
             <img class="header__logo" src="images/logo.png"/>
         </a>
-        <nav class="header__navigation">
+        <nav class="header__navigation hidden-xs">
             <ul class="navigation__navigation-list">
                 <li class="navigation-list__button"> вопросы и ответы </li>
                 <a href="reviews.html"><li class="navigation-list__button">  отзывы </li></a>
@@ -38,10 +38,13 @@
             </ul>
         </nav>
         
-        <div class="header__cart">
-            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+        <div class="header__mobile-menu mobile-menu hidden-sm hidden-md hidden-lg">
+            <span class="btn-icon-menu glyphicon glyphicon-align-justify" aria-hidden="true"></span>
         </div>
-        <div class="header__phone">
+        <div class="header__cart">
+            <span class="btn-icon-menu glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+        </div>
+        <div class="header__phone visible-md visible-lg">
             +7 495 456 34 78
         </div>
     </header>
@@ -50,35 +53,38 @@
         <!--  -->
         <section class="slide-bg section">
             <div class="content-slide">
-                <div class="right-col text-right">
-                    <div id="bg-title">
-                        <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg1.jpg') no-repeat;"></div>
-                        <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg2.jpg') no-repeat;"></div>
-                        <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg3.jpg') no-repeat;"></div>
-                        <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg4.jpg') no-repeat;"></div>
-                        <!--
-                        <img src="images/first-main-slide-bg1.jpg" style="position: absolute; top:0; left:0; width:100%; z-index:-1;">
-                        <img src="images/first-main-slide-bg2.jpg" style="position: absolute; top:0; left:0; width:100%; z-index:-1;">
-                        <img src="images/first-main-slide-bg3.jpg" style="position: absolute; top:0; left:0; width:100%; z-index:-1;">
-                        <img src="images/first-main-slide-bg4.jpg" style="position: absolute; top:0; left:0; width:100%; z-index:-1;"> -->
-                    </div>
-
-                    <h1 class="content-slide__header-slide ">
-                        Что если бы...
-                    </h1>
-                    <div id="content-slide__title_slider" class="content-slide__title_slider">
-                        <p class="content-slide__title title-slide">
-                            самое здоровое питание<br/> было бы еще и самым<br/>  простым?
-                        </p>
-                        <p class="content-slide__title title-slide">
-                            вы могли похудеть, не изнуряя себя<br/> мучительными диетами?
-                        </p>
-                        <p class="content-slide__title title-slide">
-                            фитнесс-питание стало<br/> доступно каждому?
-                        </p>
-                        <p class="content-slide__title title-slide">
-                            у вас всегда было время<br/> на здоровую еду?
-                        </p>
+                <div id="bg-title">
+                    <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg1.jpg') no-repeat;"></div>
+                    <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg2.jpg') no-repeat;"></div>
+                    <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg3.jpg') no-repeat;"></div>
+                    <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg4.jpg') no-repeat;"></div>
+                    <!--
+                    <img src="images/first-main-slide-bg1.jpg" style="position: absolute; top:0; left:0; width:100%; z-index:-1;">
+                    <img src="images/first-main-slide-bg2.jpg" style="position: absolute; top:0; left:0; width:100%; z-index:-1;">
+                    <img src="images/first-main-slide-bg3.jpg" style="position: absolute; top:0; left:0; width:100%; z-index:-1;">
+                    <img src="images/first-main-slide-bg4.jpg" style="position: absolute; top:0; left:0; width:100%; z-index:-1;"> -->
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                            <div class="col-xs-12 text-right">
+                                <h1 class="content-slide__header-slide ">
+                                    Что если бы...
+                                </h1>
+                                <div id="content-slide__title_slider" class="content-slide__title_slider">
+                                    <p class="content-slide__title title-slide">
+                                        самое здоровое питание<br/> было бы еще и самым<br/>  простым?
+                                    </p>
+                                    <p class="content-slide__title title-slide">
+                                        вы могли похудеть, не изнуряя себя<br/> мучительными диетами?
+                                    </p>
+                                    <p class="content-slide__title title-slide">
+                                        фитнесс-питание стало<br/> доступно каждому?
+                                    </p>
+                                    <p class="content-slide__title title-slide">
+                                        у вас всегда было время<br/> на здоровую еду?
+                                    </p>
+                                </div>
+                            </div>      
                     </div>
                 </div>                
             </div>
@@ -86,20 +92,24 @@
         <!-- MOONFOOD -->>
         <section class="slide-bg section" style="background: url('images/template2.jpg') no-repeat;">
             <div class="content-slide">
-                <div class="left-col">
-                    <h1 class="content-slide__header-slide ">
-                        MOONFOOD
-                    </h1>
-                    <p class="content-slide__title">
-                        - полноценный обед из трех блюд в одной бутылке
-                    </p>
-                    <p class="content-slide__description">
-                        Весь комплекс необходимых микроэлементов,
-    витаминов и питательных веществ, идеально сбалансированный для повседневного питания, который заботится о вашем здоровье, укрепляет иммунитет, экономит ваше время и вместо последобеденной тяжести в желудке дарит легкость и заряд энергии
-                    </p>
-                </div>
-                <div class="right-col text-center">
-                    <img src="images/bootle.png" style="width: 100%; max-width: 400px;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <h1 class="content-slide__header-slide ">
+                                MOONFOOD
+                            </h1>
+                            <p class="content-slide__title">
+                                - полноценный обед из трех блюд в одной бутылке
+                            </p>
+                            <p class="content-slide__description">
+                                Весь комплекс необходимых микроэлементов,
+            витаминов и питательных веществ, идеально сбалансированный для повседневного питания, который заботится о вашем здоровье, укрепляет иммунитет, экономит ваше время и вместо последобеденной тяжести в желудке дарит легкость и заряд энергии
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-lg-6 visible-md visible-lg text-center">
+                            <img src="images/bootle.png" style="width: 100%; max-width: 400px;">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -251,31 +261,39 @@
     </div>
     
     <footer class="footer">
-        <div id="btn-arrow-down" class="footer__arrow">
-            <img src="images/arrow_down.png">
-        </div>
-       
-        <div class="social-panel">
-            <span class="icon-instagram social-panel__social-btn"></span>
-            <span class="icon-facebook social-panel__social-btn"></span>
-            <span class="icon-vk social-panel__social-btn"></span>
-        </div>
-        
-        <div class="order">
-            <div class="form-group order__select-count">
-              <label class="select-count__label" for="sel1">Закажите сейчас</label>
-              <select class="form-control select-count__selector" id="sel1">
-                <option>1 бутылка</option>
-                <option>2 бутылки</option>
-                <option>3 бутылки</option>
-                <option>4 бутылки</option>
-              </select>
+        <div class="container-fluid">
+            <div class="row hidden-arrow-down">
+                <div id="btn-arrow-down" class="footer__arrow">
+                    <img src="images/arrow_down.png">
+                </div>  
             </div>
-            <span class="order__cost">
-                = 1200 руб.
-            </span>
-            <div class="btn order__order-btn">
-                Заказать
+            <div class="row">
+                <div class="social-panel hidden-xs col-sm-3 col-md-2">
+                    <span class="icon-instagram social-panel__social-btn"></span>
+                    <span class="icon-facebook social-panel__social-btn"></span>
+                    <span class="icon-vk social-panel__social-btn"></span>
+                </div>
+                <div class="col-xs-12 col-sm-6 offset-sm-3 col-md-8">
+                    <div class="order center-block">
+                        <div class="visible-md visible-lg">
+                            <div class="form-group order__select-count">
+                              <label class="select-count__label hide" for="sel1">Закажите сейчас</label>
+                              <select class="form-control select-count__selector" id="sel1">
+                                <option>1 бутылка</option>
+                                <option>2 бутылки</option>
+                                <option>3 бутылки</option>
+                                <option>4 бутылки</option>
+                              </select>
+                            </div>
+                            <span class="order__cost">
+                                = 1200 руб.
+                            </span>
+                        </div>
+                        <div class="btn order__order-btn">
+                            Заказать
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

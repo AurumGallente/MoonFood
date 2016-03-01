@@ -29,18 +29,21 @@
         <a href="index.html">
             <img class="header__logo" src="images/logo.png"/>
         </a>
-        <nav class="header__navigation">
+        <nav class="header__navigation hidden-xs">
             <ul class="navigation__navigation-list">
                 <li class="navigation-list__button"> вопросы и ответы </li>
-                <li class="navigation-list__button active"> отзывы </li>
+                <a href="reviews.html"><li class="navigation-list__button">  отзывы </li></a>
                 <a href="blog.html"><li class="navigation-list__button"> блог </li></a>
             </ul>
         </nav>
         
-        <div class="header__cart">
-            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+        <div class="header__mobile-menu mobile-menu hidden-sm hidden-md hidden-lg">
+            <span class="btn-icon-menu glyphicon glyphicon-align-justify" aria-hidden="true"></span>
         </div>
-        <div class="header__phone">
+        <div class="header__cart">
+            <span class="btn-icon-menu glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+        </div>
+        <div class="header__phone visible-md visible-lg">
             +7 495 456 34 78
         </div>
     </header>
@@ -103,31 +106,39 @@
     </div>
     
     <footer class="footer">
-        <div id="btn-arrow-down" class="footer__arrow hide">
-            <img src="images/arrow_down.png">
-        </div>
-       
-        <div class="social-panel">
-            <span class="icon-instagram social-panel__social-btn"></span>
-            <span class="icon-facebook social-panel__social-btn"></span>
-            <span class="icon-vk social-panel__social-btn"></span>
-        </div>
-        
-        <div class="order">
-            <div class="form-group order__select-count">
-              <label class="select-count__label" for="sel1">Закажите сейчас</label>
-              <select class="form-control select-count__selector" id="sel1">
-                <option>1 бутылка</option>
-                <option>2 бутылки</option>
-                <option>3 бутылки</option>
-                <option>4 бутылки</option>
-              </select>
+        <div class="container-fluid">
+            <div class="row hidden-arrow-down">
+                <div id="btn-arrow-down" class="footer__arrow">
+                    <img src="images/arrow_down.png">
+                </div>  
             </div>
-            <span class="order__cost">
-                = 1200 руб.
-            </span>
-            <div class="btn order__order-btn">
-                Заказать
+            <div class="row">
+                <div class="social-panel hidden-xs col-sm-3 col-md-2">
+                    <span class="icon-instagram social-panel__social-btn"></span>
+                    <span class="icon-facebook social-panel__social-btn"></span>
+                    <span class="icon-vk social-panel__social-btn"></span>
+                </div>
+                <div class="col-xs-12 col-sm-6 offset-sm-3 col-md-8">
+                    <div class="order center-block">
+                        <div class="visible-md visible-lg">
+                            <div class="form-group order__select-count">
+                              <label class="select-count__label hide" for="sel1">Закажите сейчас</label>
+                              <select class="form-control select-count__selector" id="sel1">
+                                <option>1 бутылка</option>
+                                <option>2 бутылки</option>
+                                <option>3 бутылки</option>
+                                <option>4 бутылки</option>
+                              </select>
+                            </div>
+                            <span class="order__cost">
+                                = 1200 руб.
+                            </span>
+                        </div>
+                        <div class="btn order__order-btn">
+                            Заказать
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

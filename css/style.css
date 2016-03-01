@@ -7,6 +7,8 @@ body{
 .header{
     z-index: 100;
     position: fixed;
+    top: 0;
+    left: 0;
     color: #fff;
     width: 100%;
     padding-top: 35px;
@@ -63,16 +65,30 @@ a .navigation-list__button{
     margin-top: 10px;
 }
 
-.header__cart .glyphicon.glyphicon-shopping-cart{
-    background: #fff;
-    color: #000;
-    border-radius: 50%;
+.header__mobile-menu{
+    float: right;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.btn-icon-menu{
     width: 32px;
     height: 32px;
     text-align: center;
     vertical-align: middle;
     line-height: 32px;
     cursor: pointer;
+}
+
+.mobile-menu{
+    font-size: 20px;
+}
+
+.header__cart .glyphicon.glyphicon-shopping-cart{
+    background: #F48D08;
+    color: #fff;
+    border-radius: 50%;
 }
 
 .header__cart .glyphicon.glyphicon-shopping-cart:hover{
@@ -95,6 +111,7 @@ a .navigation-list__button{
 /*               FOOTER             */
 .footer{
     position: fixed;
+    left: 0;
     bottom: 0;
     padding-bottom: 35px;
     padding-left: 60px;
@@ -159,7 +176,8 @@ a .navigation-list__button{
 .social-panel{
     /* margin-bottom: 25px; */
     margin-top: 15px;
-    float: left;
+    /*float: left;*/
+    /*position: absolute;*/
 }
 
 .social-panel__social-btn{
@@ -190,12 +208,13 @@ a .navigation-list__button{
 }
 
 .order{
-    float: right;
+    /*float: right;*/
     margin-bottom: 5px;
+    width: 640px;
 }
 
 .order__select-count{
-    width: 385px;
+    /*width: 385px;*/
     float: left;
 }
 
@@ -246,6 +265,10 @@ select.select-count__selector > option{
 
 .order__order-btn:hover{
     color: #fff;
+}
+
+.form-group{
+    margin-bottom: 0px;
 }
 
 /* slids  */
@@ -458,11 +481,12 @@ select.select-count__selector > option{
 
 /*  fullpage nav   */
 #fp-nav{
-    top: 160px;
+    /*top: 160px;*/
 }
 /* navigation panel */
 #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{
-    background-color: #fff;
+    background-color: #F48D08;
+    border: 2px solid #F48D08;
 }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
@@ -485,4 +509,32 @@ select.select-count__selector > option{
 
 #fp-nav ul li{
     margin: 15px 7px;
+}
+
+
+/*     MEDIA QUERY           */
+@media (max-width: 795px){
+    .header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 991px){
+    html {
+        overflow-x: hidden !important;
+    }
+    .order{
+        width: 240px;
+    }
+}
+
+@media (max-width: 900px){    
+    .hidden-arrow-down{
+        display: none;
+    }
 }

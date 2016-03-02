@@ -66,5 +66,12 @@ $(document).ready(function(e) {
         $('#prev-comment').click(function(){
                 animSlide("prew");
             });
+        
+        $("#prev-sml-comment").click(function(){
+            $('#next-comment').click();
+        });
+        $("#next-sml-comment").click(function(){
+            $('#prev-comment').click();
+        });
     }
 });

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=”viewport” content="user-scalable=no" />
     <title>Moon Food</title>
     
     <!-- Normalize -->
@@ -27,27 +28,59 @@
   </head>
   <body>
     <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="images/logo.png"/>
-        </a>
-        <nav class="header__navigation hidden-xs">
-            <ul class="navigation__navigation-list">
-                <li class="navigation-list__button"> вопросы и ответы </li>
-                <a href="reviews.html"><li class="navigation-list__button">  отзывы </li></a>
-                <a href="blog.html"><li class="navigation-list__button"> блог </li></a>
-            </ul>
-        </nav>
-        
-        <div class="header__mobile-menu mobile-menu hidden-sm hidden-md hidden-lg">
-            <span class="btn-icon-menu glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-        </div>
-        <div class="header__cart">
-            <span class="btn-icon-menu glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-        </div>
-        <div class="header__phone visible-md visible-lg">
-            +7 495 456 34 78
+        <div class="container-fluid">
+            <div class="row">
+                <a href="index.html">
+                    <img class="header__logo" src="images/logo.png"/>
+                </a>
+                <nav class="header__navigation hidden-xs">
+                    <ul class="navigation__navigation-list">
+                        <li class="navigation-list__button"> вопросы и ответы </li>
+                        <a href="reviews.html"><li class="navigation-list__button">  отзывы </li></a>
+                        <a href="blog.html"><li class="navigation-list__button"> блог </li></a>
+                    </ul>
+                </nav>
+
+                <div class="header__mobile-menu mobile-menu hidden-sm hidden-md hidden-lg" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <span class="btn-icon-menu glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+                </div>
+                <div class="header__cart">
+                    <span class="btn-icon-menu glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                </div>
+                <div class="header__phone visible-md visible-lg">
+                    +7 495 456 34 78
+                </div>
+            </div>
         </div>
     </header>
+     <!-- modal menu -->
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+     <div class="modal-dialog">
+        <div class="modal-content moda-menu">
+          <div class="modal-header">
+            <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="container-fluid" style="margin-top: 60px;">
+              <div class="row">
+                    <div class="modal-menu__phone">+7 495 456 34 78</div>
+              </div>
+              <hr style="width: 40%; margin: 50px auto;" />
+              <div class="modal-nav">
+                  <div class="row"><a href="#"><div class="navigation-list__button"> вопросы и ответы </div></a></div>
+                  <div class="row"><a href="reviews.html"><div class="navigation-list__button">  отзывы </div></a></div>
+                  <div class="row"><a href="blog.html"><div class="navigation-list__button"> блог </div></a></div>
+              </div>
+              <div class="row fixed-social">
+                  <div class="social-panel social-panel_modal center-block text-center">
+                    <span class="icon-instagram social-panel__social-btn"></span>
+                    <span class="icon-facebook social-panel__social-btn"></span>
+                    <span class="icon-vk social-panel__social-btn"></span>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>  
+    </div>
     
     <div id="fullpage">
         <!--  -->
@@ -89,7 +122,7 @@
                 </div>                
             </div>
         </section>
-        <!-- MOONFOOD -->>
+        <!-- MOONFOOD -->
         <section class="slide-bg section" style="background: url('images/template2.jpg') no-repeat;">
             <div class="content-slide">
                 <div class="container-fluid">
@@ -125,7 +158,7 @@
                     </p>
                 </div>
                 <div class="text-center">
-                    <div class="compositions">
+                    <div class="compositions hidden-xs hidden-sm hidden-md">
                         <img src="images/Shape.png" style="display:block; position: absolute; margin: 0 50px; width: 850px;">
                         <!-- семена чиа -->
                         <div class="composition down">
@@ -197,8 +230,8 @@
         <!-- Мнение специалиста -->
         <section class="slide-bg section" style="background: url('images/template4.jpg') no-repeat;">
             <div class="content-slide">
-                
-                <div class="center-col opinion-specialist">
+                <h1>На переделке...</h1>
+                <div class="center-col opinion-specialist hide">
                     <h1 class="content-slide__header-slide ">
                         Мнение специалиста
                     </h1>
@@ -210,7 +243,7 @@
                                     - Виктор Стрижевский, <span class="proffesion">диетолог</span>
                                 </p>
                                 <div class="opinion__detail-opinion">
-                                    <img src="images/foto.png" class="detail-opinion__foto-specialist">
+                                    <img src="images/foto.png" class="detail-opinion__foto-specialist hidden-xs hidden-sm">
                                     <p class="detail-opinion__concret-opinion">
                                        <img src="images/qoute_left.png" style="margin-left:-25px;">
                                         За 15 лет практики в качестве ведущего врача-диетолога в нашей клинике, это первый случай, когда продукт подходит абсолютно всем пациентам. Отсутствие потенциальных аллергенов в составе, сбалансированность веществ и микроэлементов позволяют употреблять Moon Food практически всем. За 4 месяца, в течение которых я предлагаю эти бутылочки своим пациентам, не наблюдалось ни одного негативного случая или побочного эффекта. Да что там говорить, я и сама в последнее время частенько пользуюсь этим уникальным продуктом. Это инновации, которые качественно меняют нашу жизнь: будущее в диетическом питании пришло к нам уже сегодня.<img src="images/qoute_right.png">
@@ -223,7 +256,7 @@
                                     - Имя Фамилия, <span class="proffesion">терапевт</span>
                                 </p>
                                 <div class="opinion__detail-opinion">
-                                    <img src="images/foto.png" class="detail-opinion__foto-specialist">
+                                    <img src="images/foto.png" class="detail-opinion__foto-specialist hidden-xs hidden-sm">
                                     <p class="detail-opinion__concret-opinion">
                                        <img src="images/qoute_left.png" style="margin-left:-25px;">
                                         какойто текст............
@@ -237,7 +270,7 @@
                                     - Имя Фамилия, <span class="proffesion">фитнесс тререр</span>
                                 </p>
                                 <div class="opinion__detail-opinion">
-                                    <img src="images/foto.png" class="detail-opinion__foto-specialist">
+                                    <img src="images/foto.png" class="detail-opinion__foto-specialist hidden-xs hidden-sm">
                                     <p class="detail-opinion__concret-opinion">
                                         <img src="images/qoute_left.png" style="margin-left:-25px;">
                                         какойто текст............
@@ -246,13 +279,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="prev-opinion" class="slide-btn left-slide-btn text-center">
+                        <div id="prev-opinion" class="slide-btn left-slide-btn text-center hidden-xs">
                             <img src="images/left_slide_btn.png" class="img-circle">
-                            <span>Фитнесс тренер</span>
+                            <span>-</span>
                         </div>
-                        <div id="next-opinion" class="slide-btn right-slide-btn text-center">
+                        <div id="next-opinion" class="slide-btn right-slide-btn text-center hidden-xs">
                             <img src="images/right_slide_btn.png" class="img-circle">
-                            <span>Терапевт</span>
+                            <span>-т</span>
                         </div>
                     </div>
                 </div>
@@ -289,14 +322,45 @@
                                 = 1200 руб.
                             </span>
                         </div>
-                        <div class="btn order__order-btn">
+                        <div class="btn order__order-btn visible-md visible-lg">
                             Заказать
+                        </div>
+                    <div class="btn order__order-btn hidden-md hidden-lg" data-toggle="modal" data-target=".bs-order">
+                            Заказать!
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- modal order -->
+    <div class="modal fade bs-order" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+     <div class="modal-dialog">
+        <div class="modal-content moda-menu">
+          <div class="modal-header">
+            <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="container-fluid" style="margin-top: 60px;">
+              <div class="row">
+                    <div class="modal-menu__phone">Заказ</div>
+              </div>
+              <hr style="width: 40%; margin: 50px auto;" />
+              <div class="modal-nav">
+                  <div class="row"><a href="#"><div class="navigation-list__button"> вопросы и ответы </div></a></div>
+                  <div class="row"><a href="reviews.html"><div class="navigation-list__button">  отзывы </div></a></div>
+                  <div class="row"><a href="blog.html"><div class="navigation-list__button"> блог </div></a></div>
+              </div>
+              <div class="row fixed-social">
+                  <div class="social-panel social-panel_modal center-block text-center">
+                    <span class="icon-instagram social-panel__social-btn"></span>
+                    <span class="icon-facebook social-panel__social-btn"></span>
+                    <span class="icon-vk social-panel__social-btn"></span>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>  
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

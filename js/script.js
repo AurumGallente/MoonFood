@@ -27,6 +27,15 @@ $(function(){
     $("#btn-arrow-down").on("click", function(){
         //$("#main").moveDown();
         $.fn.fullpage.moveSectionDown();
-    })
+    });
+    
+    var resizeHeaderFooter = function(){
+        var width = $(window).width();
+        //console.log(width);
+        $("header").width( width );
+        $("footer").width( width );
+    };
+    //resizeHeaderFooter();
+    //$( window ).resize( resizeHeaderFooter );
 });
 

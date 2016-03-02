@@ -26,27 +26,59 @@
   </head>
   <body>
     <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="images/logo.png"/>
-        </a>
-        <nav class="header__navigation hidden-xs">
-            <ul class="navigation__navigation-list">
-                <li class="navigation-list__button"> вопросы и ответы </li>
-                <a href="reviews.html"><li class="navigation-list__button">  отзывы </li></a>
-                <a href="blog.html"><li class="navigation-list__button"> блог </li></a>
-            </ul>
-        </nav>
-        
-        <div class="header__mobile-menu mobile-menu hidden-sm hidden-md hidden-lg">
-            <span class="btn-icon-menu glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-        </div>
-        <div class="header__cart">
-            <span class="btn-icon-menu glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-        </div>
-        <div class="header__phone visible-md visible-lg">
-            +7 495 456 34 78
+        <div class="container-fluid">
+            <div class="row">
+                <a href="index.html">
+                    <img class="header__logo" src="images/logo.png"/>
+                </a>
+                <nav class="header__navigation hidden-xs">
+                    <ul class="navigation__navigation-list">
+                        <li class="navigation-list__button"> вопросы и ответы </li>
+                        <a href="reviews.html"><li class="navigation-list__button">  отзывы </li></a>
+                        <a href="#"><li class="navigation-list__button"> блог </li></a>
+                    </ul>
+                </nav>
+
+                <div class="header__mobile-menu mobile-menu hidden-sm hidden-md hidden-lg" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <span class="btn-icon-menu glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+                </div>
+                <div class="header__cart">
+                    <span class="btn-icon-menu glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                </div>
+                <div class="header__phone visible-md visible-lg">
+                    +7 495 456 34 78
+                </div>
+            </div>
         </div>
     </header>
+     <!-- modal menu -->
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+     <div class="modal-dialog">
+        <div class="modal-content moda-menu">
+          <div class="modal-header">
+            <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="container-fluid" style="margin-top: 60px;">
+              <div class="row">
+                    <div class="modal-menu__phone">+7 495 456 34 78</div>
+              </div>
+              <hr style="width: 40%; margin: 50px auto;" />
+              <div class="modal-nav">
+                  <div class="row"><a href="#"><div class="navigation-list__button"> вопросы и ответы </div></a></div>
+                  <div class="row"><a href="reviews.html"><div class="navigation-list__button">  отзывы </div></a></div>
+                  <div class="row"><a href="blog.html"><div class="navigation-list__button"> блог </div></a></div>
+              </div>
+              <div class="row fixed-social">
+                  <div class="social-panel social-panel_modal center-block text-center">
+                    <span class="icon-instagram social-panel__social-btn"></span>
+                    <span class="icon-facebook social-panel__social-btn"></span>
+                    <span class="icon-vk social-panel__social-btn"></span>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>  
+    </div>
     
     <div id="fullpage">
        
@@ -72,7 +104,7 @@
     
     <footer class="footer">
         <div class="container-fluid">
-            <div class="row hidden-arrow-down">
+            <div class="row hidden-arrow-down hide">
                 <div id="btn-arrow-down" class="footer__arrow">
                     <img src="images/arrow_down.png">
                 </div>  
@@ -99,14 +131,46 @@
                                 = 1200 руб.
                             </span>
                         </div>
-                        <div class="btn order__order-btn">
+                        <div class="btn order__order-btn visible-md visible-lg">
                             Заказать
+                        </div>
+                    <div class="btn order__order-btn hidden-md hidden-lg" data-toggle="modal" data-target=".bs-order">
+                            Заказать!
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- modal order -->
+    <div class="modal fade bs-order" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+     <div class="modal-dialog">
+        <div class="modal-content moda-menu">
+          <div class="modal-header">
+            <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="container-fluid" style="margin-top: 60px;">
+              <div class="row">
+                    <div class="modal-menu__phone">Заказ</div>
+              </div>
+              <hr style="width: 40%; margin: 50px auto;" />
+              <div class="modal-nav">
+                  <div class="row"><a href="#"><div class="navigation-list__button"> вопросы и ответы </div></a></div>
+                  <div class="row"><a href="reviews.html"><div class="navigation-list__button">  отзывы </div></a></div>
+                  <div class="row"><a href="blog.html"><div class="navigation-list__button"> блог </div></a></div>
+              </div>
+              <div class="row fixed-social">
+                  <div class="social-panel social-panel_modal center-block text-center">
+                    <span class="icon-instagram social-panel__social-btn"></span>
+                    <span class="icon-facebook social-panel__social-btn"></span>
+                    <span class="icon-vk social-panel__social-btn"></span>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

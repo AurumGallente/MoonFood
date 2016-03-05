@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Moon Food</title>
-    
+
     <!-- <link href="css/onepage-scroll.css" rel="stylesheet"> -->
     <link href="css/jquery.fullpage.css" rel="stylesheet">
     <!-- Normalize -->
@@ -23,19 +24,24 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="header">
         <div class="container-fluid">
             <div class="row">
                 <a href="index.html">
-                    <img class="header__logo" src="images/logo.png"/>
+                    <img class="header__logo" src="images/logo.png" />
                 </a>
                 <nav class="header__navigation hidden-xs">
                     <ul class="navigation__navigation-list">
                         <li class="navigation-list__button"> вопросы и ответы </li>
-                        <a href="reviews.html"><li class="navigation-list__button">  отзывы </li></a>
-                        <a href="blog.html"><li class="navigation-list__button"> блог </li></a>
+                        <a href="reviews.html">
+                            <li class="navigation-list__button"> отзывы </li>
+                        </a>
+                        <a href="blog.html">
+                            <li class="navigation-list__button"> блог </li>
+                        </a>
                     </ul>
                 </nav>
 
@@ -53,139 +59,150 @@
     </header>
     <!-- modal menu -->
     <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-     <div class="modal-dialog">
-        <div class="modal-content moda-menu">
-          <div class="modal-header">
-            <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          </div>
-          <div class="container-fluid" style="margin-top: 60px;">
-              <div class="row">
-                    <div class="modal-menu__phone">+7 495 456 34 78</div>
-              </div>
-              <hr style="width: 40%; margin: 50px auto;" />
-              <div class="modal-nav">
-                  <div class="row"><a href="#"><div class="navigation-list__button"> вопросы и ответы </div></a></div>
-                  <div class="row"><a href="reviews.html"><div class="navigation-list__button">  отзывы </div></a></div>
-                  <div class="row"><a href="blog.html"><div class="navigation-list__button"> блог </div></a></div>
-              </div>
-              <div class="row fixed-social">
-                  <div class="social-panel social-panel_modal center-block text-center">
-                    <span class="icon-instagram social-panel__social-btn"></span>
-                    <span class="icon-facebook social-panel__social-btn"></span>
-                    <span class="icon-vk social-panel__social-btn"></span>
-                  </div>
-              </div>
-          </div>
+        <div class="modal-dialog">
+            <div class="modal-content moda-menu">
+                <div class="modal-header">
+                    <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="container-fluid" style="margin-top: 60px;">
+                    <div class="row">
+                        <div class="modal-menu__phone">+7 495 456 34 78</div>
+                    </div>
+                    <hr style="width: 40%; margin: 50px auto;" />
+                    <div class="modal-nav">
+                        <div class="row">
+                            <a href="#">
+                                <div class="navigation-list__button"> вопросы и ответы </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="reviews.html">
+                                <div class="navigation-list__button"> отзывы </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="blog.html">
+                                <div class="navigation-list__button"> блог </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row fixed-social">
+                        <div class="social-panel social-panel_modal center-block text-center">
+                            <span class="icon-instagram social-panel__social-btn"></span>
+                            <span class="icon-facebook social-panel__social-btn"></span>
+                            <span class="icon-vk social-panel__social-btn"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>  
     </div>
-    
+
     <div id="fullpage">
-       
+
         <section class="slide-bg section" style="background: url('images/template5.jpg') no-repeat;">
-            <div class="content-slide">
+            <div class="content-slide onpage-padding">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xs-12 col-lg-6">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-xs-5 small-btn visible-xs visible-sm">
-                                        <div id="prev-sml-comment" class="col-xs-6 small-slide-btn">
-                                            <img src="images/left_slide_btn.png" class="img-circle">
-                                        </div>
-                                        <div id="next-sml-comment" class="col-xs-6 small-slide-btn">
-                                            <img src="images/right_slide_btn.png" class="img-circle">
+                        <div class="col-xs-12">
+                            <div id="small-slider-btn" class="small-slide-btn-panel hidden-md hidden-lg">
+                                <div id="prew-small-btn" class="small-btn small-btn__left">
+                                    <img src="images/left_slide_btn.png" class="img-circle small-img-slide-btn">
+                                </div>
+                                <div id="next-small-btn" class="small-btn small-btn__right">
+                                    <img src="images/right_slide_btn.png" class="img-circle small-img-slide-btn">
+                                </div>
+                            </div>
+                            <h1 class="content-slide__header-slide right-text-xs">
+                                Отзывы
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="slider-reviews" class="slider-wrap col-xs-12" style="margin-bottom: 30px;">
+                            <div class="slider-on-page col-xs-12 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1">
+                                <div class="slider-on-page__slide col-xs-12 recall">
+                                    <div class="recall__name">
+                                        <h2><span class="name">Анна</span>, 36 лет</h2>
+                                    </div>
+                                    <div class="recall__description">
+                                        <div class="description__concret-recall col-xs-12">
+                                            <p>
+                                                "Было непросто вот так сразу взять, и заменить обычное питание на эти бутылочки полностью. Сначала я купила просто попробовать. На вкус это оказалась довольно приятная вещь. Что удивительно - чувство насыщения пришло, но никакой тяжести, как от плотных обедов, я не ощутила. Понемногу я пробовала заменять некоторые приёмы пищи на moon food, а затем и вовсе целую неделю смогла питаться только им. Конечно, полностью отказаться от обычной еды я пока не смогла - иногда не могу устоять перед чем-то вкусненьким, но эти бутылочки - просто нечто удивительное. Подсадила троих подруг на эту штуку."
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="col-xs-7 margin-right">
-                                        <h1 class="content-slide__header-slide ">
-                                            отзывы
-                                        </h1>
+                                </div>
+                                <div class="slider-on-page__slide col-xs-12 recall">
+                                    <div class="recall__name">
+                                        <h2><span class="name">Другое Имя</span>, 36 лет</h2>
+                                    </div>
+                                    <div class="opinion__description">
+                                        <div class="description__concret-recall col-xs-12">
+                                            <p>
+                                                "Было непросто вот так сразу взять, и заменить обычное питание на эти бутылочки полностью. Сначала я купила просто попробовать. На вкус это оказалась довольно приятная вещь. Что удивительно - чувство насыщения пришло, но никакой тяжести, как от плотных обедов, я не ощутила. Понемногу я пробовала заменять некоторые приёмы пищи на moon food, а затем и вовсе целую неделю смогла питаться только им. Конечно, полностью отказаться от обычной еды я пока не смогла - иногда не могу устоять перед чем-то вкусненьким, но эти бутылочки - просто нечто удивительное. Подсадила троих подруг на эту штуку."
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-on-page__slide col-xs-12 recall">
+                                    <div class="recall__name">
+                                        <h2><span class="name">Имя</span>, 36 лет</h2>
+                                    </div>
+                                    <div class="opinion__description">
+                                        <div class="description__concret-recall col-xs-12">
+                                            <p>
+                                                "Было непросто вот так сразу взять, и заменить обычное питание на эти бутылочки полностью. Сначала я купила просто попробовать. На вкус это оказалась довольно приятная вещь. Что удивительно - чувство насыщения пришло, но никакой тяжести, как от плотных обедов, я не ощутила. Понемногу я пробовала заменять некоторые приёмы пищи на moon food, а затем и вовсе целую неделю смогла питаться только им. Конечно, полностью отказаться от обычной еды я пока не смогла - иногда не могу устоять перед чем-то вкусненьким, но эти бутылочки - просто нечто удивительное. Подсадила троих подруг на эту штуку."
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="slider-wrap" class="slider-wrap-reviews">
-                                <div id="slider-reviews" class="slider__reviews">
-                                    <!-- коментарий 1 -->
-                                    <div class="comment">
-                                        <p class="comment__title">
-                                            <span class="name-reviews">Анна</span>, 36 лет:
-                                        </p>
-                                        <p class="comment__description">
-                                            "Было непросто вот так сразу взять, и заменить обычное питание на эти бутылочки полностью. Сначала я купила просто попробовать. На вкус это оказалась довольно приятная вещь. Что удивительно - чувство насыщения пришло, но никакой тяжести, как от плотных обедов, я не ощутила. Понемногу я пробовала заменять некоторые приёмы пищи на moon food, а затем и вовсе целую неделю смогла питаться только им. Конечно, полностью отказаться от обычной еды я пока не смогла - иногда не могу устоять перед чем-то вкусненьким, но эти бутылочки - просто нечто удивительное. Подсадила троих подруг на эту штуку."
-                                        </p>
-                                    </div>
-                                    <!-- коментарий 2 -->
-                                    <div class="comment">
-                                        <p class="comment__title">
-                                            <span class="name-reviews">Имя</span>, 36 лет:
-                                        </p>
-                                        <p class="comment__description">
-                                             "Было непросто вот так сразу взять, и заменить обычное питание на эти бутылочки полностью. Сначала я купила просто попробовать. На вкус это оказалась довольно приятная вещь. Что удивительно - чувство насыщения пришло, но никакой тяжести, как от плотных обедов, я не ощутила. Понемногу я пробовала заменять некоторые приёмы пищи на moon food, а затем и вовсе целую неделю смогла питаться только им. Конечно, полностью отказаться от обычной еды я пока не смогла - иногда не могу устоять перед чем-то вкусненьким, но эти бутылочки - просто нечто удивительное. Подсадила троих подруг на эту штуку."
-                                        </p>
-                                    </div>
-                                    <!-- коментарий 3 -->
-                                    <div class="comment">
-                                        <p class="comment__title">
-                                            <span class="name-reviews">другое Имя</span>, 36 лет:
-                                        </p>
-                                        <p class="comment__description">
-                                             "Было непросто вот так сразу взять, и заменить обычное питание на эти бутылочки полностью. Сначала я купила просто попробовать. На вкус это оказалась довольно приятная вещь. Что удивительно - чувство насыщения пришло, но никакой тяжести, как от плотных обедов, я не ощутила. Понемногу я пробовала заменять некоторые приёмы пищи на moon food, а затем и вовсе целую неделю смогла питаться только им. Конечно, полностью отказаться от обычной еды я пока не смогла - иногда не могу устоять перед чем-то вкусненьким, но эти бутылочки - просто нечто удивительное. Подсадила троих подруг на эту штуку."
-                                        </p>
-                                    </div>
-                                </div>
-                                
+                            <div class="col-md-5 col-lg-5 visible-md visible-lg">
+                                <img src="images/bootle.png" style="width: 100%; position: fixed; width: 400px; top: 15%;">
+                            </div>
+                            <div id="prew-slide" class="slide-btn prew-slide-btn text-center visible-md visible-lg">
+                                <img src="images/left_slide_btn.png" class="img-circle">
+                                <span style="display: block;"></span>
+                            </div>
+                            <div id="next-slide" class="slide-btn next-slide-btn text-center visible-md visible-lg">
+                                <img src="images/right_slide_btn.png" class="img-circle">
+                                <span style="display: block;"></span>
                             </div>
                         </div>
-                        <div class="col-lg-6 visible-lg">
-                            <img src="images/bootle.png" style="width: 100%; max-width: 400px;">
-                        </div>
-                    </div>
-                    
-                    <div id="prev-comment" class="slide-btn left-slide-btn text-center visible-md visible-lg">
-                        <img src="images/left_slide_btn.png" class="img-circle">
-                        <span></span>
-                    </div>
-                    <div id="next-comment" class="slide-btn right-slide-btn text-center visible-md visible-lg">
-                        <img src="images/right_slide_btn.png" class="img-circle">
-                        <span></span>
                     </div>
                 </div>
-                <!--<div class="left-col">
-                    
-                </div>
-                <div class="right-col text-center">
-                    
-                </div>-->
             </div>
         </section>
-        
+
     </div>
-    
+
     <footer class="footer">
         <div class="container-fluid">
-            <div class="row hidden-arrow-down hide">
+            <div class="row hide">
                 <div id="btn-arrow-down" class="footer__arrow">
                     <img src="images/arrow_down.png">
-                </div>  
+                </div>
             </div>
             <div class="row">
-                <div class="social-panel hidden-xs col-sm-3 col-md-2">
-                    <span class="icon-instagram social-panel__social-btn"></span>
-                    <span class="icon-facebook social-panel__social-btn"></span>
-                    <span class="icon-vk social-panel__social-btn"></span>
+                <div class="hidden-xs col-sm-3 col-md-2">
+                    <div class="social-panel">
+                        <span class="icon-instagram social-panel__social-btn"></span>
+                        <span class="icon-facebook social-panel__social-btn"></span>
+                        <span class="icon-vk social-panel__social-btn"></span>
+                    </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 offset-sm-3 col-md-8">
                     <div class="order center-block">
                         <div class="visible-md visible-lg">
                             <div class="form-group order__select-count">
-                              <label class="select-count__label hide" for="sel1">Закажите сейчас</label>
-                              <select class="form-control select-count__selector" id="sel1">
-                                <option>1 бутылка</option>
-                                <option>2 бутылки</option>
-                                <option>3 бутылки</option>
-                                <option>4 бутылки</option>
-                              </select>
+                                <label class="select-count__label hide" for="sel1">Закажите сейчас</label>
+                                <select class="form-control select-count__selector" id="sel1">
+                                    <option>1 бутылка</option>
+                                    <option>2 бутылки</option>
+                                    <option>3 бутылки</option>
+                                    <option>4 бутылки</option>
+                                </select>
                             </div>
                             <span class="order__cost">
                                 = 1200 руб.
@@ -204,48 +221,55 @@
     </footer>
     <!-- modal order -->
     <div class="modal fade bs-order" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-     <div class="modal-dialog">
-        <div class="modal-content moda-menu">
-          <div class="modal-header">
-            <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          </div>
-          <div class="container-fluid" style="margin-top: 60px;">
-              <div class="row">
-                    <div class="modal-menu__phone">Заказ</div>
-              </div>
-              <hr style="width: 40%; margin: 50px auto;" />
-              <div class="modal-nav">
-                  <div class="row"><a href="#"><div class="navigation-list__button"> вопросы и ответы </div></a></div>
-                  <div class="row"><a href="reviews.html"><div class="navigation-list__button">  отзывы </div></a></div>
-                  <div class="row"><a href="blog.html"><div class="navigation-list__button"> блог </div></a></div>
-              </div>
-              <div class="row fixed-social">
-                  <div class="social-panel social-panel_modal center-block text-center">
-                    <span class="icon-instagram social-panel__social-btn"></span>
-                    <span class="icon-facebook social-panel__social-btn"></span>
-                    <span class="icon-vk social-panel__social-btn"></span>
-                  </div>
-              </div>
-          </div>
+        <div class="modal-dialog">
+            <div class="modal-content moda-menu">
+                <div class="modal-header">
+                    <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="container-fluid" style="margin-top: 60px;">
+                    <div class="order in-modal center-block">
+                        <div class="form-group order__select-count">
+                            <label class="select-count__label text-center" for="sel1">Закажите сейчас</label>
+                            <select class="form-control select-count__selector" id="sel1">
+                                <option>1 бутылка</option>
+                                <option>2 бутылки</option>
+                                <option>3 бутылки</option>
+                                <option>4 бутылки</option>
+                            </select>
+                        </div>
+                        <span class="order__cost text-center">
+                            = 1200 руб.
+                        </span>
+                        <div class="btn order__order-btn">
+                            Заказать
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>  
     </div>
-    
-    
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- MoonFood script -->
-    <script src="js/script.js"></script>
     <!-- full page scroller -->
     <!-- <script src="js/jquery.onepage-scroll.js"></script> -->
     <script src="js/jquery.fullpage.js"></script>
     <!-- slider first main slide -->
     <script src="js/slider_title.js"></script>
+    <!-- slider on page -->
+    <script src="js/slider_on_page.js"></script>
+    
+    <script src="js/modernizr.custom.79639.js"></script>
+    <script src="js/jquery.pfold.js"></script>
+    <!-- MoonFood script -->
+    <script src="js/script.js"></script>
     <!-- slider opinion -->
-    <script src="js/slider_opinion.js"></script>
+    <!--<script src="js/slider_opinion.js"></script>-->
     <!-- slider reviews -->
-    <script src="js/slider_reviews.js"></script>
-  </body>
+    <!--<script src="js/slider_reviews.js"></script>-->
+</body>
+
 </html>

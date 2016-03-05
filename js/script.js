@@ -35,10 +35,13 @@ $(function(){
         }
     });
     
-    if($('#fp-nav ul li').size() <= 1){
-        $('#fp-nav').hide();
+    var hiderFpNav = function(){
+        if($('#fp-nav ul li').size() <= 1){
+            $('#fp-nav').hide();
+        }
     }
-    
+    hiderFpNav();
+    $( window ).resize(hiderFpNav);
     
     // нажатие стрелки вниз
     $("#btn-arrow-down").on("click", function(){

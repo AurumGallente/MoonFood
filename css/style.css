@@ -677,6 +677,32 @@ img.small-img-slide-btn{
         font-size: 12px;
         font-weight: bold;
     }
+    
+    .opinion__specialist h2{
+        font-size: 20px;
+        text-align: right;
+    }
+    
+    .opinion__qoute{
+        width: 10px;
+    }
+    .opinion__qoute.left{
+        margin-left: -15px !important;
+    }
+    
+    .description__concret-opinion{
+        font-size: 11px;
+    }
+    
+    .recall__name h2{
+        font-size: 20px;
+        text-align: right;
+    }
+    
+    .description__concret-recall{
+        font-size: 12px;
+        text-align: right;
+    }
 }
 
 

@@ -100,7 +100,7 @@ $(function(){
         var parentHeight = $this.height();
         var $descrWind = $this.find(".composition-description");
         var descrWidth = $descrWind.width();
-        console.log(position);
+        //console.log(position);
         if($descrWind.css('display') == 'none'){
             //$descrWind.fadeIn(600).offset({top:position.top+parentHeight/2, left:position.left-descrWidth/4});
             $descrWind.fadeIn(600).css({ "top" : position.top });

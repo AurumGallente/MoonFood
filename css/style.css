@@ -572,9 +572,9 @@ img.small-img-slide-btn{
 
 
 /*            сотав                 */
-.composition-slide{
+.composition-container{
     padding: 0;
-    margin: 0;
+    margin: 0 -140px;
 }
 .composition{
     

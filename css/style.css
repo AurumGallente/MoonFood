@@ -239,7 +239,7 @@ a .navigation-list__button{
 .order{
     /*float: right;*/
     margin-bottom: 5px;
-    width: 640px;
+    width: 660px;
 }
 
 .order.in-modal{
@@ -572,6 +572,21 @@ img.small-img-slide-btn{
 
 
 /*            сотав                 */
+.composition-slide{
+    padding: 0;
+    margin: 0;
+}
+.composition{
+    
+    /*float: left;*/
+}
+
+.composition-mid{
+    width: 145px;
+}
+.composition-sml{
+    width: 110px;
+}
 .composition-description{
     width: 200px;
     position: absolute;

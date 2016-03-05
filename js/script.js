@@ -34,7 +34,7 @@ $(function(){
             }
         }
     });
-    
+    //скрытие боковой навигации
     var hiderFpNav = function(){
         if($('#fp-nav ul li').size() <= 1){
             $('#fp-nav').hide();

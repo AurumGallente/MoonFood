@@ -13,8 +13,8 @@ $(function(){
         fitSection: false,
         onLeave: function(){
             if($(".last-slide").hasClass("fp-completely")){
-                $("#btn-reviews").fadeOut(300, function(){
-                    $("#btn-arrow-down").fadeIn(300).addClass("visible-lg");; 
+                $("#btn-reviews").stop(true,true).fadeOut(100, function(){
+                    $("#btn-arrow-down").fadeIn(200).addClass("visible-lg");; 
                 });
             }else{
                 
@@ -23,11 +23,11 @@ $(function(){
         afterLoad: function(){
             if($(".last-slide").hasClass("active")){
                 if($(window).width() >= 1200){
-                    $("#btn-arrow-down").removeClass("visible-lg").fadeOut(300, function(){
-                        $("#btn-reviews").fadeIn(300);
+                    $("#btn-arrow-down").stop(true,true).removeClass("visible-lg").fadeOut(100, function(){
+                        $("#btn-reviews").fadeIn(200);
                     });
                 }else{
-                    $("#btn-reviews").fadeIn(300);
+                    $("#btn-reviews").fadeIn(200);
                 }
             }else{
                 
@@ -94,22 +94,65 @@ $(function(){
     $("#slider-reviews").sliderOnPage(slidingSpecialist);
     
     // наведение на состав
-    $(".composition").hover(function(){
+    /*$(".composition img.composition-foto").hover(function(){
         var $this = $(this);
-        var position = $this.position();
-        var parentHeight = $this.height();
-        var $descrWind = $this.find(".composition-description");
+        var position = $this.offset();
+        
+        var $descrWind = $this.parent().find(".composition-description");
         var descrWidth = $descrWind.width();
-        //console.log(position);
+        
+        position.left -= descrWidth/2;
+        if(position.left < 0){
+            position.left = 15;
+        }else{
+            var docWidth = $( window ).width()
+            if((position.left + descrWidth + 10) > docWidth )
+                position.left =  position.left + (docWidth -  (position.left + descrWidth + 10));
+        }
+        
+        if(position.top < (88+20)){
+            position.top = (88+20);
+        }
+        
         if($descrWind.css('display') == 'none'){
-            //$descrWind.fadeIn(600).offset({top:position.top+parentHeight/2, left:position.left-descrWidth/4});
-            $descrWind.fadeIn(600).css({ "top" : position.top });
+            $descrWind.fadeIn(600).offset({ top : position.top, left : position.left });
         }
     });
     // клик по крестику, для закрытия окна описание состава
     $(".composition-description__close").click(function(){
         var $parent = $(this).parent();
-        $parent.fadeOut(600);
-    });
+        $parent.fadeOut(300);
+    });*/
+    
+    var opened = false;
+    
+    $( '.composition > .uc-container' ).each( function( i ) {
+
+        var $item = $( this ), direction;
+        
+        direction = ['left','bottom'];
+
+        var pfold = $item.pfold( {
+            folddirection : direction,
+            speed : 900,
+            onEndFolding : function() { opened = false; },
+        } );
+
+        $item.find( 'img.composition-foto' ).hover( function() {
+            $item.find('.composition-description')
+            if( !opened ) {
+                opened = true;
+                pfold.unfold();
+            }
+
+
+        } ).end().find( '.composition-description__close' ).on( 'click', function() {
+
+            pfold.fold();
+
+        } );
+
+    } );
+    
 });
 

@@ -610,6 +610,7 @@ img.small-img-slide-btn{
     position: absolute;
     /*display: none;*/
     z-index: 1050;
+    top: 30px;
 }
 .composition-description .composition-description__content{
     width: 100%;

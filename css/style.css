@@ -1,20 +1,20 @@
 @font-face {
-    font-family: 'pragmatica';
-    src: url('../fonts/pragmatica-bold.eot');
-    src: url('../fonts/pragmatica-bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pragmatica-bold.woff') format('woff'),
-         url('../fonts/pragmatica-bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'pragmatica';
+    src: url('../fonts/pragmatica-bold.eot');
+    src: url('../fonts/pragmatica-bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/pragmatica-bold.woff') format('woff'),
+      url('../fonts/pragmatica-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 body{
-    font-family: "pragmatica";
-}
-
-body{
+    font-family: 'pragmatica', arial;
     padding-right: 0px !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
 /*             HEADER             */
 .header{
     position: fixed;
@@ -27,10 +27,10 @@ body{
     /*padding-top: 35px;
     padding-left: 60px;
     padding-right: 60px;*/
-    
+
     /* width: 1260px; */
-    
-    font-weight: bold;
+
+    font-weight: 700;
 }
 
 .header .container-fluid{
@@ -145,9 +145,9 @@ a .navigation-list__button{
     /*padding-bottom: 35px;
     padding-left: 60px;
     padding-right: 60px;*/
-    
+
     width: 100%;
-    
+
     /* width: 1260px */
 }
 
@@ -182,23 +182,23 @@ a .navigation-list__button{
 
 @keyframes arrow-up-down {
     0% {
-        transform: translateY(0%);  
+        transform: translateY(0%);
     }
     50% {
-        transform: translateY(20%);  
-    }   
+        transform: translateY(20%);
+    }
     100% {
         transform: translateY(0%);
-    }   
+    }
 }
- 
+
 @-webkit-keyframes arrow-up-down {
     0% {
-        transform: translateY(0%);  
+        transform: translateY(0%);
     }
     50% {
-        transform: translateY(20%);  
-    }   
+        transform: translateY(20%);
+    }
     100% {
         transform: translateY(0%);
     }
@@ -284,7 +284,8 @@ a .navigation-list__button{
     border-radius: 0px;
     border: solid 2px #fff;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 18px;
     background: rgba(255, 255, 255, 0.3);
 }
 
@@ -311,7 +312,7 @@ a .navigation-list__button{
     border-radius: 0px;
     border: solid 2px #fff;
     background: rgba(255, 255, 255, 0.3);
-    
+
     padding: 15px 21px;
     height: inherit;
 }
@@ -332,11 +333,11 @@ select.select-count__selector > option{
 }
 
 .bg-title__slide{
-    position: absolute; 
-    top:0; 
-    left:0; 
-    width:100%; 
-    height:100%; 
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
     z-index:-1;
 }
 
@@ -362,13 +363,13 @@ select.select-count__selector > option{
     /*font-weight: bold;*/
 }
 .content-slide__title_slider{
-    position:relative; 
-    width:100%; 
-    height: 125px; 
+    position:relative;
+    width:100%;
+    height: 125px;
     overflow:hidden;
 }
 .content-slide__title.title-slide{
-    position:absolute; 
+    position:absolute;
     right:0;
 }
 
@@ -516,7 +517,7 @@ select.select-count__selector > option{
     position: relative;
     left: -1px;
     top: -1px;
-    
+
     -webkit-box-shadow: 1px 1px 0 0 #000;
     box-shadow: 1px 1px 0 0 #000;
 }
@@ -524,7 +525,7 @@ select.select-count__selector > option{
 .slide-btn:active img{
     left: 0px;
     top: 0px;
-    
+
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -548,14 +549,14 @@ select.select-count__selector > option{
     position: relative;
     left: -1px;
     top: -1px;
-    
+
     -webkit-box-shadow: 1px 1px 0 0 #000;
     box-shadow: 1px 1px 0 0 #000;
 }
 .small-btn:active img{
     left: 0px;
     top: 0px;
-    
+
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -692,7 +693,7 @@ img.small-img-slide-btn{
         padding: 0;
     }
     .content-slide__header-slide{
-        font-size: 50px;    
+        font-size: 50px;
     }
     .why-need-align{
         text-align: left;
@@ -701,25 +702,25 @@ img.small-img-slide-btn{
         margin-top: 5px;
         font-weight: bold;
     }
-    
+
     .onpage-padding{
-        padding: 0 80px; 
+        padding: 0 80px;
     }
 }
 /* SMALL DEVICE */
 @media (max-width: 991px){
     .content-slide__header-slide{
-        font-size: 40px;    
+        font-size: 40px;
     }
-    
+
     .content-slide{
         padding: 0 0;
     }
-    
+
     .order{
         width: 240px;
     }
-    
+
     .why-need-align{
         text-align: center;
     }
@@ -733,7 +734,11 @@ img.small-img-slide-btn{
         font-size: 18px;
     }
     .content-slide__description{
-        font-size: 14px;    
+<<<<<<< HEAD
+        font-size: 14px;
+=======
+        font-size: 80%;
+>>>>>>> add fonts
     }
     .content-slide{
         margin: 0;
@@ -741,10 +746,10 @@ img.small-img-slide-btn{
     .right-text-xs{
     text-align: right;
     }
-    
+
     .composit__img{
         width: 100px;
-        height: 100px;        
+        height: 100px;
     }
     .composit__name{
         font-size: 14px;
@@ -754,30 +759,30 @@ img.small-img-slide-btn{
         font-size: 12px;
         font-weight: bold;
     }
-    
+
     .opinion__specialist h2{
         font-size: 20px;
         text-align: right;
         margin: 5px 0px;
     }
-    
+
     .opinion__qoute{
         width: 10px;
     }
     .opinion__qoute.left{
         margin-left: -15px !important;
     }
-    
+
     .description__concret-opinion{
         font-size: 11px;
     }
-    
+
     .recall__name h2{
         font-size: 20px;
         text-align: right;
         margin: 5px 0px;
     }
-    
+
     .description__concret-recall{
         font-size: 12px;
         text-align: right;

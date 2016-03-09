@@ -144,7 +144,7 @@ $(function(){
         var pfold = $item.pfold( {
             folddirection : direction,
             speed : 600,
-            onEndFolding : function() { opened = false; $item.fadeOut(300); },
+            onEndFolding : function() { $item.fadeOut(300,function(){opened = false;});  },
         } );
 
         $item.parent().find( 'img.composition-foto' ).hover( function() {
@@ -153,6 +153,13 @@ $(function(){
                 $item.fadeIn(300);
                 opened = true;
                 pfold.unfold();
+                
+                var $thisFoto = $(this);
+                var position = $thisFoto.offset();
+                if(position.top < (88+20)){
+                    var offsetX = (88+20) - position.top;
+                    $item.css("top", offsetX);
+                }
             }
         } ).end().find( '.composition-description__close' ).on( 'click', function() {
 

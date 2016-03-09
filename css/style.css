@@ -757,6 +757,7 @@ img.small-img-slide-btn{
     .opinion__specialist h2{
         font-size: 20px;
         text-align: right;
+        margin: 5px 0px;
     }
     
     .opinion__qoute{
@@ -773,6 +774,7 @@ img.small-img-slide-btn{
     .recall__name h2{
         font-size: 20px;
         text-align: right;
+        margin: 5px 0px;
     }
     
     .description__concret-recall{

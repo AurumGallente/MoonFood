@@ -1,5 +1,32 @@
 @font-face {
     font-family: 'pragmatica';
+    src: url('../fonts/pragmatica-light.eot');
+    src: url('../fonts/pragmatica-light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/pragmatica-light.woff') format('woff'),
+      url('../fonts/pragmatica-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pragmatica';
+    src: url('../fonts/pragmatica-book.eot');
+    src: url('../fonts/pragmatica-book.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/pragmatica-book.woff') format('woff'),
+      url('../fonts/pragmatica-book.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pragmatica';
+    src: url('../fonts/pragmatica-medium.eot');
+    src: url('../fonts/pragmatica-medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/pragmatica-medium.woff') format('woff'),
+      url('../fonts/pragmatica-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pragmatica';
     src: url('../fonts/pragmatica-bold.eot');
     src: url('../fonts/pragmatica-bold.eot?#iefix') format('embedded-opentype'),
       url('../fonts/pragmatica-bold.woff') format('woff'),

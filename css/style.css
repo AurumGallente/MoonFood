@@ -610,7 +610,7 @@ img.small-img-slide-btn{
     position: absolute;
     /*display: none;*/
     z-index: 1050;
-    top: 30px;
+    /*top: 30px;*/
 }
 .composition-description .composition-description__content{
     width: 100%;
@@ -651,12 +651,19 @@ img.small-img-slide-btn{
 
 /* fold */
 .uc-single, .uc-final-wrapper, .uc-initial-content, .uc-back, .uc-front{
-    background: none;
+    /*background: none;*/
 }
 
 .uc-container{
-    height: 165px;
+    /*height: 100%;*/
     width: 200px;
+    position: absolute;
+    display: none;
+}
+.overlay-composition{
+    width: 100%;
+    height: 100%;
+    /*background: #fff;*/
 }
 
 /************* MEDIA QUERY **************/

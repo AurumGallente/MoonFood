@@ -124,8 +124,17 @@ $(function(){
         $parent.fadeOut(300);
     });*/
     
+    /* появление описание при наведении */
+    $( '.composition > .uc-container' ).each( function( i ){
+        var $item = $(this);
+        
+        var height = $item.find('.composition-description').actual('height');
+        $item.find('div.overlay-composition').height(height/2);
+        $item.height(height/2);
+        
+    });
+                                                 
     var opened = false;
-    
     $( '.composition > .uc-container' ).each( function( i ) {
 
         var $item = $( this ), direction;
@@ -134,18 +143,17 @@ $(function(){
 
         var pfold = $item.pfold( {
             folddirection : direction,
-            speed : 900,
-            onEndFolding : function() { opened = false; },
+            speed : 600,
+            onEndFolding : function() { opened = false; $item.fadeOut(300); },
         } );
 
-        $item.find( 'img.composition-foto' ).hover( function() {
-            $item.find('.composition-description')
+        $item.parent().find( 'img.composition-foto' ).hover( function() {
+            //$item.find('.composition-description');
             if( !opened ) {
+                $item.fadeIn(300);
                 opened = true;
                 pfold.unfold();
             }
-
-
         } ).end().find( '.composition-description__close' ).on( 'click', function() {
 
             pfold.fold();

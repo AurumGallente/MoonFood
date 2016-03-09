@@ -38,13 +38,6 @@
         
         if( _countSlide > 1){
             var maxHeight = 0;
-
-            /*_slider.find(".slider-on-page__slide").each(function() {
-                console.log($(this).height());
-                maxHeight = Math.max( maxHeight, $(this).height() );
-            });
-            _slider.height(maxHeight);*/
-            
             
             _slider.find(".slider-on-page__slide").css({
                 "position" : "absolute",

@@ -1,7 +1,15 @@
-@import url("../fonts/pragmatica-bold.ttf");
+@font-face {
+    font-family: 'pragmatica';
+    src: url('../fonts/pragmatica-bold.eot');
+    src: url('../fonts/pragmatica-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pragmatica-bold.woff') format('woff'),
+         url('../fonts/pragmatica-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
-    font-family: 'Pragmatica Bold', arial;
+    font-family: "pragmatica";
 }
 
 body{
@@ -51,11 +59,10 @@ body{
     padding: 10px 20px;
     margin-top: 10px;
     margin-left: 15px;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 18px;
     text-transform: uppercase;
     border: solid 1px rgba(0, 0, 0, 0);
-    
     cursor: pointer;
 }
 a .navigation-list__button{
@@ -81,6 +88,10 @@ a .navigation-list__button{
     margin-left: 10px;
 }
 
+
+.btn{
+    font-size: 18px;
+}
 
 .btn-icon-menu{
     width: 32px;
@@ -716,13 +727,13 @@ img.small-img-slide-btn{
 /* EXTRA-SMALL DEVICE */
 @media (max-width: 767px){
     .content-slide__header-slide{
-        font-size: 30px;
+        font-size: 34px;
     }
     .content-slide__title{
-        font-size: 15px;
+        font-size: 18px;
     }
     .content-slide__description{
-        font-size: 80%;    
+        font-size: 14px;    
     }
     .content-slide{
         margin: 0;

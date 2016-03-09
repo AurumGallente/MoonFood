@@ -1,6 +1,5 @@
 $(function(){
-    // скролы странцы
-    //$("#main").onepage_scroll();
+    // fullpagescroll plugin
     $('#fullpage').fullpage({
         navigation: true,
         navigationPosition: 'right',
@@ -45,11 +44,10 @@ $(function(){
     
     // нажатие стрелки вниз
     $("#btn-arrow-down").on("click", function(){
-        //$("#main").moveDown();
         $.fn.fullpage.moveSectionDown();
     });
     
-    //   слайдер  -  МНЕНИЕ СПЕЦИАЛИСТА          
+    //   обработчик перемены слайдов "МНЕНИЕ СПЕЦИАЛИСТА"       
     var slidingSpecialist = function(curSlide){
         var prewSlide = 0;
         var countSlide = $("#slider-opinion .slider-on-page__slide").size();
@@ -69,6 +67,7 @@ $(function(){
         $("#slider-opinion #prew-slide span").empty().append($("#slider-opinion .slider-on-page__slide").eq(prewSlide).find('span.profession').html());
         $("#slider-opinion #next-slide span").empty().append($("#slider-opinion .slider-on-page__slide").eq(nextSlide).find('span.profession').html());
     };
+    //   обработчик перемены слайдов "ОТЗЫВЫ" 
     var slidingReviews = function(curSlide){
         var prewSlide = 0;
         var countSlide = $("#slider-reviews .slider-on-page__slide").size();
@@ -88,42 +87,14 @@ $(function(){
         $("#slider-reviews #prew-slide span").empty().append($("#slider-reviews .slider-on-page__slide").eq(prewSlide).find('span.name').html());
         $("#slider-reviews #next-slide span").empty().append($("#slider-reviews .slider-on-page__slide").eq(nextSlide).find('span.name').html());
     };
+    // слайдер "мнение специалиста
     slidingSpecialist(0);
     $("#slider-opinion").sliderOnPage(slidingSpecialist);
+    // слайдер "отзывы"
     slidingReviews(0);
     $("#slider-reviews").sliderOnPage(slidingSpecialist);
     
-    // наведение на состав
-    /*$(".composition img.composition-foto").hover(function(){
-        var $this = $(this);
-        var position = $this.offset();
         
-        var $descrWind = $this.parent().find(".composition-description");
-        var descrWidth = $descrWind.width();
-        
-        position.left -= descrWidth/2;
-        if(position.left < 0){
-            position.left = 15;
-        }else{
-            var docWidth = $( window ).width()
-            if((position.left + descrWidth + 10) > docWidth )
-                position.left =  position.left + (docWidth -  (position.left + descrWidth + 10));
-        }
-        
-        if(position.top < (88+20)){
-            position.top = (88+20);
-        }
-        
-        if($descrWind.css('display') == 'none'){
-            $descrWind.fadeIn(600).offset({ top : position.top, left : position.left });
-        }
-    });
-    // клик по крестику, для закрытия окна описание состава
-    $(".composition-description__close").click(function(){
-        var $parent = $(this).parent();
-        $parent.fadeOut(300);
-    });*/
-    
     /* появление описание при наведении */
     $( '.composition > .uc-container' ).each( function( i ){
         var $item = $(this);

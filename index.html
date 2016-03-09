@@ -16,7 +16,7 @@
     <link href="css/jquery.fullpage.css" rel="stylesheet">
     <!-- Social font icon -->
     <link href="css/fontello.css" rel="stylesheet">
-    <!-- -->
+    <!-- css for jq plugin pfold -->
     <link rel="stylesheet" type="text/css" href="css/pfold.css" />
     <!-- Moon Food style -->
     <link href="css/style.css" rel="stylesheet">
@@ -579,7 +579,7 @@
                 <div id="btn-arrow-down" class="footer__arrow visible-lg">
                     <img src="images/arrow_down.png">
                 </div>
-                <div id="btn-reviews" class="col-xs-12 text-center hidden-xs" style="display: none;">
+                <div id="btn-reviews" class="col-xs-12 text-center" style="display: none;">
                     <a href="reviews.html" class="btn-reviews"><span class="">Отзывы</span></a>
                 </div>
             </div>
@@ -620,38 +620,39 @@
     </footer>
     <!-- modal order -->
     <div class="modal fade bs-order" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-     <div class="modal-dialog">
-        <div class="modal-content moda-menu">
-          <div class="modal-header">
-            <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          </div>
-          <div class="container-fluid" style="margin-top: 60px;">
-              <div class="row">
-                    <div class="modal-menu__phone">Заказ</div>
-              </div>
-              <hr style="width: 40%; margin: 50px auto;" />
-              <div class="modal-nav">
-                  <div class="row"><a href="#"><div class="navigation-list__button"> вопросы и ответы </div></a></div>
-                  <div class="row"><a href="reviews.html"><div class="navigation-list__button">  отзывы </div></a></div>
-                  <div class="row"><a href="blog.html"><div class="navigation-list__button"> блог </div></a></div>
-              </div>
-              <div class="row fixed-social">
-                  <div class="social-panel social-panel_modal center-block text-center">
-                    <span class="icon-instagram social-panel__social-btn"></span>
-                    <span class="icon-facebook social-panel__social-btn"></span>
-                    <span class="icon-vk social-panel__social-btn"></span>
-                  </div>
-              </div>
-          </div>
+        <div class="modal-dialog">
+            <div class="modal-content moda-menu">
+                <div class="modal-header">
+                    <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="container-fluid" style="margin-top: 60px;">
+                    <div class="order in-modal center-block">
+                        <div class="form-group order__select-count">
+                            <label class="select-count__label text-center" for="sel1">Закажите сейчас</label>
+                            <select class="form-control select-count__selector" id="sel1">
+                                <option>1 бутылка</option>
+                                <option>2 бутылки</option>
+                                <option>3 бутылки</option>
+                                <option>4 бутылки</option>
+                            </select>
+                        </div>
+                        <span class="order__cost text-center">
+                            = 1200 руб.
+                        </span>
+                        <div class="btn order__order-btn">
+                            Заказать
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>  
     </div>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- full page scroller -->
-    <!-- <script src="js/jquery.onepage-scroll.js"></script> -->
     <script src="js/jquery.fullpage.js"></script>
     <!-- slider first main slide -->
     <script src="js/slider_title.js"></script>
@@ -659,7 +660,7 @@
     <script src="js/slider_on_page.js"></script>
     <!-- actual size -->
     <script src="js/jquery.liActualSize.js"></script>
-    <!-- скрипты для окошек описание составов -->
+    <!-- plugin pfold -->
     <script src="js/modernizr.custom.79639.js"></script>
     <script src="js/jquery.pfold.js"></script>
     <!-- MoonFood script -->

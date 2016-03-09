@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Moon Food</title>
 
-    <!-- <link href="css/onepage-scroll.css" rel="stylesheet"> -->
-    <link href="css/jquery.fullpage.css" rel="stylesheet">
     <!-- Normalize -->
     <link href="css/normalize.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Moon Food style -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- pagescroller css -->
+    <!-- <link href="css/onepage-scroll.css" rel="stylesheet"> -->
+    <link href="css/jquery.fullpage.css" rel="stylesheet">
     <!-- Social font icon -->
     <link href="css/fontello.css" rel="stylesheet">
+    <!-- css for jq plugin pfold -->
+    <link rel="stylesheet" type="text/css" href="css/pfold.css" />
+    <!-- Moon Food style -->
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -104,20 +107,23 @@
             <div class="content-slide">
                 <div class="container-fluid">
                     <div class="row">
-                        
+                        <div class="col-xs-12">
+                            <h1 class="content-slide__header-slide">
+                                БЛОГ
+                            </h1>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-12 blog-content">
-                    <h1 class="content-slide__header-slide ">
-                        БЛОГ
-                    </h1>
-                    <div class="blog">
-                        <p class="blog__title">
-                            Участие в международной выставке
-                        </p>
-                        <p class="blog__description">
-                            "Было непросто вот так сразу взять, и заменить обычное питание на эти бутылочки полностью. Сначала я купила просто попробовать. На вкус это оказалась довольно приятная вещь. Что удивительно - чувство насыщения пришло, но никакой тяжести, как от плотных обедов, я не ощутила. Понемногу я пробовала заменять некоторые приёмы пищи на moon food, а затем и вовсе целую неделю смогла питаться только им. Конечно, полностью отказаться от обычной еды я пока не смогла - иногда не могу устоять перед чем-то вкусненьким, но эти бутылочки - просто нечто удивительное. Подсадила троих подруг на эту штуку."
-                        </p>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="blog">
+                                <p class="content-slide__title">
+                                    Участие в международной выставке
+                                </p>
+                                <p class="content-slide__description">
+                                    "Было непросто вот так сразу взять, и заменить обычное питание на эти бутылочки полностью. Сначала я купила просто попробовать. На вкус это оказалась довольно приятная вещь. Что удивительно - чувство насыщения пришло, но никакой тяжести, как от плотных обедов, я не ощутила. Понемногу я пробовала заменять некоторые приёмы пищи на moon food, а затем и вовсе целую неделю смогла питаться только им. Конечно, полностью отказаться от обычной еды я пока не смогла - иногда не могу устоять перед чем-то вкусненьким, но эти бутылочки - просто нечто удивительное. Подсадила троих подруг на эту штуку."
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -175,22 +181,20 @@
                     <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="container-fluid" style="margin-top: 60px;">
-                    <div class="order center-block">
-                        <div class="visible-md visible-lg">
-                            <div class="form-group order__select-count">
-                                <label class="select-count__label hide" for="sel1">Закажите сейчас</label>
-                                <select class="form-control select-count__selector" id="sel1">
-                                    <option>1 бутылка</option>
-                                    <option>2 бутылки</option>
-                                    <option>3 бутылки</option>
-                                    <option>4 бутылки</option>
-                                </select>
-                            </div>
-                            <span class="order__cost">
+                    <div class="order in-modal center-block">
+                        <div class="form-group order__select-count">
+                            <label class="select-count__label text-center" for="sel1">Закажите сейчас</label>
+                            <select class="form-control select-count__selector" id="sel1">
+                                <option>1 бутылка</option>
+                                <option>2 бутылки</option>
+                                <option>3 бутылки</option>
+                                <option>4 бутылки</option>
+                            </select>
+                        </div>
+                        <span class="order__cost text-center">
                             = 1200 руб.
                         </span>
-                        </div>
-                        <div class="btn order__order-btn visible-md visible-lg">
+                        <div class="btn order__order-btn">
                             Заказать
                         </div>
                     </div>
@@ -204,13 +208,14 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- full page scroller -->
-    <!-- <script src="js/jquery.onepage-scroll.js"></script> -->
     <script src="js/jquery.fullpage.js"></script>
     <!-- slider first main slide -->
     <script src="js/slider_title.js"></script>
     <!-- slider on page -->
     <script src="js/slider_on_page.js"></script>
-    <!-- скрипты для окошек описание составов -->
+    <!-- actual size -->
+    <script src="js/jquery.liActualSize.js"></script>
+    <!-- plugin pfold -->
     <script src="js/modernizr.custom.79639.js"></script>
     <script src="js/jquery.pfold.js"></script>
     <!-- MoonFood script -->

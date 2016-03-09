@@ -366,20 +366,10 @@ select.select-count__selector > option{
 }
 
 /*  blog   */
-.blog-content{
-    margin-top: -150px;   
-}
 .blog{
-    max-width: 750px;
-    margin-left: 60px;
-    margin-top: 70px;
-}
-.blog__title{
-    font-size: 27px;
-    font-weight: bold;
-}
-.blog__description{
-    
+    /*max-width: 750px;
+    margin-left: 60px;*/
+    margin-top: 50px;
 }
 
 /*  fullpage nav   */
@@ -781,11 +771,14 @@ img.small-img-slide-btn{
         font-size: 12px;
         text-align: right;
     }
+    .blog{
+        margin-top: 10px;
+    }
 }
 @media (max-width: 420px){
     .composit__img{
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
     .composit__name{
         font-size: 11px;

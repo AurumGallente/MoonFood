@@ -138,7 +138,7 @@ $(function(){
                 $item.fadeIn(300);
                 opened = true;
                 pfold.unfold();
-                
+
                 var $thisFoto = $(this);
                 var position = $thisFoto.offset();
                 if(position.top < (88+20)){
@@ -191,5 +191,5 @@ $(function(){
     
     
 });
-
+                
 });

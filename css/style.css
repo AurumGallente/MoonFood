@@ -111,12 +111,39 @@ a .navigation-list__button{
     margin-top: 10px;
 }
 
-.header__mobile-menu{
+.header__mobile-menu {
     float: right;
-    margin-top: 10px;
-    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
 }
 
+.header__mobile-menu .btn-menu-toggle {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 23px;
+  margin: 15px auto 0;
+  border-top: 3px solid #fff;
+}
+
+.btn-menu-toggle:before,
+.btn-menu-toggle:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #fff;
+}
+
+.btn-menu-toggle:before {
+  top: 7px;
+}
+
+.btn-menu-toggle:after {
+  bottom: 0;
+}
 
 .btn{
     font-size: 18px;
@@ -237,6 +264,7 @@ a .navigation-list__button{
 .social-panel{
     /* margin-bottom: 25px; */
     margin-top: 10px;
+    font-size: 0;
     width: 135px
     /*float: left;*/
     /*position: absolute;*/
@@ -249,6 +277,8 @@ a .navigation-list__button{
     border-radius: 50%;
     width: 32px;
     height: 32px;
+    margin-left: 4px;
+    margin-right: 4px;
     text-align: center;
     vertical-align: middle;
     line-height: 32px;

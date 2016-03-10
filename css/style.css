@@ -85,13 +85,13 @@ body{
     float: left;
     display: block;
     padding: 11px 20px 9px;
-    margin-top: 7px;
+    margin-top: 6px;
     margin-left: 15px;
     font-size: 18px;
     font-weight: 500;
     line-height: 18px;
     text-transform: uppercase;
-    border: solid 1px rgba(0, 0, 0, 0);
+    border: solid 2px rgba(0, 0, 0, 0);
     cursor: pointer;
 }
 a .navigation-list__button{
@@ -99,7 +99,7 @@ a .navigation-list__button{
     color: #fff;
 }
 .navigation-list__button:hover{
-    border: solid 1px #fff;
+    border: solid 2px #fff;
 }
 
 .navigation-list__button.active{

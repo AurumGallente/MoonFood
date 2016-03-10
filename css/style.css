@@ -84,9 +84,10 @@ body{
     float: left;
     display: block;
     padding: 10px 20px;
-    margin-top: 10px;
+    margin-top: 7px;
     margin-left: 15px;
     font-size: 18px;
+    font-weight: 500;
     line-height: 18px;
     text-transform: uppercase;
     border: solid 1px rgba(0, 0, 0, 0);
@@ -357,6 +358,7 @@ select.select-count__selector > option{
 
 .slide-bg{
     background-size: cover !important;
+    background-position-x: center !important;
 }
 
 .bg-title__slide{
@@ -378,16 +380,15 @@ select.select-count__selector > option{
 }
 
 .content-slide__header-slide{
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 50px;
     margin: 0;
 }
 
 .content-slide__title{
-    /*font-weight: bold;*/
     font-size: 27px;
-    /*font-weight: bold;*/
+    font-weight: 500;
 }
 .content-slide__title_slider{
     position:relative;
@@ -401,7 +402,8 @@ select.select-count__selector > option{
 }
 
 .content-slide__description{
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 300;
 }
 
 /*  blog   */
@@ -499,19 +501,27 @@ select.select-count__selector > option{
     bottom: 0;
 }
 
-/**/
+/* бутылка  */
+.bootle {
+    width: 420px; 
+    position: absolute; 
+    top: -135px; 
+    right: 0px;
+}
+/* кнопка отзывы  */
 .btn-reviews{
     display: block;
     text-transform: uppercase;
     color: #000;
-    font-weight: bold;
     background: #fff;
     border-radius: 20px;
-    padding: 7px 20px;
-    width: 110px;
+    padding: 8px 20px;
+    width: 170px;
     margin: 0 auto;
     margin-bottom: 20px;
     cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .btn-reviews:hover{
@@ -555,6 +565,11 @@ select.select-count__selector > option{
 
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+.slide-btn span{
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .prew-slide-btn{
@@ -641,6 +656,9 @@ img.small-img-slide-btn{
     z-index: 1050;
     /*top: 30px;*/
 }
+.composition-sm-md .composition-description{
+    width: 300px;
+}
 .composition-description .composition-description__content{
     width: 100%;
     padding: 15px;
@@ -678,6 +696,24 @@ img.small-img-slide-btn{
     left: 4px;
 }
 
+/*   зачем нужен     */
+.why-need-block{
+    margin-top: 25px;
+}
+.icon-why-need{
+    width: 65px;
+    height: 65px;
+}
+
+.why-need-description{
+    font-size: 14px;
+    font-weight: 300;
+}
+.why-need-item{
+    font-size: 18px;
+    font-weight: 600;
+}
+
 /* fold */
 .uc-single, .uc-final-wrapper, .uc-initial-content, .uc-back, .uc-front{
     /*background: none;*/
@@ -689,10 +725,27 @@ img.small-img-slide-btn{
     position: absolute;
     display: none;
 }
+
+.composition-sm-md .uc-container{
+    width: 150px;
+}
 .overlay-composition{
     width: 100%;
     height: 100%;
     /*background: #fff;*/
+}
+
+/*        мнение специалиста         */
+.opinion__specialist h2{
+    font-size: 27px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.description__concret-opinion p{
+    font-weight: 300;
+    font-size: 18px;
 }
 
 /************* MEDIA QUERY **************/
@@ -727,11 +780,13 @@ img.small-img-slide-btn{
     }
     .why-need h4{
         margin-top: 5px;
-        font-weight: bold;
     }
 
     .onpage-padding{
         padding: 0 80px;
+    }
+    .bootle{
+        top: -100px;
     }
 }
 /* SMALL DEVICE */
@@ -754,6 +809,11 @@ img.small-img-slide-btn{
 }
 /* EXTRA-SMALL DEVICE */
 @media (max-width: 767px){
+    
+    .padding-xs-section{
+        padding: 75px 0;
+    }
+    
     .content-slide__header-slide{
         font-size: 34px;
     }
@@ -761,11 +821,7 @@ img.small-img-slide-btn{
         font-size: 18px;
     }
     .content-slide__description{
-<<<<<<< HEAD
         font-size: 14px;
-=======
-        font-size: 80%;
->>>>>>> add fonts
     }
     .content-slide{
         margin: 0;

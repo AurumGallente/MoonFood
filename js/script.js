@@ -12,20 +12,26 @@ $(function(){
         fitSection: false,
         onLeave: function( i, next ){
             if(i == 1){
-                $("#btn-arrow-down").removeClass("visible-lg").fadeOut(300, function(){
+                $("#btn-arrow-down").fadeOut(300, function(){
                     $("#fp-nav").append($(this));
                     $(this).fadeIn(300,function(){
-                        $(this).addClass("visible-lg");
+                        //$(this).addClass("visible-lg");
                     });
                 });
             }
             if(next == 1){                
-                $("#btn-arrow-down").removeClass("visible-lg").fadeOut(300, function(){
+                $("#btn-arrow-down").fadeOut(300, function(){
                     $("#footer-nav").append($(this));
                     $(this).fadeIn(300,function(){
-                        $(this).addClass("visible-lg");
+                        //$(this).addClass("visible-lg");
                     });
                 });
+            }
+            if($("section.fp-section").size() == next){
+                $("#btn-arrow-down").fadeOut(300);
+            }
+            if($("section.fp-section").size() == i){
+                $("#btn-arrow-down").fadeIn(300);//, function(){ $(this).addClass("visible-lg"); });
             }
         },
         /*

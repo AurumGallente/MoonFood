@@ -107,8 +107,6 @@ $(function(){
     // слайдер "отзывы"
     slidingReviews(0);
     $("#slider-reviews").sliderOnPage(slidingReviews);
-    
-        
     /* появление описание при наведении */
     $( '.uc-container' ).each( function( i ){
         var $item = $(this);
@@ -118,7 +116,7 @@ $(function(){
         $item.height(height/2);
 
     });
-                                                 
+                                             
     // описание состава на большом
     $( '.composition > .uc-container' ).each( function( i ) {
 
@@ -153,6 +151,7 @@ $(function(){
         } );
 
     } );
+
     // описание состава на среднем и маленьком
     $( '.composition-sm-md .uc-container' ).each( function( i ) {
         console.log(i);
@@ -173,7 +172,7 @@ $(function(){
                 $item.fadeIn(300);
                 opened = true;
                 pfold2.unfold();
-
+                
                 var $thisFoto = $(this);
                 var position = $thisFoto.offset();
                 if(position.top < (88+20)){
@@ -190,6 +189,4 @@ $(function(){
     } );
     
     
-});
-                
 });

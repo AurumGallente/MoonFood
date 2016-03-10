@@ -13,10 +13,10 @@ $(function(){
         onLeave: function(){
             if($(".last-slide").hasClass("fp-completely")){
                 $("#btn-reviews").stop(true,true).fadeOut(100, function(){
-                    $("#btn-arrow-down").fadeIn(200).addClass("visible-lg");; 
+                    $("#btn-arrow-down").fadeIn(200).addClass("visible-lg");;
                 });
             }else{
-                
+
             }
         },
         afterLoad: function(){
@@ -29,10 +29,14 @@ $(function(){
                     $("#btn-reviews").fadeIn(200);
                 }
             }else{
-                
+
             }
         }
     });
+
+    //formstyler
+    $('.js-select').styler();
+
     //скрытие боковой навигации
     var hiderFpNav = function(){
         if($('#fp-nav ul li').size() <= 1){
@@ -41,13 +45,13 @@ $(function(){
     }
     hiderFpNav();
     $( window ).resize(hiderFpNav);
-    
+
     // нажатие стрелки вниз
     $("#btn-arrow-down").on("click", function(){
         $.fn.fullpage.moveSectionDown();
     });
-    
-    //   обработчик перемены слайдов "МНЕНИЕ СПЕЦИАЛИСТА"       
+
+    //   обработчик перемены слайдов "МНЕНИЕ СПЕЦИАЛИСТА"
     var slidingSpecialist = function(curSlide){
         var prewSlide = 0;
         var countSlide = $("#slider-opinion .slider-on-page__slide").size();
@@ -56,18 +60,18 @@ $(function(){
         }else{
             prewSlide = curSlide - 1;
         }
-        
+
         var nextSlide = 0;
         if(curSlide == (countSlide-1)){
             nextSlide=0;
         }else{
             nextSlide = curSlide + 1;
         }
-        
+
         $("#slider-opinion #prew-slide span").empty().append($("#slider-opinion .slider-on-page__slide").eq(prewSlide).find('span.profession').html());
         $("#slider-opinion #next-slide span").empty().append($("#slider-opinion .slider-on-page__slide").eq(nextSlide).find('span.profession').html());
     };
-    //   обработчик перемены слайдов "ОТЗЫВЫ" 
+    //   обработчик перемены слайдов "ОТЗЫВЫ"
     var slidingReviews = function(curSlide){
         var prewSlide = 0;
         var countSlide = $("#slider-reviews .slider-on-page__slide").size();
@@ -76,14 +80,14 @@ $(function(){
         }else{
             prewSlide = curSlide - 1;
         }
-        
+
         var nextSlide = 0;
         if(curSlide == (countSlide-1)){
             nextSlide=0;
         }else{
             nextSlide = curSlide + 1;
         }
-        
+
         $("#slider-reviews #prew-slide span").empty().append($("#slider-reviews .slider-on-page__slide").eq(prewSlide).find('span.name').html());
         $("#slider-reviews #next-slide span").empty().append($("#slider-reviews .slider-on-page__slide").eq(nextSlide).find('span.name').html());
     };
@@ -93,23 +97,23 @@ $(function(){
     // слайдер "отзывы"
     slidingReviews(0);
     $("#slider-reviews").sliderOnPage(slidingSpecialist);
-    
-        
+
+
     /* появление описание при наведении */
     $( '.composition > .uc-container' ).each( function( i ){
         var $item = $(this);
-        
+
         var height = $item.find('.composition-description').actual('height');
         $item.find('div.overlay-composition').height(height/2);
         $item.height(height/2);
-        
+
     });
-                                                 
+
     var opened = false;
     $( '.composition > .uc-container' ).each( function( i ) {
 
         var $item = $( this ), direction;
-        
+
         direction = ['left','bottom'];
 
         var pfold = $item.pfold( {
@@ -124,7 +128,7 @@ $(function(){
                 $item.fadeIn(300);
                 opened = true;
                 pfold.unfold();
-                
+
                 var $thisFoto = $(this);
                 var position = $thisFoto.offset();
                 if(position.top < (88+20)){
@@ -139,6 +143,5 @@ $(function(){
         } );
 
     } );
-    
-});
 
+});

@@ -333,7 +333,7 @@ a .navigation-list__button{
 }
 
 .select-count__selector{
-    color: #fff;
+    /*color: #fff;
     width: 240px;
     float: right;
     border-radius: 0px;
@@ -341,7 +341,7 @@ a .navigation-list__button{
     background: rgba(255, 255, 255, 0.3);
 
     padding: 15px 21px;
-    height: inherit;
+    height: inherit;*/
 }
 
 select.select-count__selector > option{
@@ -351,6 +351,90 @@ select.select-count__selector > option{
 
 .form-group{
     margin-bottom: 0px;
+}
+
+/* formstyler  */
+
+.jq-selectbox {
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	float: right;
+	width: 240px;
+	height: 58px;
+	padding: 0;
+	border-radius: 0px;
+	border: solid 2px #fff;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.jq-selectbox__select {
+	padding: 15px 21px 14px;
+}
+
+.jq-selectbox__select-text {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 18px;
+	color: #fff
+}
+
+.jq-selectbox .placeholder {
+	color: #fff;
+}
+
+.jq-selectbox__trigger-arrow {
+	position: absolute;
+	top: 19px;
+	right: 17px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 17px 10px 0 10px;
+	border-color: #fff transparent transparent transparent;
+}
+
+.jq-selectbox__dropdown {
+	box-sizing: border-box;
+	bottom: 60px !important;
+	left: -2px;
+	right: -2px;
+	padding: 0;
+	background: rgba(255, 255, 255, 0.3);
+	border: 2px solid #fff;
+	font: 14px/18px Arial, sans-serif;
+}
+
+.jq-selectbox ul {
+	margin: 0;
+	padding: 0;
+}
+
+.jq-selectbox li {
+	min-height: 18px;
+	padding: 15px 10px;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	white-space: nowrap;
+	font-size: 18px;
+	color: #fff;
+	-webkit-transition: all .1s;
+	-moz-transition: all .1s;
+	-ms-transition: all .1s;
+	transition: all .1s;
+}
+
+.jq-selectbox li:hover {
+	background-color: #fff;
+	color: #000;
 }
 
 /* bgfullpage slids  */

@@ -404,13 +404,18 @@ select.select-count__selector > option{
 
 .jq-selectbox__dropdown {
 	box-sizing: border-box;
-	bottom: 60px !important;
+  z-index: 100;
 	left: -2px;
 	right: -2px;
 	padding: 0;
-	background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.9);
 	border: 2px solid #fff;
 	font: 14px/18px Arial, sans-serif;
+}
+
+.select-up .jq-selectbox__dropdown {
+	bottom: 60px !important;
+	background: rgba(255, 255, 255, 0.3);
 }
 
 .jq-selectbox ul {
@@ -588,9 +593,9 @@ select.select-count__selector > option{
 
 /* бутылка  */
 .bootle {
-    width: 420px; 
-    position: absolute; 
-    top: -135px; 
+    width: 420px;
+    position: absolute;
+    top: -135px;
     right: 0px;
 }
 /* кнопка отзывы  */
@@ -894,11 +899,11 @@ img.small-img-slide-btn{
 }
 /* EXTRA-SMALL DEVICE */
 @media (max-width: 767px){
-    
+
     .padding-xs-section{
         padding: 75px 0;
     }
-    
+
     .content-slide__header-slide{
         font-size: 34px;
     }

@@ -142,7 +142,6 @@ $(function(){
             onEndFolding : function() { $item.fadeOut(300,function(){openedlg = false;});  },
         } );
         pfold_list.push(pfold);
-        //var opened = false;
         $item.parent().find( 'img.composition-foto' ).hover( function() {
             //$item.find('.composition-description');
             if( !openedlg ) {

@@ -126,6 +126,7 @@ $(function(){
     });
                                              
     // описание состава на большом
+    var openedlg = false;    
     $( '.composition > .uc-container' ).each( function( i ) {
 
         var $item = $( this ), direction;
@@ -135,14 +136,14 @@ $(function(){
         var pfold = $item.pfold( {
             folddirection : direction,
             speed : 150,
-            onEndFolding : function() { $item.fadeOut(300,function(){opened = false;});  },
+            onEndFolding : function() { $item.fadeOut(300,function(){openedlg = false;});  },
         } );
-        var opened = false;
+        //var opened = false;
         $item.parent().find( 'img.composition-foto' ).hover( function() {
             //$item.find('.composition-description');
-            if( !opened ) {
+            if( !openedlg ) {
                 $item.fadeIn(300);
-                opened = true;
+                openedlg = true;
                 pfold.unfold();
 
                 var $thisFoto = $(this);
@@ -161,6 +162,7 @@ $(function(){
     } );
 
     // описание состава на среднем и маленьком
+    var openedsmmd = false;
     $( '.composition-sm-md .uc-container' ).each( function( i ) {
         console.log(i);
         var $item = $( this ), direction;
@@ -170,15 +172,15 @@ $(function(){
         var pfold2 = $item.pfold( {
             folddirection : direction,
             speed : 150,
-            onEndFolding : function() { $item.fadeOut(300,function(){opened = false;});  },
+            onEndFolding : function() { $item.fadeOut(300,function(){openedsmmd = false;});  },
         } );
-        var opened = false;
+        //var opened = false;
         $item.parent().find( 'img.composit__img' ).click( function() {
             console.log("click");
             //$item.find('.composition-description');
-            if( !opened ) {
+            if( !openedsmmd ) {
                 $item.fadeIn(300);
-                opened = true;
+                openedsmmd = true;
                 pfold2.unfold();
                 
                 var $thisFoto = $(this);
@@ -197,6 +199,7 @@ $(function(){
     } );
     
     // описание состава на extra-small
+    var openedxs = false;
     $( '.composition-xs .uc-container' ).each( function( i ) {
         console.log(i);
         var $item = $( this ), direction;
@@ -206,15 +209,15 @@ $(function(){
         var pfold2 = $item.pfold( {
             folddirection : direction,
             speed : 150,
-            onEndFolding : function() { $item.fadeOut(300,function(){opened = false;});  },
+            onEndFolding : function() { $item.fadeOut(300,function(){openedxs = false;});  },
         } );
-        var opened = false;
+        //var opened = false;
         $item.parent().find( 'img' ).click( function() {
             console.log("click");
             //$item.find('.composition-description');
-            if( !opened ) {
+            if( !openedxs ) {
                 $item.fadeIn(300);
-                opened = true;
+                openedxs = true;
                 pfold2.unfold();
                 
                 var $thisFoto = $(this);

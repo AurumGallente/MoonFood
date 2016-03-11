@@ -1001,7 +1001,7 @@ img.small-img-slide-btn{
 @media (max-width: 767px){
 
     .padding-xs-section{
-        padding: 50px 0;
+        padding: 80px 0;
     }
 
     .content-slide__header-slide{
@@ -1032,9 +1032,12 @@ img.small-img-slide-btn{
         font-size: 12px;
         font-weight: bold;
     }
-
+    
+    .marg-xs-spec{
+        margin-top: 14px;
+    }
     .opinion__specialist h2{
-        font-size: 20px;
+        font-size: 16px;
         text-align: right;
         margin: 5px 0px;
     }

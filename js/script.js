@@ -126,9 +126,12 @@ $(function(){
     });
                                              
     // описание состава на большом
-    var openedlg = false;    
+    var pfold_list = new Array();
+    
     $( '.composition > .uc-container' ).each( function( i ) {
-
+        
+        var openedlg = false;  
+        
         var $item = $( this ), direction;
 
         direction = ['left','bottom'];
@@ -138,6 +141,7 @@ $(function(){
             speed : 150,
             onEndFolding : function() { $item.fadeOut(300,function(){openedlg = false;});  },
         } );
+        pfold_list.push(pfold);
         //var opened = false;
         $item.parent().find( 'img.composition-foto' ).hover( function() {
             //$item.find('.composition-description');
@@ -153,6 +157,10 @@ $(function(){
                     $item.css("top", offsetX);
                 }
             }
+            for(i=0; i < pfold_list.length;i++){
+                if(pfold_list[i] != pfold)
+                    pfold_list[i].fold();
+            }
         } ).end().find( '.composition-description__close' ).on( 'click', function() {
 
             pfold.fold();
@@ -162,26 +170,29 @@ $(function(){
     } );
 
     // описание состава на среднем и маленьком
-    var openedsmmd = false;
+    
+    var pfold_list2 = new Array();
     $( '.composition-sm-md .uc-container' ).each( function( i ) {
-        console.log(i);
+        
+        var openedsmmd = false;
+        
         var $item = $( this ), direction;
         
         direction = ['left','bottom'];
 
-        var pfold2 = $item.pfold( {
+        var pfold = $item.pfold( {
             folddirection : direction,
             speed : 150,
             onEndFolding : function() { $item.fadeOut(300,function(){openedsmmd = false;});  },
         } );
-        //var opened = false;
+        pfold_list2.push(pfold)
         $item.parent().find( 'img.composit__img' ).click( function() {
             console.log("click");
             //$item.find('.composition-description');
             if( !openedsmmd ) {
                 $item.fadeIn(300);
                 openedsmmd = true;
-                pfold2.unfold();
+                pfold.unfold();
                 
                 var $thisFoto = $(this);
                 var position = $thisFoto.offset();
@@ -190,35 +201,39 @@ $(function(){
                     $item.css("top", offsetX);
                 }
             }
+            for(i=0; i < pfold_list2.length;i++){
+                if(pfold_list2[i] != pfold)
+                    pfold_list2[i].fold();
+            }
         } ).end().find( '.composition-description__close' ).on( 'click', function() {
 
-            pfold2.fold();
+            pfold.fold();
 
         } );
 
     } );
     
     // описание состава на extra-small
-    var openedxs = false;
+    var pfold_list3 = new Array();
     $( '.composition-xs .uc-container' ).each( function( i ) {
-        console.log(i);
+        var openedxs = false;
+        
         var $item = $( this ), direction;
         
         direction = ['left','bottom'];
 
-        var pfold2 = $item.pfold( {
+        var pfold = $item.pfold( {
             folddirection : direction,
             speed : 150,
             onEndFolding : function() { $item.fadeOut(300,function(){openedxs = false;});  },
         } );
-        //var opened = false;
+        pfold_list3.push(pfold)
         $item.parent().find( 'img' ).click( function() {
-            console.log("click");
             //$item.find('.composition-description');
             if( !openedxs ) {
                 $item.fadeIn(300);
                 openedxs = true;
-                pfold2.unfold();
+                pfold.unfold();
                 
                 var $thisFoto = $(this);
                 var position = $thisFoto.offset();
@@ -227,9 +242,13 @@ $(function(){
                     $item.css("top", offsetX);
                 }
             }
+            for(i=0; i < pfold_list3.length;i++){
+                if(pfold_list3[i] != pfold)
+                    pfold_list3[i].fold();
+            }
         } ).end().find( '.composition-description__close' ).on( 'click', function() {
 
-            pfold2.fold();
+            pfold.fold();
 
         } );
 

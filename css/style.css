@@ -42,6 +42,10 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
+.no-padding{
+    padding: 0;
+}
+
 /*             HEADER             */
 .header{
     position: fixed;
@@ -930,6 +934,10 @@ img.small-img-slide-btn{
 .description__concret-opinion p{
     font-weight: 300;
     font-size: 18px;
+}
+
+.profession{
+    text-transform: lowercase;
 }
 
 /************* MEDIA QUERY **************/

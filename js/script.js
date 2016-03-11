@@ -113,6 +113,8 @@ $(function(){
     // слайдер "отзывы"
     slidingReviews(0);
     $("#slider-reviews").sliderOnPage(slidingReviews);
+    
+    
     /* появление описание при наведении */
     $( '.uc-container' ).each( function( i ){
         var $item = $(this);
@@ -172,6 +174,42 @@ $(function(){
         } );
         var opened = false;
         $item.parent().find( 'img.composit__img' ).click( function() {
+            console.log("click");
+            //$item.find('.composition-description');
+            if( !opened ) {
+                $item.fadeIn(300);
+                opened = true;
+                pfold2.unfold();
+                
+                var $thisFoto = $(this);
+                var position = $thisFoto.offset();
+                if(position.top < (88+20)){
+                    var offsetX = (88+20) - position.top;
+                    $item.css("top", offsetX);
+                }
+            }
+        } ).end().find( '.composition-description__close' ).on( 'click', function() {
+
+            pfold2.fold();
+
+        } );
+
+    } );
+    
+    // описание состава на extra-small
+    $( '.composition-xs .uc-container' ).each( function( i ) {
+        console.log(i);
+        var $item = $( this ), direction;
+        
+        direction = ['left','bottom'];
+
+        var pfold2 = $item.pfold( {
+            folddirection : direction,
+            speed : 150,
+            onEndFolding : function() { $item.fadeOut(300,function(){opened = false;});  },
+        } );
+        var opened = false;
+        $item.parent().find( 'img' ).click( function() {
             console.log("click");
             //$item.find('.composition-description');
             if( !opened ) {

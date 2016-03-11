@@ -477,6 +477,7 @@ select.select-count__selector > option{
 /* bgfullpage slids  */
 
 .slide-bg{
+    overflow: hidden;
     background-size: cover !important;
     background-position-x: center !important;
 }
@@ -630,9 +631,9 @@ select.select-count__selector > option{
 }
 
 .bootle-reviews{
-    width: 100%; 
-    position: fixed; 
-    width: 30%; 
+    width: 100%;
+    position: fixed;
+    width: 30%;
     top: 15%;
 }
 
@@ -969,7 +970,7 @@ img.small-img-slide-btn{
     .bootle{
         top: -100px;
     }
-    
+
     .btn-reviews-panel{
         bottom: 13%;
     }
@@ -991,7 +992,7 @@ img.small-img-slide-btn{
     .why-need-align{
         text-align: center;
     }
-    
+
     .header-opinion{
         position: initial;
         top: 0;
@@ -1066,10 +1067,10 @@ img.small-img-slide-btn{
     .blog{
         margin-top: 10px;
     }
-    
+
     .btn-reviews-panel{
         position: relative;
-    }    
+    }
 }
 
 
@@ -1092,14 +1093,14 @@ img.small-img-slide-btn{
     .col-xlg-10{
         width: 83.33333333%;
     }
-    
+
     .description__concret-opinion p{
         font-size: 20px;
     }
     .opinion__specialist h2{
         font-size: 30px;
     }
-    
+
     .why-need-description{
         font-size: 18px;
     }

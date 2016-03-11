@@ -115,7 +115,7 @@ a .navigation-list__button{
     float: right;
     width: 50px;
     height: 50px;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .header__mobile-menu .btn-menu-toggle {
@@ -771,6 +771,16 @@ img.small-img-slide-btn{
     line-height: 145px;
     margin: 0 auto;
 }
+
+.composition-header-extra-small{
+    position: relative;
+    display: block;
+    width: 125px;
+    height: 195px;
+    line-height: 195px;
+    margin: 0 auto;
+}
+
 .composit__img{
     -webkit-box-shadow: 0px 0px 15px 0px #000;
     box-shadow: 0px 0px 15px 0px #000;
@@ -824,6 +834,24 @@ img.small-img-slide-btn{
 }
 .composition-description__close:hover{
     font-weight: bold;
+}
+
+.extra-small-wrap{
+    width: 260px;
+}
+.comp-img-xs{
+    position: relative;
+    left: -7px;
+}
+.col-xs-ht{
+    height: 105px;
+}
+.col-xs-chain-ht{
+    height: 107px;
+}
+.chain-xs{
+    position: relative;
+    left: -15px;
 }
 
 /*   цепочки   */
@@ -1060,15 +1088,17 @@ img.small-img-slide-btn{
         font-size: 30px;
     }
     
+    .why-need-description{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1920px){
     .bootle{
         width: 560px;
         position: absolute;
         top: -260px;
         right: 40px;
-    }
-    
-    .why-need-description{
-        font-size: 18px;
     }
 }
 

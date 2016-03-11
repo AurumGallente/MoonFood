@@ -525,7 +525,7 @@ select.select-count__selector > option{
 }
 
 .content-slide__description{
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 300;
 }
 
@@ -817,7 +817,7 @@ img.small-img-slide-btn{
 
 .composition-description .composition-description__content{
     width: 100%;
-    padding: 15px;
+    padding: 17px 20px;
     color: #000;
     background: #fff;
 }
@@ -877,6 +877,7 @@ img.small-img-slide-btn{
 .icon-why-need{
     width: 65px;
     height: 65px;
+    margin-bottom: 10px;
 }
 
 .why-need-description{
@@ -884,6 +885,7 @@ img.small-img-slide-btn{
     font-weight: 300;
 }
 .why-need-item{
+    margin-bottom: 7px;
     font-size: 18px;
     font-weight: 600;
 }

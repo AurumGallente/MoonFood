@@ -42,10 +42,6 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
-.no-padding{
-    padding: 0;
-}
-
 /*             HEADER             */
 .header{
     position: fixed;
@@ -964,6 +960,53 @@ img.small-img-slide-btn{
     text-transform: lowercase;
 }
 
+
+/*      страница заказа          */
+.order__input{
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+}
+.your-order{
+    border: 1px solid #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+.your-order__img{
+    width: 180px;
+    height: 180px;
+}
+
+.your-order__select-count{
+    display: inline-block;
+}
+
+.your-order__btn-accept{
+    display: inline-block;
+    width: 100%;
+}
+
+.your-order__info{
+    width: 295px;
+    padding-left: 20px;
+    float: right;
+}
+
+.your-order__btn-accept .order__order-btn{
+    width: 100%;
+}
+
+.your-order__select-count .order__select-count{
+    float: none;
+}
+.your-order__select-count .jq-selectbox{
+    float: none;
+}
+
 /************* MEDIA QUERY **************/
 /* MEDIUM DEVICE */
 @media (max-width: 1200px){
@@ -1171,4 +1214,9 @@ img.small-img-slide-btn{
     .hidden-arrow-down{
         display: none;
     }
+}
+
+/**** *****/
+.no-padding{
+    padding: 0;
 }

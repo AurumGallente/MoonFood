@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moon Food - заказ</title>
+
+    <!-- Normalize -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- pagescroller css -->
+    <!-- <link href="css/onepage-scroll.css" rel="stylesheet"> -->
+    <link href="css/jquery.fullpage.css" rel="stylesheet">
+    <!-- Social font icon -->
+    <link href="css/fontello.css" rel="stylesheet">
+    <!-- css for jq plugin pfold -->
+    <link rel="stylesheet" type="text/css" href="css/pfold.css" />
+    <!-- Moon Food style -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <a href="index.html">
+                    <img class="header__logo" src="images/logo.svg"/>
+                </a>
+                <nav class="header__navigation hidden-xs">
+                    <ul class="navigation__navigation-list">
+                        <li class="navigation-list__button"> вопросы и ответы </li>
+                        <a href="reviews.html"><li class="navigation-list__button">  отзывы </li></a>
+                        <a href="blog.html"><li class="navigation-list__button"> блог </li></a>
+                    </ul>
+                </nav>
+
+                <div class="header__mobile-menu mobile-menu hidden-sm hidden-md hidden-lg" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <span class="btn-icon-menu btn-menu-toggle" aria-hidden="true"></span>
+                </div>
+                <div class="header__cart">
+                    <span class="btn-icon-menu glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                </div>
+                <div class="header__phone visible-md visible-lg">
+                    +7 495 456 34 78
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- modal menu -->
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+     <div class="modal-dialog">
+        <div class="modal-content moda-menu">
+          <div class="modal-header">
+            <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="container-fluid" style="margin-top: 60px;">
+              <div class="row">
+                    <div class="modal-menu__phone">+7 495 456 34 78</div>
+              </div>
+              <hr style="width: 40%; margin: 50px auto;" />
+              <div class="modal-nav">
+                  <div class="row"><a href="#"><div class="navigation-list__button"> вопросы и ответы </div></a></div>
+                  <div class="row"><a href="reviews.html"><div class="navigation-list__button">  отзывы </div></a></div>
+                  <div class="row"><a href="blog.html"><div class="navigation-list__button"> блог </div></a></div>
+              </div>
+              <div class="row fixed-social">
+                  <div class="social-panel social-panel_modal center-block text-center">
+                    <span class="icon-instagram social-panel__social-btn"></span>
+                    <span class="icon-facebook social-panel__social-btn"></span>
+                    <span class="icon-vk social-panel__social-btn"></span>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fullpage">
+
+        <section class="slide-bg section" style="background: url('images/template4.jpg') no-repeat;">
+            <div class="content-slide no-padding">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h1 class="content-slide__header-slide">
+                            Заказать обед Moon Food
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <form action="" class="col-lg-5 no-padding">
+                            <input class="order__input" type="input" placeholder="ФИО"/>
+                            <input class="order__input" type="input" placeholder="страна"/>
+                            <input class="order__input" type="input" placeholder="город"/>
+                            <input class="order__input" type="input" placeholder="адрес"/>
+                            <input class="order__input" type="input" placeholder="индекс"/>
+                            <input class="order__input" type="input" placeholder="телефон"/>
+                            <input class="order__input" type="input" placeholder="email"/>
+                        </form>
+
+                        <div class="col-lg-5 col-lg-offset-2 no-padding">
+                            <div class="your-order">
+                                <h2>Ваш заказ</h2>
+                                <img class="your-order__img" src="" alt="">
+                                <div class="your-order__info">
+                                    <div class="your-order__descr">
+                                        Moon Food - полноценный обед из трех блюд в одной бутылке.
+                                    </div>
+                                    <div class="your-order__select-count">
+                                        <div class="form-group order__select-count select-down">
+                                            <select class="form-control select-count__selector js-select" id="sel1">
+                                                <option>1 Бутылка</option>
+                                                <option>2 Бутылки</option>
+                                                <option>3 Бутылки</option>
+                                                <option>4 Бутылки</option>
+                                            </select>
+                                        </div>
+                                        <span class="your-order__cost">
+                                            Стоимость 1200 руб.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="your-order__btn-accept">
+                                    <div class="btn order__order-btn">
+                                        Заказать
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div id="footer-nav" class="row hide">
+                <div id="btn-arrow-down" class="footer__arrow visible-lg">
+                    <img src="images/arrow_down.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="hidden-xs col-sm-3 col-md-2">
+                    <div class="social-panel">
+                        <span class="icon-instagram social-panel__social-btn"></span>
+                        <span class="icon-facebook social-panel__social-btn"></span>
+                        <span class="icon-vk social-panel__social-btn"></span>
+                    </div>
+                </div>
+                <!--<div class="col-xs-12 col-sm-6 offset-sm-3 col-md-8">
+                    <div class="order center-block">
+                        <div class="visible-md visible-lg">
+                            <div class="form-group order__select-count select-up">
+                                <label class="select-count__label hide" for="sel1">Закажите сейчас</label>
+                                <select class="form-control select-count__selector js-select" id="sel1">
+                                    <option>1 Бутылка</option>
+                                    <option>2 Бутылки</option>
+                                    <option>3 Бутылки</option>
+                                    <option>4 Бутылки</option>
+                                </select>
+                            </div>
+                            <span class="order__cost">
+                                = 1200 руб.
+                            </span>
+                        </div>
+                        <div class="btn order__order-btn visible-md visible-lg">
+                            Заказать
+                        </div>
+                        <div class="btn order__order-btn hidden-md hidden-lg" data-toggle="modal" data-target=".bs-order">
+                            Заказать
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </footer>
+    <!-- modal order -->
+    <div class="modal fade bs-order" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content moda-menu">
+                <div class="modal-header">
+                    <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="container-fluid" style="margin-top: 60px;">
+                    <div class="order in-modal center-block">
+                        <div class="form-group order__select-count">
+                            <label class="select-count__label text-center" for="sel1">Закажите сейчас</label>
+                            <select class="form-control select-count__selector js-select" id="sel1">
+                                <option>1 бутылка</option>
+                                <option>2 бутылки</option>
+                                <option>3 бутылки</option>
+                                <option>4 бутылки</option>
+                            </select>
+                        </div>
+                        <span class="order__cost text-center">
+                            = 1200 руб.
+                        </span>
+                        <div class="btn order__order-btn">
+                            Заказать
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- full page scroller -->
+    <script src="js/jquery.fullpage.js"></script>
+    <!-- slider first main slide -->
+    <script src="js/slider_title.js"></script>
+    <!-- slider on page -->
+    <script src="js/slider_on_page.js"></script>
+    <!-- actual size -->
+    <script src="js/jquery.liActualSize.js"></script>
+    <!-- plugin pfold -->
+    <script src="js/modernizr.custom.79639.js"></script>
+    <script src="js/jquery.pfold.js"></script>
+    <!-- plugin formstyler -->
+    <script src="js/jquery.formstyler.js"></script>
+    <!-- MoonFood script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

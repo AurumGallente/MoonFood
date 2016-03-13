@@ -968,21 +968,55 @@ img.small-img-slide-btn{
     color: #fff;
     border: none;
     border-bottom: 2px solid #fff;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    padding: 5px;
 }
+
+.order__input:focus{
+    outline: none;
+}
+
+.order__input::-webkit-input-placeholder    { color: #fff; font-weight: 300; }
+.order__input::-moz-placeholder             { color: #fff; font-weight: 300; }
+.order__input:-moz-placeholder              { color: #fff; font-weight: 300; }
+.order__input:-ms-input-placeholder         { color: #fff; font-weight: 300; }
+
+.order__input:focus::-webkit-input-placeholder    { color: transparent; }
+.order__input:focus::-moz-placeholder             { color: transparent; }
+.order__input:focus:-moz-placeholder              { color: transparent; }     
+.order__input:focus:-ms-input-placeholder         { color: transparent; }
+
 .your-order{
     border: 1px solid #fff;
     padding: 20px;
+    margin-top: 30px;
     width: 100%;
 }
 
+.your-order__header{
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.your-order__detail{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
 .your-order__img{
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
+}
+
+.your-order__descr{
+    font-size: 21px;
 }
 
 .your-order__select-count{
     display: inline-block;
+    width: 100%;
 }
 
 .your-order__btn-accept{
@@ -991,7 +1025,7 @@ img.small-img-slide-btn{
 }
 
 .your-order__info{
-    width: 295px;
+    width: 305px;
     padding-left: 20px;
     float: right;
 }
@@ -1002,9 +1036,32 @@ img.small-img-slide-btn{
 
 .your-order__select-count .order__select-count{
     float: none;
+    margin-top: 20px;
 }
 .your-order__select-count .jq-selectbox{
     float: none;
+    width: 100%;
+}
+
+.your-order__cost-info{
+    width: 100%;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+
+.your-order__cost{
+    width: 49.66666%;
+    float: left;
+}
+.your-order__value{
+    width: 49.66666%;
+    float: right;
+}
+
+.your-order__value span{
+    font-weight: 500;
 }
 
 /************* MEDIA QUERY **************/

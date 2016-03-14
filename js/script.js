@@ -136,7 +136,6 @@ $(function(){
         var $item = $( this ), direction;
         
         var horizonal = $item.attr("data-direction-horizontal");
-        console.log(horizonal);
         
         if(horizonal){
             direction = [ horizonal, 'bottom'];
@@ -230,7 +229,6 @@ $(function(){
         var $item = $( this ), direction;
         
         var horizonal = $item.attr("data-direction-horizontal");
-        console.log(horizonal);
         
         if(horizonal){
             direction = [ horizonal, 'bottom'];

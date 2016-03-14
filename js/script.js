@@ -134,8 +134,17 @@ $(function(){
         var openedlg = false;  
         
         var $item = $( this ), direction;
-
-        direction = ['left','bottom'];
+        
+        var horizonal = $item.attr("data-direction-horizontal");
+        console.log(horizonal);
+        
+        if(horizonal){
+            direction = [ horizonal, 'bottom'];
+        }else{
+            direction = [ 'left', 'bottom'];
+        }
+        
+        
 
         var pfold = $item.pfold( {
             folddirection : direction,
@@ -220,7 +229,14 @@ $(function(){
         
         var $item = $( this ), direction;
         
-        direction = ['left','bottom'];
+        var horizonal = $item.attr("data-direction-horizontal");
+        console.log(horizonal);
+        
+        if(horizonal){
+            direction = [ horizonal, 'bottom'];
+        }else{
+            direction = [ 'left', 'bottom'];
+        }
 
         var pfold = $item.pfold( {
             folddirection : direction,

@@ -803,6 +803,17 @@ img.small-img-slide-btn{
 .composition-sml{
     width: 110px;
 }
+
+.composition-sm-md-wrap{
+    width: 145px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.composition-sm-md-wrap .uc-container{
+    left: 50% !important;
+}
+
 .composition-description{
     width: 400px;
     position: absolute;
@@ -850,7 +861,7 @@ img.small-img-slide-btn{
 }
 .comp-img-xs{
     position: relative;
-    left: -7px;
+    left: -4px;
 }
 .col-xs-ht{
     height: 105px;
@@ -860,7 +871,7 @@ img.small-img-slide-btn{
 }
 .chain-xs{
     position: relative;
-    left: -15px;
+    left: -11px;
 }
 
 /*   цепочки   */
@@ -902,6 +913,19 @@ img.small-img-slide-btn{
     width: 200px;
     position: absolute;
     display: none;
+}
+
+.uc-container.l-pos{
+    top: 42px !important;
+}
+
+.uc-container.s-pos{
+    top: 32px !important;
+}
+
+.uc-container.right-side{
+    right: 0;
+    left: initial !important;
 }
 
 .composition-sm-md .uc-container{
@@ -950,8 +974,8 @@ img.small-img-slide-btn{
     height: 80px;
     border-radius: 50%;
     border: 1px solid #fff;
-    -webkit-box-shadow: 0 0 25px 0 #000;
-    box-shadow: 0 0 25px 0 #000;
+    -webkit-box-shadow: 0 0 10px 0 #000;
+    box-shadow: 0 0 10px 0 #000;
 
     margin-top: 10px;
     margin-bottom: 10px;

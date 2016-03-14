@@ -52,6 +52,7 @@ $(function(){
 
     //formstyler
     $('.js-select').styler();
+    $('.js-select-country').styler();
 
     //скрытие боковой навигации
     var hiderFpNav = function(){

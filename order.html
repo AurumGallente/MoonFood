@@ -90,7 +90,7 @@
     <div id="fullpage">
 
         <section class="slide-bg section" style="background: url('images/template4.jpg') no-repeat;">
-            <div class="content-slide no-padding">
+            <div class="content-slide offsets-order">
                 <div class="container-fluid">
                     <div class="row">
                         <h1 class="content-slide__header-slide">
@@ -98,28 +98,45 @@
                         </h1>
                     </div>
                     <div class="row">
-                        <form action="" class="col-lg-5 no-padding">
-                            <input class="order__input" type="input" placeholder="ФИО *"/>
-                            <input class="order__input" type="input" placeholder="страна"/>
-                            <input class="order__input" type="input" placeholder="город"/>
-                            <input class="order__input" type="input" placeholder="адрес"/>
-                            <input class="order__input" type="input" placeholder="индекс"/>
-                            <input class="order__input" type="input" placeholder="телефон"/>
-                            <input class="order__input" type="input" placeholder="email"/>
+                        <form action="" class="col-sm-4 col-md-6 col-lg-5 no-padding">
+                            <input name="fio" class="order__input" type="input" placeholder="ФИО *"/>
+                            <!--input name="country" class="order__input" type="input" placeholder="страна"/-->
+                            <select name="country" class="js-select-country maxheight" data-placeholder="Cтрана">
+                                <!-- list country -->
+                                <option></option>
+                                <option>Страна 1</option>
+                                <option>Страна 2</option>
+                                <option>Страна 3</option>
+                                <option>Страна 4</option>
+                                <option>Страна 5</option>
+                            </select>
+                            <input name="city" class="order__input" type="input" placeholder="город"/>
+                            <input name="adress" class="order__input" type="input" placeholder="адрес"/>
+                            <input name="index" class="order__input" type="input" placeholder="индекс"/>
+                            <input name="phone" class="order__input" type="input" placeholder="телефон"/>
+                            <input name="email" class="order__input" type="input" placeholder="email"/>
                         </form>
 
-                        <div class="col-lg-5 col-lg-offset-2 no-padding">
+                        <div class="col-sm-7 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-2 no-padding">
                             <div class="your-order">
-                                <h2 class="your-order__header">Ваш заказ</h2>
+                                <h2 class="your-order__header hidden-xs">Ваш заказ</h2>
                                 <div class="your-order__detail">
-                                    <img class="your-order__img" src="images/order_img.png" alt="">
+                                    <img class="your-order__img hidden-xs" src="images/order_img.png" alt="">
                                     <div class="your-order__info">
-                                        <div class="your-order__descr">
+                                        <div class="your-order__descr hidden-xs">
                                             Moon Food &mdash; полноценный обед из трех блюд в одной бутылке.
                                         </div>
                                         <div class="your-order__select-count">
-                                            <div class="form-group order__select-count select-down">
+                                            <div class="form-group order__select-count select-down hidden-xs">
                                                 <select class="form-control select-count__selector js-select" id="sel1">
+                                                    <option>1 Бутылка</option>
+                                                    <option>2 Бутылки</option>
+                                                    <option>3 Бутылки</option>
+                                                    <option>4 Бутылки</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group order__select-count select-up visible-xs">
+                                                <select class="form-control select-count__selector js-select" id="sel2">
                                                     <option>1 Бутылка</option>
                                                     <option>2 Бутылки</option>
                                                     <option>3 Бутылки</option>
@@ -155,7 +172,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="hidden-xs col-sm-3 col-md-2">
+                <div class="hidden-xs col-sm-3 col-md-2 no-padding">
                     <div class="social-panel">
                         <span class="icon-instagram social-panel__social-btn"></span>
                         <span class="icon-facebook social-panel__social-btn"></span>

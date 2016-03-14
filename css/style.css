@@ -191,6 +191,10 @@ a .navigation-list__button{
     margin-right: 65px;
 }
 
+.hr {
+  width: 40%;
+  margin: 50px auto;
+}
 
 /*               FOOTER             */
 .footer{
@@ -572,11 +576,15 @@ select.select-count__selector > option{
 /* modal menu */
 .modal-dialog{
     height: 95%;
+    margin: 0;
 }
 .modal-header{
     border: none;
 }
 .close-btn{
+    position: absolute;
+    right: 15px;
+    top: 10px;
     color: #fff;
     font-size: 50px;
     text-shadow: none;
@@ -598,6 +606,7 @@ select.select-count__selector > option{
     font-size: 30px;
     text-align: center;
     font-weight: bold;
+    margin-top: 60px;
 }
 .modal-nav{
     text-align: center;
@@ -1379,6 +1388,15 @@ img.small-img-slide-btn{
     .hidden-arrow-down{
         display: none;
     }
+}
+
+@media screen and (orientation: landscape) {
+  .hr {
+    margin: 10px auto;
+  }
+  .modal-menu__phone {
+    margin-top: 30px;
+  }
 }
 
 /**** *****/

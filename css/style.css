@@ -188,7 +188,7 @@ a .navigation-list__button{
     font-size: 20px;
     line-height: 20px;
     margin-top: 19px;
-    margin-right: 53px;
+    margin-right: 65px;
 }
 
 
@@ -1161,6 +1161,10 @@ img.small-img-slide-btn{
     .offsets-order{
         padding: 0;
         margin: 0 15px;
+    }
+    
+    .header__phone{
+        margin-right: 30px;
     }
 }
 /* SMALL DEVICE */

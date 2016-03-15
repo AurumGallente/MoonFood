@@ -63,7 +63,7 @@ body{
 .header .container-fluid{
     margin-left: 60px;
     margin-right: 60px;
-    margin-top: 35px;
+    margin-top: 15px;
 }
 
 .header__logo{
@@ -214,7 +214,7 @@ a .navigation-list__button{
 .footer .container-fluid{
     margin-left: 60px;
     margin-right: 60px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .footer__arrow{
@@ -640,10 +640,10 @@ select.select-count__selector > option{
 
 /* бутылка  */
 .bootle {
-    width: 420px;
+    width: 370px;
     position: absolute;
-    top: -70px;
-    right: 0px;
+    top: 15%;
+    /*right: 0px;*/
 }
 
 .bootle-reviews{
@@ -784,9 +784,16 @@ img.small-img-slide-btn{
     position: relative;
     display: block;
     width: 150px;
-    height: 100px;
-    line-height: 145px;
+    /*height: 100px;*/
+    /*line-height: 145px;*/
     margin: 0 auto;
+}
+
+.composition-header h1{
+    margin: 0;
+    position: relative;
+    top: 40px;
+    font-size: 30px;
 }
 
 .composition-header-extra-small{
@@ -811,10 +818,16 @@ img.small-img-slide-btn{
     margin-top: 5px;
 }
 .composition-mid{
-    width: 145px;
+    width: 120px;
+    height: 100%;
 }
 .composition-sml{
-    width: 110px;
+    width: 90px;
+    height: 100%;
+}
+
+.composition__row_height{
+    height: 100%;
 }
 
 .composition-sm-md-wrap{
@@ -898,12 +911,12 @@ img.small-img-slide-btn{
 
 /*   зачем нужен     */
 .why-need-block{
-    margin-top: 25px;
+    margin-top: 15px;
 }
 .icon-why-need{
-    width: 65px;
-    height: 65px;
-    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0px;
 }
 
 .why-need-description{
@@ -1177,6 +1190,12 @@ img.small-img-slide-btn{
 }
 
 /************* MEDIA QUERY **************/
+/**/
+@media (min-width: 1200px){
+    .why-need-marg{
+        margin: 0 -60px;
+    }
+}
 /* MEDIUM DEVICE */
 @media (max-width: 1200px){
     /*.header{
@@ -1260,9 +1279,9 @@ img.small-img-slide-btn{
 
     .bootle {
       width: 321px;
-      right: auto;
-      left: -140px;
-      top: -45px;
+      /*right: auto;*/
+      left: -130px;
+      /*top: -45px;*/
     }
 
     .offsets-order{
@@ -1279,7 +1298,18 @@ img.small-img-slide-btn{
     .no-padding-sm-right{
         padding-right: 0;
     }
+    
+    .content-slide__description{
+        font-size: 16px;
+    }
 }
+
+@media (min-width: 768px){
+    .why-need-descr-merg{
+        margin: 0 -60px;
+    }
+}
+
 /* EXTRA-SMALL DEVICE */
 @media (max-width: 767px){
 
@@ -1422,14 +1452,20 @@ img.small-img-slide-btn{
     .your-order__header{
         font-size: 26px;
     }
+    
+    .icon-why-need{
+        width: 65px;
+        height: 65px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (min-width: 1920px){
     .bootle{
         width: 560px;
         position: absolute;
-        top: -260px;
-        right: 40px;
+        /*top: -210px;
+        right: 40px;*/
     }
 }
 
@@ -1460,6 +1496,18 @@ img.small-img-slide-btn{
   .modal-menu__phone {
     margin-top: 30px;
   }
+}
+
+@media screen and (min-height: 800px){
+    .bootle{
+        top: 23%;
+    }
+}
+
+@media screen and (min-height: 950px){
+    .bootle{
+        top: 15%;
+    }
 }
 
 /**** *****/

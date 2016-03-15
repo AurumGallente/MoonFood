@@ -8,8 +8,10 @@ $(function(){
         animateAnchor:false,
         scrollOverflow: false,
         autoScrolling:true,
-        responsive: 900,
+        //responsive: 992,
+        responsiveWidth: 992,
         fitSection: false,
+        
         onLeave: function( i, next ){
             if(i == 1){
                 $("#btn-arrow-down").fadeOut(300, function(){

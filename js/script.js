@@ -1,27 +1,42 @@
+var costBootle = 400;
+
+$.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null){
+       return null;
+    }
+    else{
+       return results[1] || 0;
+    }
+}
+
 $(function(){
     // fullpagescroll plugin
     $('#fullpage').fullpage({
         navigation: true,
         navigationPosition: 'right',
         continuousVertical:false,
-        resize: false,
+        resize: true,
         animateAnchor:false,
-        scrollOverflow: false,
+        //scrollOverflow: true,
         autoScrolling:true,
-        //responsive: 992,
         responsiveWidth: 992,
         fitSection: false,
         
         onLeave: function( i, next ){
             if(i == 1){
                 $("#btn-arrow-down").fadeOut(300, function(){
+                    $("#btn-arrow-up").fadeIn(300);
                     $("#fp-nav").append($(this));
                     $(this).fadeIn(300,function(){
-                        //$(this).addClass("visible-lg");
+                        if($("section.fp-section").size() == next){
+                            $("#btn-arrow-down").fadeOut(300);
+                        }
                     });
                 });
             }
-            if(next == 1){                
+            if(next == 1){
+                $("#btn-arrow-up").fadeOut(300);
                 $("#btn-arrow-down").fadeOut(300, function(){
                     $("#footer-nav").append($(this));
                     $(this).fadeIn(300,function(){
@@ -36,21 +51,10 @@ $(function(){
                 $("#btn-arrow-down").fadeIn(300);//, function(){ $(this).addClass("visible-lg"); });
             }
         },
-        /*
-        afterLoad: function(){
-            if($(".last-slide").hasClass("active")){
-                if($(window).width() >= 1200){
-                    $("#btn-arrow-down").stop(true,true).removeClass("visible-lg").fadeOut(100, function(){
-                        $("#btn-reviews").fadeIn(200);
-                    });
-                }else{
-                    $("#btn-reviews").fadeIn(200);
-                }
-            }else{
-
-            }
-        }*/
     });
+    // добавляем стрелку вверх к пагинации
+    var arrow = "<div id='btn-arrow-up' class='footer__arrow' style='position: absolute; top: -45px; display: none;'><img src='images/arrow_up.png'></div>";
+    $("#fp-nav").prepend(arrow);
 
     //formstyler
     $('.js-select').styler();
@@ -68,6 +72,10 @@ $(function(){
     // нажатие стрелки вниз
     $("#btn-arrow-down").on("click", function(){
         $.fn.fullpage.moveSectionDown();
+    });
+    // нажатие стрелки вверх
+    $("#btn-arrow-up").on("click", function(){
+        $.fn.fullpage.moveSectionUp();
     });
 
     //   обработчик перемены слайдов "МНЕНИЕ СПЕЦИАЛИСТА"
@@ -107,8 +115,8 @@ $(function(){
             nextSlide = curSlide + 1;
         }
 
-        $("#slider-reviews #prew-slide span").empty().append($("#slider-reviews .slider-on-page__slide").eq(prewSlide).find('span.name').html());
-        $("#slider-reviews #next-slide span").empty().append($("#slider-reviews .slider-on-page__slide").eq(nextSlide).find('span.name').html());
+        $("#slider-reviews #prew-slide span").empty().append($("#slider-reviews .slider-on-page__slide").eq(prewSlide).find('.name').html());
+        $("#slider-reviews #next-slide span").empty().append($("#slider-reviews .slider-on-page__slide").eq(nextSlide).find('.name').html());
     };
     // слайдер "мнение специалиста
     slidingSpecialist(0);
@@ -118,19 +126,27 @@ $(function(){
     $("#slider-reviews").sliderOnPage(slidingReviews);
     
     
-    /* появление описание при наведении */
-    $( '.uc-container' ).each( function( i ){
-        var $item = $(this);
+    /* настройка высоты uc-container */
+    var setHeightUcContainer = function(){
+        $( '.uc-container' ).each( function( i ){
+            var $item = $(this);
+            var height = $item.find('.composition-description').actual('height');
+            $item.find('div.overlay-composition').height(height/2);
+            $item.height(height/2);
 
-        var height = $item.find('.composition-description').actual('height');
-        $item.find('div.overlay-composition').height(height/2);
-        $item.height(height/2);
-
+        });
+    }
+    setHeightUcContainer();
+    
+    $(window).resize(function() {
+        clearTimeout(window.resizedFinished);
+        window.resizedFinished = setTimeout(function(){
+            setHeightUcContainer();            
+        }, 500);
     });
                                              
     // описание состава на большом
-    var pfold_list = new Array();
-    
+    /*var pfold_list = new Array();
     $( '.composition > .uc-container' ).each( function( i ) {
         
         var openedlg = false;  
@@ -177,11 +193,44 @@ $(function(){
 
         } );
 
-    } );
+    } );*/
+    
+    /* появление описание при наведении */
+    $('.composition > .composition-foto, .composition-sm-md .composit__img').each( function(){
+        var foto = $(this);
+        var descr = foto.parent().find('.composition-description');
+        var mouseEnter = false;
+        foto.mouseenter(function(){ 
+            mouseEnter = true; 
+            descr.fadeIn(300);
+        })
+        foto.mouseleave(function(){ 
+            mouseEnter = false; 
+            descr.fadeOut(300);
+        })
+        foto.mousemove(function(event){
+            if(mouseEnter == true){
+                if(descr){
+                    var offsetDescrX = 0;
+                    var offsetDescrY = 0;
+                    
+                    // определение выхода подсказки за правый край окна
+                    if( (event.pageX + descr.width() + 40) > $(document).width()){
+                        offsetDescrX = - 10 - descr.width();
+                    }
+                    // определение выхода подсказки за нижний край окна
+                    if( (event.pageY + descr.height() + 80) > $(document).height()){
+                        offsetDescrY = - 10 - descr.height();
+                    }
+                    descr.offset({ top: event.pageY+10+offsetDescrY, left: event.pageX+10+offsetDescrX});
+                }
+            }
+        });
+    });
 
     // описание состава на среднем и маленьком
     
-    var pfold_list2 = new Array();
+    /*var pfold_list2 = new Array();
     $( '.composition-sm-md .uc-container' ).each( function( i ) {
         
         var openedsmmd = false;
@@ -221,7 +270,7 @@ $(function(){
 
         } );
 
-    } );
+    } );*/
     
     // описание состава на extra-small
     var pfold_list3 = new Array();
@@ -270,5 +319,60 @@ $(function(){
 
     } );
     
+    // отображение цены
+    var showCostOrder = function(){
+        var count = $("#sel1 option:selected").val();
+        $("#order-value-cost").empty().html( count * costBootle);
+        $("#order-value-cost2").empty().html( count * costBootle);
+    }
+    showCostOrder();
+    
+    // выбор количества
+    $("#sel1").change(function(){
+        var $this = $(this);
+        
+        /*$('#sel2 option').removeAttr("selected");
+            
+        
+        $("#sel2").trigger('refresh');
+        
+        $("#sel2 [value="+$this.val()+"]").attr("selected", "selected");*/
+        
+        $("#sel2").val($this.val());
+        $("#sel2").trigger('refresh');
+        
+        showCostOrder();
+    })
+    
+    $("#sel2").change(function(){
+        var $this = $(this);
+        
+        /*$('#sel1 option').removeAttr("selected");
+        
+        $("#sel1").trigger('refresh');
+        
+        $("#sel1 [value="+$this.val()+"]").attr("selected", "selected");*/
+        
+        $("#sel1").val($this.val());
+        $("#sel1").trigger('refresh');
+        
+        showCostOrder();
+    })
+    
+    // клик по кнопке заказа
+    $("a.order-link").click(function(event){
+        event.preventDefault();
+        //console.log( $("#sel1").val() );
+        var url = $(this).attr("href") + "?select=" + $("#sel1 option:selected").val();
+        $(location).attr('href',url);
+    });
+    
+    // определения параметра в строке
+    var orderCount = $.urlParam('select');
+    if(orderCount != null){
+        $("#sel1").val(orderCount);
+        $("#sel1").trigger('refresh');
+        $("#sel1").change();
+    }
     
 });

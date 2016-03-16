@@ -111,6 +111,42 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="blog">
+                                <p class="content-slide__title">
+                                    Участие в международной выставке
+                                </p>
+                                <p class="content-slide__description">
+                                    "Было непросто вот так сразу взять, и заменить обычное питание на эти бутылочки полностью. Сначала я купила просто попробовать. На вкус это оказалась довольно приятная вещь. Что удивительно - чувство насыщения пришло, но никакой тяжести, как от плотных обедов, я не ощутила. Понемногу я пробовала заменять некоторые приёмы пищи на moon food, а затем и вовсе целую неделю смогла питаться только им. Конечно, полностью отказаться от обычной еды я пока не смогла - иногда не могу устоять перед чем-то вкусненьким, но эти бутылочки - просто нечто удивительное. Подсадила троих подруг на эту штуку."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="blog">
+                                <p class="content-slide__title">
+                                    Участие в международной выставке
+                                </p>
+                                <p class="content-slide__description">
+                                    "Было непросто вот так сразу взять, и заменить обычное питание на эти бутылочки полностью. Сначала я купила просто попробовать. На вкус это оказалась довольно приятная вещь. Что удивительно - чувство насыщения пришло, но никакой тяжести, как от плотных обедов, я не ощутила. Понемногу я пробовала заменять некоторые приёмы пищи на moon food, а затем и вовсе целую неделю смогла питаться только им. Конечно, полностью отказаться от обычной еды я пока не смогла - иногда не могу устоять перед чем-то вкусненьким, но эти бутылочки - просто нечто удивительное. Подсадила троих подруг на эту штуку."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="blog">
+                                <p class="content-slide__title">
+                                    Участие в международной выставке
+                                </p>
+                                <p class="content-slide__description">
+                                    "Было непросто вот так сразу взять, и заменить обычное питание на эти бутылочки полностью. Сначала я купила просто попробовать. На вкус это оказалась довольно приятная вещь. Что удивительно - чувство насыщения пришло, но никакой тяжести, как от плотных обедов, я не ощутила. Понемногу я пробовала заменять некоторые приёмы пищи на moon food, а затем и вовсе целую неделю смогла питаться только им. Конечно, полностью отказаться от обычной еды я пока не смогла - иногда не могу устоять перед чем-то вкусненьким, но эти бутылочки - просто нечто удивительное. Подсадила троих подруг на эту штуку."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -120,7 +156,7 @@
     <footer class="footer">
         <div class="container-fluid">
             <div id="footer-nav" class="row hide">
-                <div id="btn-arrow-down" class="footer__arrow visible-lg">
+                <div id="btn-arrow-down" class="footer__arrow">
                     <img src="images/arrow_down.png">
                 </div>
             </div>
@@ -138,18 +174,18 @@
                             <div class="form-group order__select-count select-up">
                                 <label class="select-count__label hide" for="sel1">Закажите сейчас</label>
                                 <select class="form-control select-count__selector js-select" id="sel1">
-                                    <option>1 Бутылка</option>
-                                    <option>2 Бутылки</option>
-                                    <option>3 Бутылки</option>
-                                    <option>4 Бутылки</option>
+                                    <option value="1">1 Бутылка</option>
+                                    <option value="2">2 Бутылки</option>
+                                    <option value="3">3 Бутылки</option>
+                                    <option value="4">4 Бутылки</option>
                                 </select>
                             </div>
-                            <span class="order__cost">
-                                = 1200 руб.
+                            <span id="order-cost" class="order__cost">
+                                = <span id="order-value-cost">1200</span> руб.
                             </span>
                         </div>
-                        <a href="order.html">
-                            <div class="btn order__order-btn visible-md visible-lg">
+                        <a class="order-link" href="order.html">
+                            <div id="order-btn" class="btn order__order-btn visible-md visible-lg">
                                 Заказать
                             </div>
                         </a>
@@ -171,17 +207,19 @@
                 <div class="container-fluid" style="margin-top: 60px;">
                     <div class="order in-modal center-block">
                         <div class="form-group order__select-count">
-                            <label class="select-count__label text-center" for="sel1">Закажите сейчас</label>
-                            <select class="form-control select-count__selector js-select" id="sel1">
-                                <option>1 бутылка</option>
-                                <option>2 бутылки</option>
-                                <option>3 бутылки</option>
-                                <option>4 бутылки</option>
+                            <label class="select-count__label text-center" for="sel2">Закажите сейчас</label>
+                            <select class="form-control select-count__selector js-select" id="sel2">
+                                <option value="1">1 бутылка</option>
+                                <option value="2">2 бутылки</option>
+                                <option value="3">3 бутылки</option>
+                                <option value="4">4 бутылки</option>
                             </select>
                         </div>
-                        <span class="order__cost text-center">
-                            = 1200 руб.
+                        
+                        <span id="order-cost2" class="order__cost">
+                            = <span id="order-value-cost2">1200</span> руб.
                         </span>
+                        
                         <a href="order.html">
                             <div class="btn order__order-btn">
                                 Заказать

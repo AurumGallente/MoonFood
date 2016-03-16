@@ -904,7 +904,7 @@ img.small-img-slide-btn{
     width: 300px;
 }
 .composition-xs .composition-description{
-    width: 230px;
+    width: 250px;
 }
 
 .composition-description .composition-description__content{
@@ -918,6 +918,10 @@ img.small-img-slide-btn{
     font-size: 13px;
     margin: 5px 0px;
     font-weight: bold;
+}
+
+.composition-description__content p{
+    font-size: 13px;
 }
 
 .composition-description .composition-description__close{

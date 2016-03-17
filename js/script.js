@@ -60,7 +60,12 @@ $(function(){
                 height: '350px',
             });*/
             
+            // нано скроллер
             $(".nano").nanoScroller();
+            $(".nano").height($(window).height() * 0.6);
+            $(window).resize(function(){
+                $(".nano").height($(window).height() * 0.6);
+            });
         },
     });
     // добавляем стрелку вверх к пагинации

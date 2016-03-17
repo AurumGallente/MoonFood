@@ -24,7 +24,7 @@ $(function(){
         fitSection: false,
         anchors:['main', 'firstPage', 'secondPage', 'thirdPage', 'foursPage'],
         
-        normalScrollElements: '#composition-section',
+        //normalScrollElements: '#composition-section',
         
         onLeave: function( i, next ){
             if(i == 1){

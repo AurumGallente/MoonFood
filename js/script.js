@@ -395,7 +395,50 @@ $(function(){
     var number = storage.getItem('number');
     if(number){
         $("#sel1").val(number);
-        $("#sel1").trigger('refresh');       
+        $("#sel1").trigger('refresh');
+        showCostOrder();
     }
+    
+    // клик по подробнее
+    $(".anonce__btn-more-info").each(function(i){
+        var $this = $(this);
+        var parent = $this.parent();
+        var begintHeight = parent.find('.anonce__description-overflow').height();
+        var toHeight = parent.find('.anonce__description').height();
+        var opened = false;
+        
+        $(window).resize(function(){
+            if(opened){
+                toHeight = parent.find('.anonce__description').height();
+                parent.find('.anonce__description-overflow').animate({
+                    height: toHeight,
+                });
+            }else{
+                if(begintHeight < toHeight){
+                    $this.show();
+                }
+            }
+        });
+        
+        $this.click(function(){
+            if(!opened){
+                parent.find('.anonce__description-overflow').animate({
+                    height: toHeight,
+                });
+                opened = true;
+                $this.html("Скрыть")
+            }else{
+                parent.find('.anonce__description-overflow').animate({
+                    height: beginHeight,
+                });
+                opened = false;
+                $this.html("Подробнее")
+            }
+        });
+        
+        if(begintHeight > toHeight){
+            $this.hide();
+        }
+    });
 
 });

@@ -658,9 +658,10 @@ select.select-count__selector > option{
 }
 
 .anonce__description-overflow{
-    /*position: relative;
+    position: relative;
     overflow: hidden;
-    height: 60px;*/
+    height: 60px;
+    margin-bottom: 10px;
 }
 
 .anonce__btn-more-info:hover{
@@ -1379,9 +1380,9 @@ img.small-img-slide-btn{
 }
 
 
-.nano { background: transparent; width: auto; height: 350px; overflow: inherit; }
+.nano { background: transparent; width: auto; min-height: 350px; overflow: inherit; }
 .nano > .nano-content { padding: 0px; }
-.nano > .nano-pane   { background: transparent; width: 8px; right: -8px; }
+.nano > .nano-pane   { background: transparent; width: 8px; right: -13px; }
 .nano > .nano-pane > .nano-slider { background: #915b71; }
 .nano > .nano-content:focus{ outline: none; }
 
@@ -1612,6 +1613,11 @@ img.small-img-slide-btn{
     .your-order__cost-info{
         position: initial;
         padding: 0;
+    }
+    
+    .anonce__title{
+        font-size: 23px;
+        line-height: 20px;
     }
 }
 

@@ -615,11 +615,25 @@ select.select-count__selector > option{
 }
 
 .anonce__title{
-    
+    font-size: 32px;
+    font-weight: 500;
 }
 
 .anonce__description{
-    
+    font-size: 14px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.anonce__btn-more-info{
+    width: 150px;
+    padding: 5px 0px;
+    text-align: center;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: auto;
 }
 
 /*  faq  */

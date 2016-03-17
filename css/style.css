@@ -1123,6 +1123,13 @@ img.small-img-slide-btn{
 .order__input:focus:-moz-placeholder              { color: transparent; }
 .order__input:focus:-ms-input-placeholder         { color: transparent; }
 
+/* неправильный ввод данных */
+.order__input_wrong{ border-color: #FF7575; }
+.order__input_wrong::-webkit-input-placeholder    { color: #FF7575; }
+.order__input_wrong::-moz-placeholder             { color: #FF7575; }
+.order__input_wrong:-moz-placeholder              { color: #FF7575; }
+.order__input_wrong:-ms-input-placeholder         { color: #FF7575; }
+
 .your-order{
     border: 1px solid #fff;
     padding: 20px 25px;

@@ -56,12 +56,11 @@ $(function(){
         },
         
         afterRender: function(){
-            $('#blog-list').slimScroll({
+            /*$('#blog-list').slimScroll({
                 height: '350px',
-                start: $("#blog-section"),
-            });
+            });*/
             
-            
+            $(".nano").nanoScroller();
         },
     });
     // добавляем стрелку вверх к пагинации

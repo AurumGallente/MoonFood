@@ -634,6 +634,11 @@ select.select-count__selector > option{
     font-size: 16px;
     font-weight: 500;
     margin-left: auto;
+    cursor: pointer;
+}
+
+.anonce__btn-more-info:hover{
+    background: rgba(255, 255, 255, 0.25);
 }
 
 /*  faq  */
@@ -1346,6 +1351,13 @@ img.small-img-slide-btn{
 .jq-selectbox.js-select-country.maxheight .jq-selectbox__dropdown ul{
     max-height: 190px;
 }
+
+
+.nano { background: transparent; width: auto; height: 350px; overflow: inherit; }
+.nano > .nano-content { padding: 0px; }
+.nano > .nano-pane   { background: transparent; width: 8px; right: -8px; }
+.nano > .nano-pane > .nano-slider { background: #915b71; }
+.nano > .nano-content:focus{ outline: none; }
 
 /************* MEDIA QUERY **************/
 /**/

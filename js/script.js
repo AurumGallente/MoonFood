@@ -53,7 +53,7 @@ $(function(){
         },
     });
     // добавляем стрелку вверх к пагинации
-    var arrow = "<div id='btn-arrow-up' class='footer__arrow' style='position: absolute; top: -45px; display: none;'><img src='images/arrow_up.png'></div>";
+    var arrow = "<div id='btn-arrow-up' class='footer__arrow footer__arrow_anim_up-down' style='position: absolute; top: -45px; display: none;'><img src='images/arrow_up.png'></div>";
     $("#fp-nav").prepend(arrow);
 
     //formstyler

@@ -375,16 +375,28 @@ $(function(){
     $("a.order-link").click(function(event){
         event.preventDefault();
         //console.log( $("#sel1").val() );
-        var url = $(this).attr("href") + "?select=" + $("#sel1 option:selected").val();
+        var number = $("#sel1 option:selected").val();
+        var url = $(this).attr("href") + "&select=" + number;
         $(location).attr('href',url);
     });
     
     // определения параметра в строке
-    var orderCount = $.urlParam('select');
-    if(orderCount != null){
+    var orderCount = $.urlParam('select');    
+    if(!!orderCount){
         $("#sel1").val(orderCount);
         $("#sel1").trigger('refresh');
         $("#sel1").change();
     }
-    
+    $('#sel1').on('change', function () {
+        storage = sessionStorage;
+        var number = $('#sel1').val();
+        storage.setItem('number',number);
+    });
+    var storage = sessionStorage;
+    var number = storage.getItem('number');
+    if(number){
+        $("#sel1").val(number);
+        $("#sel1").trigger('refresh');       
+    }
+
 });

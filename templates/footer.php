@@ -120,6 +120,9 @@
     <!-- plugin pfold -->
     <script src="js/modernizr.custom.79639.js"></script>
     <script src="js/jquery.pfold.js"></script>
+    <!-- nano scroll -->
+    <script src="js/overthrow.min.js"></script>
+    <script src="js/jquery.nanoscroller.js"></script>
     
     <!-- MoonFood script -->
     <script src="js/script.js"></script>

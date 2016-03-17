@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Moon Food - заказ</title>
+    <title>Moon Food</title>
 
     <!-- Normalize -->
     <link href="css/normalize.css" rel="stylesheet">
@@ -38,7 +38,7 @@
                 </a>
                 <nav class="header__navigation hidden-xs">
                     <ul class="navigation__navigation-list">
-                        <a href="faq.html"><li class="navigation-list__button"> вопросы и ответы </li></a>
+                        <a href="faq.html"><li class="navigation-list__button active"> вопросы и ответы </li></a>
                         <a href="reviews.html"><li class="navigation-list__button">  отзывы </li></a>
                         <a href="blog.html"><li class="navigation-list__button"> блог </li></a>
                     </ul>
@@ -89,78 +89,19 @@
 
     <div id="fullpage">
 
-        <section id="order-section" class="slide-bg section" style="background: url('images/template4.jpg') no-repeat;">
-            <div class="content-slide offsets-order">
+        <section class="slide-bg section" style="background: url('images/template4.jpg') no-repeat;">
+            <div class="content-slide onpage-padding">
                 <div class="container-fluid">
                     <div class="row">
-                        <h1 class="content-slide__header-slide">
-                            Заказать обед Moon Food
-                        </h1>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 no-padding-left no-padding-sm-right">
-                            <form action="" class=" order__form-contact">
-                                <h2 class="your-order__header">Заполните контактные данные</h2>
-                                <input name="fio" class="order__input" type="input" placeholder="ФИО *"/>
-                                <!--input name="country" class="order__input" type="input" placeholder="страна"/-->
-                                <!--select name="country" class="js-select-country maxheight" data-placeholder="Cтрана"-->
-                                    <!-- list country -->
-                                    <!--<option></option>
-                                    <option>Страна 1</option>
-                                    <option>Страна 2</option>
-                                    <option>Страна 3</option>
-                                    <option>Страна 4</option>
-                                    <option>Страна 5</option>
-                                </select-->
-                                <!--input name="city" class="order__input" type="input" placeholder="город"/-->
-                                <input name="adress" class="order__input" type="input" placeholder="адрес"/>
-                                <!--input name="index" class="order__input" type="input" placeholder="индекс"/-->
-                                <input name="phone" class="order__input" type="input" placeholder="телефон"/>
-                                <input name="email" class="order__input" type="input" placeholder="email" style="margin: 0;"/>
-                            </form>
-                        </div>
-                        <div class="col-md-6 no-padding-right no-padding-sm-left">
-                            <div class="your-order">
-                                <h2 class="your-order__header">Ваш заказ</h2>
-                                <div class="your-order__detail">
-                                    <img class="your-order__img hidden-xs" src="images/order_img.png" alt="">
-                                    <div class="your-order__info">
-                                        <div class="your-order__descr">
-                                            Moon Food &mdash; полноценный обед из трех блюд в одной бутылке.
-                                        </div>
-                                        <div class="your-order__cost-info">
-                                            <div class="your-order__cost">Стоимость</div>
-                                            <div class="your-order__value text-right"><span id="order-value-cost">1200</span> руб</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="your-order__select-count">
-                                    <div class="form-group order__select-count select-down visible-lg">
-                                        <select class="form-control select-count__selector js-select" id="sel1">
-                                            <option value="1">1 Бутылка</option>
-                                            <option value="2">2 Бутылки</option>
-                                            <option value="3">3 Бутылки</option>
-                                            <option value="4">4 Бутылки</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group order__select-count select-up hidden-lg">
-                                        <select class="form-control select-count__selector js-select" id="sel2">
-                                            <option value="1">1 Бутылка</option>
-                                            <option value="2">2 Бутылки</option>
-                                            <option value="3">3 Бутылки</option>
-                                            <option value="4">4 Бутылки</option>
-                                        </select>
-                                    </div>
-                                    
-                                </div>
-                                <div class="your-order__btn-accept">
-                                    <div class="btn order__order-btn" data-toggle="modal" data-target="#order-accept">
-                                        Заказать
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-xs-12">
+                            <h1 class="content-slide__header-slide">
+                                Вопросы и ответы
+                            </h1>
                         </div>
                     </div>
+                    
+                    
+                    
                 </div>
             </div>
         </section>
@@ -175,37 +116,39 @@
                 </div>
             </div>
             <div class="row">
-                <div class="hidden-xs col-sm-3 col-md-2 no-padding">
+                <div class="hidden-xs col-sm-3 col-md-2">
                     <div class="social-panel">
                         <span class="icon-instagram social-panel__social-btn"></span>
                         <span class="icon-facebook social-panel__social-btn"></span>
                         <span class="icon-vk social-panel__social-btn"></span>
                     </div>
                 </div>
-                <!--<div class="col-xs-12 col-sm-6 offset-sm-3 col-md-8">
+                <div class="col-xs-12 col-sm-6 offset-sm-3 col-md-8">
                     <div class="order center-block">
                         <div class="visible-md visible-lg">
                             <div class="form-group order__select-count select-up">
                                 <label class="select-count__label hide" for="sel1">Закажите сейчас</label>
                                 <select class="form-control select-count__selector js-select" id="sel1">
-                                    <option>1 Бутылка</option>
-                                    <option>2 Бутылки</option>
-                                    <option>3 Бутылки</option>
-                                    <option>4 Бутылки</option>
+                                    <option value="1">1 Бутылка</option>
+                                    <option value="2">2 Бутылки</option>
+                                    <option value="3">3 Бутылки</option>
+                                    <option value="4">4 Бутылки</option>
                                 </select>
                             </div>
-                            <span class="order__cost">
-                                = 1200 руб.
+                            <span id="order-cost" class="order__cost">
+                                = <span id="order-value-cost">1200</span> руб.
                             </span>
                         </div>
-                        <div class="btn order__order-btn visible-md visible-lg">
-                            Заказать
-                        </div>
+                        <a class="order-link" href="order.html">
+                            <div id="order-btn" class="btn order__order-btn visible-md visible-lg">
+                                Заказать
+                            </div>
+                        </a>
                         <div class="btn order__order-btn hidden-md hidden-lg" data-toggle="modal" data-target=".bs-order">
                             Заказать
                         </div>
                     </div>
-                </div>-->
+                </div>
             </div>
         </div>
     </footer>
@@ -219,41 +162,28 @@
                 <div class="container-fluid" style="margin-top: 60px;">
                     <div class="order in-modal center-block">
                         <div class="form-group order__select-count">
-                            <label class="select-count__label text-center" for="sel1">Закажите сейчас</label>
-                            <select class="form-control select-count__selector js-select" id="sel1">
-                                <option>1 бутылка</option>
-                                <option>2 бутылки</option>
-                                <option>3 бутылки</option>
-                                <option>4 бутылки</option>
+                            <label class="select-count__label text-center" for="sel2">Закажите сейчас</label>
+                            <select class="form-control select-count__selector js-select" id="sel2">
+                                <option value="1">1 бутылка</option>
+                                <option value="2">2 бутылки</option>
+                                <option value="3">3 бутылки</option>
+                                <option value="4">4 бутылки</option>
                             </select>
                         </div>
-                        <span class="order__cost text-center">
-                            = 1200 руб.
+                        
+                        <span id="order-cost2" class="order__cost">
+                            = <span id="order-value-cost2">1200</span> руб.
                         </span>
-                        <div class="btn order__order-btn">
-                            Заказать
-                        </div>
+                        
+                        <a href="order.html">
+                            <div class="btn order__order-btn">
+                                Заказать
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div id="order-accept" class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Принятие заказа</h4>
-          </div>
-          <div class="modal-body">
-            <h3>Ваш заказ принят.</h3>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-          </div>
-        </div>
-      </div>
     </div>
 
 

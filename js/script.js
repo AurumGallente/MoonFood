@@ -403,18 +403,20 @@ $(function(){
     $(".anonce__btn-more-info").each(function(i){
         var $this = $(this);
         var parent = $this.parent();
-        var begintHeight = parent.find('.anonce__description-overflow').height();
+        var beginHeight = parent.find('.anonce__description-overflow').height();
         var toHeight = parent.find('.anonce__description').height();
         var opened = false;
         
         $(window).resize(function(){
+            toHeight = parent.find('.anonce__description').height();
             if(opened){
-                toHeight = parent.find('.anonce__description').height();
                 parent.find('.anonce__description-overflow').animate({
                     height: toHeight,
                 });
             }else{
-                if(begintHeight < toHeight){
+                if(beginHeight >= toHeight){
+                    $this.hide();
+                }else{
                     $this.show();
                 }
             }
@@ -430,13 +432,17 @@ $(function(){
             }else{
                 parent.find('.anonce__description-overflow').animate({
                     height: beginHeight,
+                },"normal", function(){
+                    //$(".nano").nanoScroller({ scrollTo: $this });
+                    //$(".nano-content").animate({ 'scrollTop':  $this.offset().top }, 500);
                 });
+                
                 opened = false;
                 $this.html("Подробнее")
             }
         });
         
-        if(begintHeight > toHeight){
+        if(beginHeight >= toHeight){
             $this.hide();
         }
     });

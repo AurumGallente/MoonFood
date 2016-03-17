@@ -186,6 +186,7 @@ a .navigation-list__button{
     background: #F48D08;
     color: #fff;
     border-radius: 50%;
+    font-size: 14px;
 }
 
 .header__cart .glyphicon.glyphicon-shopping-cart:hover{

@@ -608,10 +608,10 @@ select.select-count__selector > option{
 }
 
 /*  blog   */
-.blog{
+.anonce{
     /*max-width: 750px;
     margin-left: 60px;*/
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 /*  fullpage nav   */
@@ -1126,7 +1126,11 @@ img.small-img-slide-btn{
 .profession{
     text-transform: lowercase;
 }
-
+/* Блог */
+.padding-blog{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 /*      страница заказа          */
 .order__input{

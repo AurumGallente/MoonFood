@@ -16,12 +16,15 @@ $(function(){
         navigation: true,
         navigationPosition: 'right',
         continuousVertical:false,
-        resize: true,
+        resize: false,
         animateAnchor:false,
-        //scrollOverflow: true,
-        autoScrolling:true,
+        scrollOverflow: false,
+        autoScrolling: true,
         responsiveWidth: 992,
         fitSection: false,
+        anchors:['main', 'firstPage', 'secondPage', 'thirdPage', 'foursPage'],
+        
+        normalScrollElements: '#composition-section',
         
         onLeave: function( i, next ){
             if(i == 1){
@@ -50,6 +53,15 @@ $(function(){
             if($("section.fp-section").size() == i){
                 $("#btn-arrow-down").fadeIn(300);//, function(){ $(this).addClass("visible-lg"); });
             }
+        },
+        
+        afterRender: function(){
+            $('#blog-list').slimScroll({
+                height: '350px',
+                start: $("#blog-section"),
+            });
+            
+            
         },
     });
     // добавляем стрелку вверх к пагинации

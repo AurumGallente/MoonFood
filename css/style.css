@@ -622,6 +622,17 @@ select.select-count__selector > option{
     
 }
 
+/*  faq  */
+.faq__question{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.faq__answer{
+    font-size: 12px;
+    font-weight: 500;
+}
+
 /*  fullpage nav   */
 #fp-nav{
     /*top: 160px;*/

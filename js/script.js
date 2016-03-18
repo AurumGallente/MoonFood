@@ -75,12 +75,15 @@ $(function(){
             $('section.section .anim').addClass('animated fadeOut');
             
             // нано скроллер
+            $(".nano").height($(window).height() * 0.6);
             $(".nano").nanoScroller({
                 alwaysVisible: true
             });
-            $(".nano").height($(window).height() * 0.6);
             $(window).resize(function(){
                 $(".nano").height($(window).height() * 0.6);
+                $(".nano").nanoScroller({
+                    alwaysVisible: true
+                });
             });
         },
     });

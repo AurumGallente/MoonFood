@@ -39,7 +39,7 @@
     <header class="header">
         <div class="container-fluid">
             <div class="row">
-                <a href="/">
+                <a href="?">
                     <img class="header__logo" src="images/logo.svg"/>
                 </a>
                 <nav class="header__navigation hidden-xs">

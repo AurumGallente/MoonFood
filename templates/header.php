@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <meta content="telephone=no" name="format-detection">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name=”viewport” content="user-scalable=no" />
     <title>Moon Food</title>
@@ -44,9 +46,9 @@
                 </a>
                 <nav class="header__navigation hidden-xs">
                     <ul class="navigation__navigation-list">
-                        <a href="?action=faq"><li class="navigation-list__button"> вопросы и ответы </li></a>
-                        <a href="?action=reviews"><li class="navigation-list__button">  отзывы </li></a>
-                        <a href="?action=blog"><li class="navigation-list__button"> блог </li></a>
+                        <a href="?action=faq"><li class="navigation-list__button <?php echo ($action=='faq')?'active':''; ?>"> вопросы и ответы </li></a>
+                        <a href="?action=reviews"><li class="navigation-list__button <?php echo ($action=='reviews')?'active':''; ?>">  отзывы </li></a>
+                        <a href="?action=blog"><li class="navigation-list__button <?php echo ($action=='blog')?'active':''; ?>"> блог </li></a>
                     </ul>
                 </nav>
 

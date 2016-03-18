@@ -50,7 +50,7 @@
                                     <div class="recall__name">
                                         <h2><span class="name">Ольга</span>, 32 лет</h2>
                                     </div>
-                                    <div class="opinion__description">
+                                    <div class="recall__description">
                                         <div class="description__concret-recall">
                                             <p>
                                                 "Я как любая мать, очень обеспокоена питанием своих детей в школе. Но после советов терапевта стала давать детям Mood Food, он обладает всеми необходимыми веществами для полноценного питания на весь день, детям он очень нравится."
@@ -62,7 +62,7 @@
                                     <div class="recall__name">
                                         <h2><span class="name">Марина</span>, 28 лет</h2>
                                     </div>
-                                    <div class="opinion__description">
+                                    <div class="recall__description">
                                         <div class="description__concret-recall">
                                             <p>
                                                 "Все знают, что во время занятия спортом безумно просыпается голод и я нашла выход, прям во время тренировки стала употреблять Mood Food, он очень питательный и легкий, благодаря ему я всегда сыта и свободно могу продолжать тренировку."
@@ -74,7 +74,7 @@
                                     <div class="recall__name">
                                         <h2><span class="name">Валентина</span>, 40 лет</h2>
                                     </div>
-                                    <div class="opinion__description">
+                                    <div class="recall__description">
                                         <div class="description__concret-recall">
                                             <p>
                                                 "С годами начала чувствовать тяжесть в желудке и частую изжогу. Но благодаря легкости и питательности Mood Food, вовсе забыла об этих проблемах. Для меня этот продукт, теперь незаменимая вещь в повседневном рационе."

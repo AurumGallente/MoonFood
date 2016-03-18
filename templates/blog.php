@@ -31,7 +31,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <hr class="style-hr" />
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="anonce">
@@ -49,7 +49,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <hr class="style-hr" />
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="anonce">
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <hr class="style-hr" />
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="anonce">
@@ -85,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <hr class="style-hr" />
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="anonce">
@@ -103,7 +103,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <hr class="style-hr" />
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="anonce">
@@ -121,6 +121,8 @@
                             </div>
                         </div>
                     </div>
+                    <hr class="style-hr" />
+                    
                     </div><!-- nano-content -->
                     </div><!-- nano -->
                 </div>

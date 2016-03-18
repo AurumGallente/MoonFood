@@ -72,6 +72,8 @@ $(function(){
                 height: '350px',
             });*/
             
+            $('section.section').show();
+            
             $('section.section .anim').addClass('animated fadeOut');
             
             // нано скроллер

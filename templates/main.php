@@ -17,7 +17,7 @@
                                     <p class="content-slide__title title-slide">
                                         самое здоровое питание<br/> было бы еще и самым<br/>  простым?
                                     </p>
-                                    <!--<p class="content-slide__title title-slide">
+                                    <p class="content-slide__title title-slide">
                                         вы могли похудеть, не изнуряя себя<br/> мучительными диетами?
                                     </p>
                                     <p class="content-slide__title title-slide">
@@ -25,7 +25,7 @@
                                     </p>
                                     <p class="content-slide__title title-slide">
                                         у вас всегда было время<br/> на здоровую еду?
-                                    </p>-->
+                                    </p>
                                 </div>
                             </div>
                     </div>
@@ -33,7 +33,7 @@
             </div>
         </section>
         <!-- MOONFOOD -->
-        <section class="slide-bg section section1">
+        <section class="slide-bg section section1" style="display: none;">
             <div class="content-slide">
                 <img data-src="images/bootle.png" class="bootle  visible-md visible-lg">
                 <img data-src="images/bootle-sm.png" class="bootle visible-xs visible-sm">
@@ -64,7 +64,7 @@
             </div>
         </section>
         <!-- состав -->
-        <section id="composition-section" class="slide-bg padding-xs-section section section2">
+        <section id="composition-section" class="slide-bg padding-xs-section section section2" style="display: none;">
             <div class="content-slide">
 
 <!-- состав на extra small -->
@@ -935,7 +935,7 @@
             </div>
         </section>
          <!-- Зачем нужен -->
-        <section class="slide-bg padding-xs-section section section3">
+        <section class="slide-bg padding-xs-section section section3" style="display: none;">
             <div class="content-slide">
                 <div class="container-fluid anim">
                     <div class="row text-center">
@@ -1033,7 +1033,7 @@
         </section>
 
         <!-- Мнение специалиста -->
-        <section class="slide-bg padding-xs-section last-slide section section4">
+        <section class="slide-bg padding-xs-section last-slide section section4" style="display: none;">
             <div class="content-slide onpage-padding">
                 <div class="container-fluid anim">
                     <div class="row">
@@ -1163,7 +1163,7 @@
                         </div>
                     </div>
                     <div id="btn-reviews" class="col-xs-12 text-center btn-reviews-panel">
-                        <a href="reviews.html" class="btn-reviews"><span class="">Отзывы</span></a>
+                        <a href="?action=reviews" class="btn-reviews"><span class="">Отзывы</span></a>
                     </div>
                 </div>
             </div>

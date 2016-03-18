@@ -683,7 +683,7 @@ select.select-count__selector > option{
     margin: 10px 0;
 }
 .faq__answer{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -1393,6 +1393,22 @@ img.small-img-slide-btn{
     max-height: 190px;
 }
 
+hr.style-hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+        to right, 
+        rgba(0, 0, 0, 0),
+        rgb(255, 255, 255),
+        rgb(255, 255, 255),
+        rgb(255, 255, 255),
+        rgb(255, 255, 255),
+        rgb(255, 255, 255),
+        rgb(255, 255, 255),
+        rgb(255, 255, 255),
+        rgba(0, 0, 0, 0)
+    );
+}
 
 .nano { background: transparent; width: auto; min-height: 340px; /*max-height: 500px;*/ overflow: inherit; }
 .nano > .nano-content { padding: 0px; }

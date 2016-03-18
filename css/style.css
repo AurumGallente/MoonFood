@@ -1394,7 +1394,7 @@ img.small-img-slide-btn{
 }
 
 
-.nano { background: transparent; width: auto; min-height: 350px; /*max-height: 500px;*/ overflow: inherit; }
+.nano { background: transparent; width: auto; min-height: 340px; /*max-height: 500px;*/ overflow: inherit; }
 .nano > .nano-content { padding: 0px; }
 .nano > .nano-pane   { background: transparent; width: 8px; right: -17px; }
 .nano > .nano-pane > .nano-slider { background: #915b71; }

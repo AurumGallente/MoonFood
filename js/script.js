@@ -77,12 +77,14 @@ $(function(){
             // нано скроллер
             $(".nano").height($(window).height() * 0.6);
             $(".nano").nanoScroller({
-                alwaysVisible: true
+                alwaysVisible: true,
+                iOSNativeScrolling: true
             });
             $(window).resize(function(){
                 $(".nano").height($(window).height() * 0.6);
                 $(".nano").nanoScroller({
-                    alwaysVisible: true
+                    alwaysVisible: true,
+                    iOSNativeScrolling: true
                 });
             });
         },

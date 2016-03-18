@@ -3,11 +3,11 @@
             <div class="content-slide">
                 <div id="bg-title">
                     <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg1.jpg') no-repeat;"></div>
-                    <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg2.jpg') no-repeat;"></div>
+                    <!--<div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg2.jpg') no-repeat;"></div>
                     <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg3.jpg') no-repeat;"></div>
-                    <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg4.jpg') no-repeat;"></div>
+                    <div class="slide-bg bg-title__slide" style="background: url('images/first-main-slide-bg4.jpg') no-repeat;"></div>-->
                 </div>
-                <div class="container-fluid">
+                <div class="container-fluid animated fadeInUp">
                     <div class="row">
                             <div class="col-xs-12 text-right">
                                 <h1 class="content-slide__header-slide ">
@@ -17,7 +17,7 @@
                                     <p class="content-slide__title title-slide">
                                         самое здоровое питание<br/> было бы еще и самым<br/>  простым?
                                     </p>
-                                    <p class="content-slide__title title-slide">
+                                    <!--<p class="content-slide__title title-slide">
                                         вы могли похудеть, не изнуряя себя<br/> мучительными диетами?
                                     </p>
                                     <p class="content-slide__title title-slide">
@@ -25,7 +25,7 @@
                                     </p>
                                     <p class="content-slide__title title-slide">
                                         у вас всегда было время<br/> на здоровую еду?
-                                    </p>
+                                    </p>-->
                                 </div>
                             </div>
                     </div>

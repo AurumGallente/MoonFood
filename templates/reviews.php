@@ -20,6 +20,7 @@
                     </div>
                     <div class="row">
                         <div id="slider-reviews" class="slider-wrap col-xs-12" style="margin-bottom: 30px;">
+
                             <div class="slider-on-page col-xs-12 col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-1">
                                 <div class="slider-on-page__slide recall">
                                     <div class="recall__name">
@@ -82,14 +83,15 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-5 col-lg-5 visible-lg">
                                 <img src="images/bootle.png" class="bootle-reviews">
                             </div>
-                            <div id="prew-slide" class="slide-btn prew-slide-btn text-center visible-md visible-lg">
+                            <div id="prew-slide" class="slide-btn prew-slide-btn text-center visible-md visible-lg animated fadeInUp">
                                 <img src="images/left_slide_btn.png" class="img-circle">
                                 <span></span>
                             </div>
-                            <div id="next-slide" class="slide-btn next-slide-btn text-center visible-md visible-lg">
+                            <div id="next-slide" class="slide-btn next-slide-btn text-center visible-md visible-lg animated fadeInUp">
                                 <img src="images/right_slide_btn.png" class="img-circle">
                                 <span></span>
                             </div>

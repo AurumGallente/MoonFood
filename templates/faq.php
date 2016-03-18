@@ -2,10 +2,9 @@
 
         <section class="slide-bg section padding-xs-section" style="background: url('images/template5.jpg') no-repeat;">
             <div class="content-slide no-padding">
-                <div class="container-fluid">
-                   
-                    <img src="images/bootle.png" alt="" class="hidden-xs" style="position: absolute; right: 0; width: 320px;">
-                    
+                <img src="images/bootle.png" alt="" class="hidden-xs" style="position: absolute; right: 0; width: 320px;">
+                
+                <div class="container-fluid animated fadeInUp">
                     <div class="row">
                         <div class="col-xs-12">
                             <h1 class="content-slide__header-slide">

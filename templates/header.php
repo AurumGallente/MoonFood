@@ -53,7 +53,7 @@
                 <div class="header__mobile-menu mobile-menu hidden-sm hidden-md hidden-lg" data-toggle="modal" data-target=".bs-example-modal-lg">
                     <span class="btn-icon-menu btn-menu-toggle" aria-hidden="true"></span>
                 </div>
-                <a href="order.html">
+                <a class="order-link" href="?action=order">
                     <div class="header__cart">
                         <span class="btn-icon-menu glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                     </div>

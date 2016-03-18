@@ -72,7 +72,7 @@
                             = <span id="order-value-cost2">1200</span> руб.
                         </span>
                         
-                        <a href="order.html">
+                        <a class="order-link" href="?action=order">
                             <div class="btn order__order-btn">
                                 Заказать
                             </div>
@@ -199,7 +199,7 @@
     <!-- actual size -->
     <script src="js/jquery.liActualSize.js"></script>
     <!-- slider first main slide -->
-    <script src="js/slider_title.js"></script>
+    <!--<script src="js/slider_title.js"></script>-->
     <!-- slider on page -->
     <script src="js/slider_on_page.js"></script>
     <!-- plugin pfold -->

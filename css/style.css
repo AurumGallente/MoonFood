@@ -814,7 +814,7 @@ select.select-count__selector > option{
 .btn-reviews-panel{
     position: relative;
     left: 0;
-    bottom: 20%;
+    bottom: -50px;
 }
 .btn-reviews{
     display: block;
@@ -1439,7 +1439,7 @@ img.small-img-slide-btn{
     }
 
     .btn-reviews-panel{
-        bottom: 13%;
+        bottom: 20px;
     }
 
     .offsets-order{

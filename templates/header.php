@@ -77,9 +77,9 @@
               </div>
               <hr class="hr">
               <div class="modal-nav">
-                  <div class="row"><a href="#"><div class="navigation-list__button"> вопросы и ответы </div></a></div>
-                  <div class="row"><a href="reviews.html"><div class="navigation-list__button">  отзывы </div></a></div>
-                  <div class="row"><a href="blog.html"><div class="navigation-list__button"> блог </div></a></div>
+                  <div class="row"><a href="?action=faq"><div class="navigation-list__button"> вопросы и ответы </div></a></div>
+                  <div class="row"><a href="?action=reviews"><div class="navigation-list__button">  отзывы </div></a></div>
+                  <div class="row"><a href="?action=blog"><div class="navigation-list__button"> блог </div></a></div>
               </div>
               <div class="row fixed-social">
                   <div class="social-panel social-panel_modal center-block text-center">

@@ -11,7 +11,7 @@
                         <div class="col-md-6 no-padding-left no-padding-sm-right">
                             <form action="" class=" order__form-contact">
                                 <h2 class="your-order__header">Заполните контактные данные</h2>
-                                <input name="fio" class="order__input" type="input" placeholder="ФИО *"/>
+                                <input name="fio" data-validation="length" data-validation-length="min5" class="order__input" type="input" placeholder="ФИО *"/>
                                 <!--input name="country" class="order__input" type="input" placeholder="страна"/-->
                                 <!--select name="country" class="js-select-country maxheight" data-placeholder="Cтрана"-->
                                     <!-- list country -->
@@ -23,10 +23,10 @@
                                     <option>Страна 5</option>
                                 </select-->
                                 <!--input name="city" class="order__input" type="input" placeholder="город"/-->
-                                <input name="adress" class="order__input" type="input" placeholder="адрес"/>
+                                <input name="adress" class="order__input" type="input" placeholder="адрес *"/>
                                 <!--input name="index" class="order__input" type="input" placeholder="индекс"/-->
-                                <input name="phone" class="order__input" type="input" placeholder="телефон"/>
-                                <input name="email" class="order__input" type="input" placeholder="email" style="margin: 0;"/>
+                                <input name="phone" class="order__input" type="input" placeholder="телефон *"/>
+                                <input name="email" data-validation="email" class="order__input" type="input" placeholder="email *" style="margin: 0;"/>
                             </form>
                         </div>
                         <div class="col-md-6 no-padding-right no-padding-sm-left">
@@ -64,7 +64,7 @@
                                     
                                 </div>
                                 <div class="your-order__btn-accept">
-                                    <div class="btn order__order-btn" data-toggle="modal" data-target="#order-accept">
+                                    <div class="btn order__order-btn">
                                         Заказать
                                     </div>
                                 </div>

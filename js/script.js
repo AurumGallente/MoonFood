@@ -84,6 +84,7 @@ $(function(){
             });
         },
     });
+    
     // добавляем стрелку вверх к пагинации
     var arrow = "<div id='btn-arrow-up' class='footer__arrow footer__arrow_anim_up-down' style='position: absolute; top: -45px; display: none;'><img src='images/arrow_up.png'></div>";
     $("#fp-nav").prepend(arrow);
@@ -391,13 +392,67 @@ $(function(){
         showCostOrder();
     })
     
-    // клик по кнопке заказа
+    // клик по кнопке заказа футера
     $("a.order-link").click(function(event){
         event.preventDefault();
         //console.log( $("#sel1").val() );
-        var number = $("#sel1 option:selected").val();
-        var url = $(this).attr("href") + "&select=" + number;
+        var _products = $("#sel1 option:selected").val();
+        var url = $(this).attr("href") + "&select=" + _products;
         $(location).attr('href',url);
+        
+    });
+    
+    $("div.your-order__btn-accept").click(function(event){
+
+        var _products = $("#sel1 option:selected").val();
+        var _fio = $("input[name=fio]").val();
+        var _adress = $("input[name=adress]").val();
+        var _phone = $("input[name=phone]").val();
+        var _email = $("input[name=email]").val();
+        
+        if(_fio.length < 4){
+            $('#order-error-fio').modal();
+            return false;
+        }
+        
+        if(_adress.length < 10){
+            $('#order-error-adress').modal();
+            return false;
+        }
+        var patternPhone = new RegExp(/^\d[\d\(\)\ -]{4,14}\d$/);
+        if(!patternPhone.test(_phone)){
+            $('#order-error-phone').modal();
+            return false;
+        }
+        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+        if(!pattern.test(_email) || _email == 0 ){
+            $('#order-error-email').modal();
+            return false;
+        }
+        
+        $.ajax({
+            type: 'POST',
+            url: 'includes/purchase.php',
+            data: {
+                products : _products,
+                fio: _fio,
+                adress: _adress,
+                phone: _phone,
+                email: _email
+            },
+            success: function(data, textStatus, jqXHR){
+                if(textStatus == 'success'){
+                    $('#order-accept').modal();
+                }else{
+                    $('#order-denied').modal();
+                }
+            },
+            error: function(xhr, error){
+                console.warn(xhr);
+                console.warn(error);
+            }
+        });
+        
     });
     
     // определения параметра в строке

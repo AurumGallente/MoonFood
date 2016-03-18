@@ -88,10 +88,95 @@
            <div class="modal-content">
              <div class="modal-header">
                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-               <h4 class="modal-title" id="myModalLabel">Принятие заказа</h4>
+               <h4 class="modal-title">Принятие заказа</h4>
              </div>
              <div class="modal-body">
                <h3>Ваш заказ принят.</h3>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+             </div>
+           </div>
+         </div>
+       </div>
+       
+       <div id="order-denied" class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-sm">
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               <h4 class="modal-title">Принятие заказа</h4>
+             </div>
+             <div class="modal-body">
+               <h3 style="color:#f00;">Ошибка принятия заказа</h3>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+             </div>
+           </div>
+         </div>
+       </div>
+       
+       <div id="order-error-fio" class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-sm">
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               <h4 class="modal-title">Ошибка</h4>
+             </div>
+             <div class="modal-body">
+               <h3 style="color:#f00;">Поле ФИО не заполенно!</h3>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+             </div>
+           </div>
+         </div>
+       </div>
+       
+        <div id="order-error-adress" class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-sm">
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               <h4 class="modal-title">Ошибка</h4>
+             </div>
+             <div class="modal-body">
+               <h3 style="color:#f00;">Поле АДРЕСС не заполенно!</h3>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+             </div>
+           </div>
+         </div>
+       </div>
+       
+        <div id="order-error-phone" class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-sm">
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               <h4 class="modal-title">Ошибка</h4>
+             </div>
+             <div class="modal-body">
+               <h3 style="color:#f00;">Поле ТЕЛЕФОН не заполенно или заполненно не правильно!</h3>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+             </div>
+           </div>
+         </div>
+       </div>
+       
+       <div id="order-error-email" class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-sm">
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               <h4 class="modal-title">Ошибка</h4>
+             </div>
+             <div class="modal-body">
+               <h3 style="color:#f00;">Поле EMAIL не заполенно или заполненно не правильно!</h3>
              </div>
              <div class="modal-footer">
                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>

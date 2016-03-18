@@ -53,6 +53,18 @@ $(function(){
             if($("section.fp-section").size() == i){
                 $("#btn-arrow-down").fadeIn(300);//, function(){ $(this).addClass("visible-lg"); });
             }
+            
+            var loadedSection = $(this);
+            loadedSection.find('.anim').addClass('fadeOut')
+        },
+        
+        afterLoad: function(anchorLink, index){
+            var loadedSection = $(this);
+            
+            loadedSection.find('.anim').removeClass('fadeOut').addClass('fadeInUp');
+            loadedSection.find('.anim').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                loadedSection.find('.anim').removeClass('fadeInUp');
+            });
         },
         
         afterRender: function(){
@@ -60,8 +72,12 @@ $(function(){
                 height: '350px',
             });*/
             
+            $('section.section .anim').addClass('animated fadeOut');
+            
             // нано скроллер
-            $(".nano").nanoScroller();
+            $(".nano").nanoScroller({
+                alwaysVisible: true
+            });
             $(".nano").height($(window).height() * 0.6);
             $(window).resize(function(){
                 $(".nano").height($(window).height() * 0.6);
@@ -438,10 +454,10 @@ $(function(){
                 parent.find('.anonce__description-overflow').animate({
                     height: beginHeight,
                 },"normal", function(){
-                    //$(".nano").nanoScroller({ scrollTo: $this });
+                    //$(".nano").nanoScroller({ scrollTo: $(this) });
                     //$(".nano-content").animate({ 'scrollTop':  $this.offset().top }, 500);
                 });
-                
+                //$(".nano").nanoScroller({ scrollTo: parent });
                 opened = false;
                 $this.html("Подробнее")
             }

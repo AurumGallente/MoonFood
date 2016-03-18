@@ -35,13 +35,14 @@
         <!-- MOONFOOD -->
         <section class="slide-bg section section1">
             <div class="content-slide">
-                <div class="container-fluid">
+                <img data-src="images/bootle.png" class="bootle  visible-md visible-lg">
+                <img data-src="images/bootle-sm.png" class="bootle visible-xs visible-sm">
+                <div class="container-fluid anim">
                     <div class="row">
                         <!-- <img src="images/bootle2.png" class="hidden-md hidden-lg" style="height: 80%; position: absolute; top: 15%; left: -130px;"> -->
                         <!-- <div class="col-xs-2 visible-xs visible-sm">
                         </div> -->
-                        <img data-src="images/bootle.png" class="bootle  visible-md visible-lg">
-                        <img data-src="images/bootle-sm.png" class="bootle visible-xs visible-sm">
+                        
                         <div class="col-xs-2 col-md-4 col-lg-4">
                             
                             
@@ -408,7 +409,7 @@
                 </div>
 
 <!-- состав на small и medium devices -->
-                <div class="container-fluid hidden-xs hidden-lg">
+                <div class="container-fluid hidden-xs hidden-lg anim">
                     <div class="row">
                         <div class="col-xs-12" style="margin-bottom: 15px;">
                             <h1 class="content-slide__header-slide right-text-xs">
@@ -651,7 +652,7 @@
                 </div>
                 
 <!-- состав на large devices  -->
-                <div class="composition-container hidden-xs hidden-sm hidden-md">
+                <div class="composition-container hidden-xs hidden-sm hidden-md anim">
                     <div class="container" style="/*margin-top: -45px;*/">
                         <div class="row" style="height: 80px;">
                             <!--<div class="col-xs-6">
@@ -936,7 +937,7 @@
          <!-- Зачем нужен -->
         <section class="slide-bg padding-xs-section section section3">
             <div class="content-slide">
-                <div class="container-fluid">
+                <div class="container-fluid anim">
                     <div class="row text-center">
                         <div class="col-xs-12 right-text-xs">
                             <h1 class="content-slide__header-slide why-need-marg">
@@ -1034,7 +1035,7 @@
         <!-- Мнение специалиста -->
         <section class="slide-bg padding-xs-section last-slide section section4">
             <div class="content-slide onpage-padding">
-                <div class="container-fluid">
+                <div class="container-fluid anim">
                     <div class="row">
                         <div class="col-xs-12">
                             <div id="small-slider-btn" class="small-slide-btn-panel hidden-md hidden-lg">

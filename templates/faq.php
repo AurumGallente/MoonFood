@@ -4,7 +4,7 @@
             <div class="content-slide no-padding">
                 <div class="container-fluid">
                    
-                    <img src="images/bootle.png" alt="" style="position: absolute; right: 0; width: 320px;">
+                    <img src="images/bootle.png" alt="" class="hidden-xs" style="position: absolute; right: 0; width: 320px;">
                     
                     <div class="row">
                         <div class="col-xs-12">
@@ -15,7 +15,7 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-xs-10">
+                        <div class="col-xs-12 col-sm-10">
                             <div class="faq">
                                 <div class="faq__question">
                                     Сколько нужно питаться Moon Food, для получения результата ?
@@ -28,7 +28,7 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-xs-10">
+                        <div class="col-xs-12 col-sm-10">
                             <div class="faq">
                                 <div class="faq__question">
                                     Не вреден ли Moon Food ?
@@ -41,7 +41,7 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-xs-10">
+                        <div class="col-xs-12 col-sm-10">
                             <div class="faq">
                                 <div class="faq__question">
                                     Рекомендуют ли Moon Food диетологи ?
@@ -54,7 +54,7 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-xs-10">
+                        <div class="col-xs-12 col-sm-10">
                             <div class="faq">
                                 <div class="faq__question">
                                     Вызывает ли Moon Food алергическую реакцию ?

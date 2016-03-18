@@ -22,6 +22,9 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css" />
     <!-- nanoscroller -->
     <link rel="stylesheet" href="css/nanoscroller.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    
     <!-- Moon Food style -->
     <link href="css/style.css" rel="stylesheet">
 

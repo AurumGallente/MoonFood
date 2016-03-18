@@ -1285,12 +1285,13 @@ img.small-img-slide-btn{
 .your-order__select-count{
     display: inline-block;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
 }
 
 .your-order__btn-accept{
     display: inline-block;
     width: 100%;
+    margin-top: 20px;
 }
 
 .your-order__info{
@@ -1304,6 +1305,7 @@ img.small-img-slide-btn{
 
 .your-order__btn-accept .order__order-btn{
     width: 100%;
+    background: #F48D08;
 }
 
 .your-order__select-count .order__select-count{
@@ -1318,12 +1320,16 @@ img.small-img-slide-btn{
 .your-order__cost-info{
     width: 100%;
     display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
     font-size: 22px;
-    line-height: 22px;
-    /*margin-top: 10px;*/
-    padding-right: 20px;
-    position: absolute;
-    bottom: 0;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    /* line-height: 22px; */
+    /* margin-top: 10px; */
+    /* padding-right: 20px; */
+    /* position: absolute; */
+    /* bottom: 0; */
 }
 
 .your-order__cost{

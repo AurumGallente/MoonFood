@@ -24,7 +24,7 @@
                                     <div class="your-order__value text-right"><span id="order-value-cost">1200</span> руб</div>
                                 </div>
                                 <div class="your-order__select-count">
-                                    <div class="form-group order__select-count select-down visible-lg">
+                                    <div class="form-group order__select-count select-up visible-lg">
                                         <select class="form-control select-count__selector js-select" id="sel1">
                                             <option value="1">1 Бутылка</option>
                                             <option value="2">2 Бутылки</option>

@@ -6,7 +6,7 @@ $products = 'products.php';
 $login = 'login.php';
 $template = isset($_SESSION['login']) && isset($_SESSION['id']) ? $products : $login;
 if(isset($_SESSION['id'])&&isset($_SESSION['login'])){
-    header('Location: /products.php');
+    header('Location: /admin/products.php');
 }
 
 $header = 'header.php';

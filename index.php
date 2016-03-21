@@ -30,6 +30,10 @@ function orderPage(){
 function reviewsPage(){
     return 'templates/reviews.php';
 }
+require_once('admin/db.php');
+$db = Database::getInstance();
+$query = "SELECT cost FROM `bottlecost` ORDER BY id DESC limit 1";
+$cost = $db->query($query)->fetchSingleRow()['cost'];
 require_once ('templates/header.php');
 require_once ($template);
 require_once ('templates/footer.php');

@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name=”viewport” content="user-scalable=no" />
     <title>Moon Food</title>
-
+    <script>
+        var costBootle =<?php echo $cost ;?>;
+    </script>
     <!-- Normalize -->
     <link href="css/normalize.css" rel="stylesheet">
     <!-- Bootstrap -->

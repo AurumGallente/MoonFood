@@ -1,4 +1,4 @@
-var costBootle = 400;
+
 
 $.urlParam = function(name){
     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);

@@ -5,6 +5,9 @@ session_start();
 $products = 'products.php';
 $login = 'login.php';
 $template = isset($_SESSION['login']) && isset($_SESSION['id']) ? $products : $login;
+if(isset($_SESSION['id'])&&isset($_SESSION['login'])){
+    header('Location: /products.php');
+}
 
 $header = 'header.php';
 $footer = 'footer.php';

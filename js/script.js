@@ -416,6 +416,7 @@ $(function(){
         var _adress = $("input[name=adress]").val();
         var _phone = $("input[name=phone]").val();
         var _email = $("input[name=email]").val();
+        var _bottlecount = $("#sel1").val();
         
         if(_fio.length < 4){
             $('#order-error-fio').modal();
@@ -445,7 +446,8 @@ $(function(){
                 fio: _fio,
                 adress: _adress,
                 phone: _phone,
-                email: _email
+                email: _email,
+                bottlecount: _bottlecount
             },
             success: function(data, textStatus, jqXHR){
                 if(textStatus == 'success'){

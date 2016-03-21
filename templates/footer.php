@@ -1,6 +1,6 @@
 
 </div>
-
+    <?php if($action!='order'): ?>
     <footer class="footer">
         <div class="container-fluid">
              <?php if(!isset($action)): ?>
@@ -18,7 +18,7 @@
                         <span class="icon-vk social-panel__social-btn"></span>
                     </div>
                 </div>
-                <?php if($action!='order'): ?>
+                
                 <div class="col-xs-12 col-sm-6 offset-sm-3 col-md-8">
                     <div class="order center-block">
                         <div class="visible-md visible-lg">
@@ -44,11 +44,12 @@
                             Заказать
                         </div>
                     </div>
-                    <?php endif; ?>
+                    
                 </div>
             </div>
         </div>
     </footer>
+    <?php endif; ?>
     <!-- modal order -->
     <div class="modal fade bs-order" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog">

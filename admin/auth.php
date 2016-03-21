@@ -13,6 +13,7 @@ $result = $db->query($query)->fetchSingleRow();
 if($result){
     $_SESSION['id']=$result['id'];
     $_SESSION['login']=$result['login'];
+    header('Location: /prodcts.php');
 } else {
     header('Location: /admin');
 }

@@ -1080,31 +1080,7 @@
                                     </div>
                                 </div>                                
                                 <?php endforeach;?>
-                                <div class="slider-on-page__slide col-xs-12 col-xlg-10 col-xlg-offset-1 opinion">
 
-                                    <div class="opinion__specialist">
-                                        <div class="col-xs-8 col-sm-9 col-md-12 marg-xs-spec no-padding">
-                                            <h2>- Лидия Иванова, <span class="profession">Химик аналитик</span></h2>
-                                        </div>
-                                        <div class="col-xs-4 col-sm-3 no-padding">
-                                            <img src="images/himik1.jpg" class="visible-xs visible-sm spec-foto-small">
-                                        </div>
-                                    </div>
-
-                                    <div class="clearfix"></div>
-                                    <div class="opinion__description">
-                                        <div class="description__foto col-md-4 col-lg-3 visible-md visible-lg">
-                                            <img src="images/himik1.jpg" class="spec-foto center-block">
-                                        </div>
-                                        <div class="description__concret-opinion right-text-xs no-padding col-sm-12 col-md-8 col-lg-9">
-                                            <p>
-                                                <img src="images/qoute_left.png" class="opinion__qoute left" style="margin-left: -25px;">
-                                                Mood Food был проверен на анализ сырья находящегося в данном продукте, реакционной смеси веществ, продукта и полупродукта. Mood Food полностью одобрен и пригоден для употребления человеком, не вызывает побочных эффектов и аллергию.
-                                                <img src="images/qoute_right.png" class="opinion__qoute">
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <div id="prew-slide" class="slide-btn prew-slide-btn text-center visible-md visible-lg">
                                 <img src="images/left_slide_btn.png" class="img-circle">

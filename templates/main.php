@@ -1055,10 +1055,11 @@
                     <div class="row">
                         <div id="slider-opinion" class="slider-wrap col-xs-12" style="margin-bottom: 30px;">
                             <div class="slider-on-page">
+                                <?php foreach($specialistTexts as $text): ?>
                                <div class="slider-on-page__slide col-xs-12 col-xlg-10 col-xlg-offset-1 opinion">
                                     <div class="opinion__specialist">
                                         <div class="col-xs-8 col-sm-9 col-md-12 marg-xs-spec no-padding">
-                                            <h2>- Виктор Стрижевский, <span class="profession">Диетолог</span></h2>
+                                            <h2>- <?php echo $text['header'] ;?>, <span class="profession"><?php echo $text['specialty'] ;?>г</span></h2>
                                         </div>
                                         <div class="col-xs-4 col-sm-3 no-padding">
                                             <img src="images/dietolog.jpg" class="visible-xs visible-sm spec-foto-small">
@@ -1072,60 +1073,13 @@
                                         <div class="description__concret-opinion right-text-xs no-padding col-sm-12 col-md-8 col-lg-9">
                                             <p>
                                                 <img src="images/qoute_left.png" class="opinion__qoute left" style="margin-left: -25px;">
-                                                За 15 лет практики в качестве ведущего врача-диетолога в нашей клинике, это первый случай, когда продукт подходит абсолютно всем пациентам. Отсутствие потенциальных аллергенов в составе, сбалансированность веществ и микроэлементов позволяют употреблять Moon Food практически всем. За 4 месяца, в течение которых я предлагаю эти бутылочки своим пациентам, не наблюдалось ни одного негативного случая или побочного эффекта. Да что там говорить, я и сама в последнее время частенько пользуюсь этим уникальным продуктом. Это инновации, которые качественно меняют нашу жизнь: будущее в диетическом питании пришло к нам уже сегодня.
+                                                <?php echo $text['text'] ;?>
                                                 <img src="images/qoute_right.png" class="opinion__qoute">
                                             </p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="slider-on-page__slide col-xs-12 col-xlg-10 col-xlg-offset-1 opinion">
-                                    <div class="opinion__specialist">
-                                        <div class="col-xs-8 col-sm-9 col-md-12 marg-xs-spec no-padding">
-                                            <h2>- Владимир Белов, <span class="profession">Фитнес-тренер</span></h2>
-                                        </div>
-                                        <div class="col-xs-4 col-sm-3 no-padding">
-                                            <img src="images/fitnes.jpg" class="visible-xs visible-sm spec-foto-small">
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="opinion__description">
-                                        <div class="description__foto col-md-4 col-lg-3 visible-md visible-lg">
-                                            <img src="images/fitnes.jpg" class="spec-foto center-block">
-                                        </div>
-                                        <div class="description__concret-opinion right-text-xs no-padding col-sm-12 col-md-8 col-lg-9">
-                                            <p>
-                                                <img src="images/qoute_left.png" class="opinion__qoute left" style="margin-left: -25px;">
-                                                Есть после тренировки желательно нужно, в первые 20-30 минут. Если воздерживаться в пище более долгое время, то тренировка теряет всякий смысл и нет желанных результатов. Как правило, мои клиенты не успевают прийти домой и поесть в первые 20-30 минут и я им рекомендую Mood Food. Это полноценный завтрак, который содержит все необходимые питательные вещества и витамины для организма.
-                                                <img src="images/qoute_right.png" class="opinion__qoute">
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider-on-page__slide col-xs-12 col-xlg-10 col-xlg-offset-1 opinion">
-
-                                    <div class="opinion__specialist">
-                                        <div class="col-xs-8 col-sm-9 col-md-12 marg-xs-spec no-padding">
-                                            <h2>- Ирина Петрова, <span class="profession">Терапевт</span></h2>
-                                        </div>
-                                        <div class="col-xs-4 col-sm-3 no-padding">
-                                            <img src="images/terapevt.jpg" class="visible-xs visible-sm spec-foto-small">
-                                        </div>
-                                    </div>
-
-                                    <div class="clearfix"></div>
-                                    <div class="opinion__description">
-                                        <div class="description__foto col-md-4 col-lg-3 visible-md visible-lg">
-                                            <img src="images/terapevt.jpg" class="spec-foto center-block">
-                                        </div>
-                                        <div class="description__concret-opinion right-text-xs no-padding col-sm-12 col-md-8 col-lg-9">
-                                            <p>
-                                                <img src="images/qoute_left.png" class="opinion__qoute left" style="margin-left: -25px;">
-                                                Данный продукт содержит все необходимые микроэлементы, витамины и питательные вещества. Продукт сбалансирован для повседневного употребления, который заботится о вашем иммунитете. Благодаря Mood Food Вы больше не почувствуете послеобеденной тяжести в своем желудке.
-                                                <img src="images/qoute_right.png" class="opinion__qoute">
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div>                                
+                                <?php endforeach;?>
                                 <div class="slider-on-page__slide col-xs-12 col-xlg-10 col-xlg-offset-1 opinion">
 
                                     <div class="opinion__specialist">

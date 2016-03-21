@@ -34,6 +34,8 @@ require_once('admin/db.php');
 $db = Database::getInstance();
 $query = "SELECT cost FROM `bottlecost` ORDER BY id DESC limit 1";
 $cost = $db->query($query)->fetchSingleRow()['cost'];
+$query = "SELECT * FROM `texts` WHERE `group`='specialist'";
+$specialistTexts = $db->query($query)->fetchAll();
 require_once ('templates/header.php');
 require_once ($template);
 require_once ('templates/footer.php');

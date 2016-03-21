@@ -1,0 +1,33 @@
+.bg-login{
+    background-color: #F0F8FF;
+}
+
+
+.wrap-login{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.panel{
+    width: 350px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: -155px;
+}
+
+.panel-heading__header{
+    font-size: 30px;
+}
+
+.btn__login-form{
+    width: 100%;
+}
+.btn-panel{
+    margin: 0;
+}

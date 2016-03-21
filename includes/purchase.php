@@ -14,6 +14,6 @@ $result = $db->query($query)->fetchSingleRow();
 $cost = $result['cost'];
 $totalCost = $cost*$bottlecount;
 
-$query = "INSERT INTO `products`(`fio`, `address`, `phone`, `email`, `bootlecount`, `cost`) VALUES ('$fio','$address','$phone','$email',$bottlecount,$totalCost)";
+$query = "INSERT INTO `products`(`fio`, `address`, `phone`, `email`, `bottlecount`, `cost`) VALUES ('$fio','$address','$phone','$email',$bottlecount,$totalCost)";
 $db->query($query);
 echo json_encode(array('success'=>1));

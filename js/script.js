@@ -427,7 +427,7 @@ $(function(){
             $('#order-error-adress').modal();
             return false;
         }
-        var patternPhone = new RegExp(/^\d[\d\(\)\ -]{4,14}\d$/);
+        var patternPhone = new RegExp(/^\+?[378][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/);
         if(!patternPhone.test(_phone)){
             $('#order-error-phone').modal();
             return false;
